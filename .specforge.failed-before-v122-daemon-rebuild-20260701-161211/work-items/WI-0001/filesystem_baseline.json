@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-07-01T07:29:41.212Z",
+  "root": "/mnt/1t_back/project/fj1",
+  "files": [
+    {
+      "path": "doc/飞检现场管理系统_业务逻辑定稿_v1.13_完整开发基线清洗版_二次审查修正版.md",
+      "size": 231486,
+      "mtimeMs": 1782885530965.407
+    },
+    {
+      "path": "doc/飞检现场管理系统_业务逻辑定稿_v1.14_最终干净版_开发输入.md",
+      "size": 265480,
+      "mtimeMs": 1782886939912.6792
+    },
+    {
+      "path": ".gitignore",
+      "size": 70,
+      "mtimeMs": 1782492545331.607
+    },
+    {
+      "path": ".specforge/manifest.json",
+      "size": 99,
+      "mtimeMs": 1782885645854.8772
+    },
+    {
+      "path": ".specforge/project/modules/core/requirements.md",
+      "size": 45019,
+      "mtimeMs": 1782890846165.5532
+    },
+    {
+      "path": ".specforge/project/modules/core/design.md",
+      "size": 31619,
+      "mtimeMs": 1782890846166.5532
+    },
+    {
+      "path": ".specforge/project/spec_manifest.json",
+      "size": 810,
+      "mtimeMs": 1782890846168.5532
+    },
+    {
+      "path": ".specforge/project/extension_registry.json",
+      "size": 271,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge/project/requirements_index.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge/project/design_index.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge/project/architecture.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge/project/glossary.md",
+      "size": 38,
+      "mtimeMs": 1782885645860.8772
+    },
+    {
+      "path": ".specforge/project/decisions.md",
+      "size": 38,
+      "mtimeMs": 1782885645860.8772
+    },
+    {
+      "path": ".specforge/project/trace_matrix.md",
+      "size": 17375,
+      "mtimeMs": 1782890846167.5532
+    },
+    {
+      "path": ".specforge/config/observability.json",
+      "size": 897,
+      "mtimeMs": 1782885645856.8772
+    },
+    {
+      "path": ".specforge/config/project-rules.md",
+      "size": 38,
+      "mtimeMs": 1782885645856.8772
+    },
+    {
+      "path": ".specforge/config/prod-environment.md",
+      "size": 38,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge/config/project.json",
+      "size": 30,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge/config/risk_policy.json",
+      "size": 45,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge/config/skill_fragments.json",
+      "size": 49,
+      "mtimeMs": 1782885645858.8772
+    },
+    {
+      "path": ".specforge/.gitignore",
+      "size": 103,
+      "mtimeMs": 1782885645863.8772
+    },
+    {
+      "path": ".specforge/knowledge/graph.json",
+      "size": 52,
+      "mtimeMs": 1782888466463.4258
+    }
+  ]
+}

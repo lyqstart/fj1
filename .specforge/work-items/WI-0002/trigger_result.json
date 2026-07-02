@@ -1,0 +1,46 @@
+{
+  "work_item_id": "WI-0002",
+  "schema_version": "1.1",
+  "triggered_at": "2026-07-01T15:10:00Z",
+  "intent": "productize",
+  "base_work_item": "WI-0001",
+  "workflow_type": "change_request",
+  "workflow_path": "requirement_change_path",
+  "workflow_path_rationale": "涉及多处规格微调（G3 DD-9联动、G4 快照填充、G5 hours语义、G9 SQLCipher降级），需要完整candidate→approval→merge治理。不符合code_only_fast_path（多处业务逻辑变更），不符合architecture_change_path（架构不变）。",
+  "user_decisions": {
+    "D1": {
+      "topic": "RectificationDeadlineCalculator hours 起算点",
+      "choice": "A",
+      "value": "从 confirmedAt 精确时刻起算",
+      "impact_gap": "G5"
+    },
+    "D2": {
+      "topic": "Android SQLCipher 本地加密",
+      "choice": "B",
+      "value": "MVP降级为不加密，后续迭代再加",
+      "impact_gap": "G9"
+    },
+    "D3": {
+      "topic": "Android 相机/图片压缩实现方式",
+      "choice": "A",
+      "value": "react-native-vision-camera",
+      "impact_gap": "G10"
+    },
+    "D4": {
+      "topic": "服务器 PostgreSQL postgres 用户密码",
+      "choice": "unknown",
+      "value": "用户不知道密码；PG13→16升级脚本由用户手动以root身份执行，脚本内部用systemctl+initdb重建，不需要旧密码",
+      "impact_gap": "infra"
+    },
+    "D5": {
+      "topic": "部署模式",
+      "choice": "A",
+      "value": "本地构建fat jar + scp到服务器，服务器只装JRE17",
+      "impact_gap": "infra"
+    }
+  },
+  "selected_skill": "sf-workflow-change-request",
+  "next_state": "workflow_selected",
+  "status": "triggered",
+  "unknowns": []
+}

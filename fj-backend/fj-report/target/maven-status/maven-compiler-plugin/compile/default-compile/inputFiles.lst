@@ -1,0 +1,14 @@
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportPublishService.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportApprovalService.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportPublishController.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/entity/ReportStatus.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportIssueSnapshotRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportIssueReferenceChecker.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/entity/Report.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportController.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportSnapshotService.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportApprovalController.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportSnapshotController.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportService.java
+/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/entity/ReportIssueSnapshot.java

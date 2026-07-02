@@ -1,0 +1,26 @@
+{
+  "work_item_id": "WI-0001",
+  "trigger_source": "user_request",
+  "intent_classification": "new_feature",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "workflow_skill": "sf-workflow-feature-spec",
+  "decision_reason": "全新独立产品构建。业务复杂度高（20+ 数据表、4 套状态机、Web+安卓双端、离线同步、报告导出引擎、可配置审批流）。不符合 code_only_fast_path 条件（非单文件小改、有新增用户可见功能、有新增验收标准、unknowns 非空）。必须走完整需求-设计-任务-实施链路。",
+  "mvp_scope": {
+    "phases": "阶段1-7（文档 §105.1）",
+    "excluded": [
+      "阶段8 报告变更高级管理",
+      "阶段9 统计看板与质量优化"
+    ]
+  },
+  "tech_stack_locked": true,
+  "p0_consensus": {
+    "offline_required": true,
+    "notification_in_app_only": true,
+    "major_issue_deadline_rule": "confirmed_at 当日 23:59:59，可由 major_issue_deadline_hours 覆盖"
+  },
+  "ready_for_candidate": true,
+  "schema_version": "1.1",
+  "status": "triggered",
+  "unknowns": []
+}

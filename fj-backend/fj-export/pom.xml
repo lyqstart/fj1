@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.fj</groupId>
+        <artifactId>fj-backend</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>fj-export</artifactId>
+    <name>fj-export</name>
+    <description>数据导出层：poi-tl 报告导出引擎（Word 模板渲染）</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-system</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-report</artifactId>
+        </dependency>
+
+        <!-- Spring Data JPA（ExportFile Repository） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- Spring Web（ExportController REST API） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- poi-tl Word 模板渲染引擎（DD-3） -->
+        <dependency>
+            <groupId>com.deepoove</groupId>
+            <artifactId>poi-tl</artifactId>
+            <version>1.12.2</version>
+        </dependency>
+        <!-- poi-ooxml：poi-tl 的底层依赖，显式声明以便锁定版本（图片渲染需要） -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.5</version>
+        </dependency>
+    </dependencies>
+
+</project>

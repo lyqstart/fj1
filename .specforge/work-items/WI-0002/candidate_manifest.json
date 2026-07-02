@@ -1,0 +1,66 @@
+{
+  "work_item_id": "WI-0002",
+  "schema_version": "1.1",
+  "workflow_path": "requirement_change_path",
+  "base_work_item": "WI-0001",
+  "base_spec_version": "wi-0001-closed-v1",
+  "generated_at": "2026-07-01T15:30:00Z",
+  "candidates": [
+    {
+      "type": "requirements",
+      "path": "candidates/project/modules/core/requirements.candidate.md",
+      "lint_passed": true,
+      "summary": "30 差量需求：11 REQ-FIX + 6 REQ-DEPLOY + 4 REQ-RUNTIME + 2 REQ-ANDROID + 2 REQ-TEST + 1 REQ-E2E + 4 NFR-FIX",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "module_id": "core"
+    },
+    {
+      "type": "design",
+      "path": "candidates/project/modules/core/design.candidate.md",
+      "lint_passed": true,
+      "summary": "19 设计决策：11 DD-FIX + 5 DD-DEPLOY + 3 DD-ANDROID",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "module_id": "core"
+    },
+    {
+      "type": "tasks",
+      "path": "candidates/tasks.md",
+      "lint_passed": true,
+      "summary": "34 任务 / 7 阶段：INFRA(7) + BACKEND-FIX(8) + REPORT(2) + ANDROID(4) + TEST(4) + RUN(5) + E2E(4)"
+    },
+    {
+      "type": "trace_delta",
+      "path": "candidates/trace_delta.md",
+      "lint_passed": true,
+      "summary": "100% 覆盖率：30/30 REQ, 19/19 DD, 34/34 TASK"
+    }
+  ],
+  "entries": [
+    {
+      "candidate_path": "candidates/project/modules/core/requirements.candidate.md",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "operation": "replace",
+      "type": "requirements",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/project/modules/core/design.candidate.md",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "operation": "replace",
+      "type": "design",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/trace_delta.md",
+      "target_path": ".specforge/project/trace_matrix.md",
+      "operation": "replace",
+      "type": "trace_delta",
+      "inferred": false,
+      "normalized": true
+    }
+  ]
+}

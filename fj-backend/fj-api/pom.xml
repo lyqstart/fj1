@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.fj</groupId>
+        <artifactId>fj-backend</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>fj-api</artifactId>
+    <packaging>jar</packaging>
+    <name>fj-api</name>
+    <description>系统启动入口：聚合所有模块，提供 SpringBoot 启动类与全局配置</description>
+
+    <dependencies>
+        <!-- 内部业务模块（聚合所有 Controller 与服务） -->
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-system</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-auth</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-project</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-inspection</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-issue</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-report</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-approval</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-export</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-sync</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-recommend</artifactId>
+        </dependency>
+
+        <!-- Web（启动内嵌 Tomcat） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 参数校验 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <!-- 数据库迁移 -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+        <!-- 生产运行时健康检查 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <finalName>fj-api-1.0.0</finalName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

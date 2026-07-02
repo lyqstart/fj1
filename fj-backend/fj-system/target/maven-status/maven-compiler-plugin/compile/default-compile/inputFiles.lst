@@ -1,0 +1,17 @@
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseDTO.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatus.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseConverter.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/repository/UserProjectRoleRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/repository/RoleRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/controller/UserController.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatusConverter.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/User.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Role.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Permission.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/repository/UserRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/repository/OrganizationRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/service/UserService.java

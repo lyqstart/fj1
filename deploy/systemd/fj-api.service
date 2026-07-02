@@ -1,0 +1,50 @@
+[Unit]
+Description=FJ Inspection Site Management System API
+After=network.target postgresql-16.service
+Wants=postgresql-16.service
+
+[Service]
+Type=simple
+User=fj
+Group=fj
+WorkingDirectory=/opt/fj/api
+
+# 环境变量文件（权限 600，不提交 Git）
+EnvironmentFile=/opt/fj/api/.env
+
+# JVM 参数 — 针对 3.6GB RAM 服务器调优
+# -Xms512m: 初始堆 512MB
+# -Xmx768m: 最大堆 768MB（OS+PG+Nginx 后剩余约 1GB 给 JVM）
+# -XX:MetaspaceSize=128m: 元空间初始
+# -XX:MaxMetaspaceSize=192m: 元空间上限
+# -XX:+UseG1GC: G1 垃圾收集器（低延迟）
+# -XX:MaxGCPauseMillis=200: GC 暂停目标 200ms
+# -XX:+HeapDumpOnOutOfMemoryError: OOM 时自动 dump
+# -XX:HeapDumpPath: dump 文件路径
+Environment="JAVA_OPTS=-Xms512m -Xmx768m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/opt/fj/api/logs/jvm"
+
+Environment="SPRING_PROFILES_ACTIVE=prod"
+
+ExecStart=/usr/bin/java $JAVA_OPTS -jar /opt/fj/api/fj-api.jar
+ExecStop=/bin/kill -TERM $MAINPID
+
+# 自动重启
+Restart=on-failure
+RestartSec=10
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+# 启动超时
+TimeoutStartSec=90
+
+# 日志
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=fj-api
+
+# 安全限制
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

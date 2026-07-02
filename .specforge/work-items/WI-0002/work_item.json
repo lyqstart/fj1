@@ -1,0 +1,696 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0002",
+  "status": "created",
+  "workflow_type": "change_request",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0002",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-01T15:00:39.248Z",
+  "updated_at": "2026-07-02T04:15:13.955Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "scripts/ops/install_pg16.sh",
+      "operation": "create"
+    },
+    {
+      "path": "scripts/ops/install_pg16.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/install_pg16.sh",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/install_pg16.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "scripts/ops/install_jre17.sh",
+      "operation": "create"
+    },
+    {
+      "path": "scripts/ops/install_jre17.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/install_jre17.sh",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/install_jre17.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "scripts/ops/init_database.sh",
+      "operation": "create"
+    },
+    {
+      "path": "scripts/ops/init_database.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/init_database.sh",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/init_database.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "scripts/ops/deploy_backend.sh",
+      "operation": "create"
+    },
+    {
+      "path": "scripts/ops/deploy_backend.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/deploy_backend.sh",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/deploy_backend.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "scripts/ops/rollback_backend.sh",
+      "operation": "create"
+    },
+    {
+      "path": "scripts/ops/rollback_backend.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/rollback_backend.sh",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/scripts/ops/rollback_backend.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "deploy/config/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "deploy/config/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/config/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/config/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "deploy/config/.env.template",
+      "operation": "create"
+    },
+    {
+      "path": "deploy/config/.env.template",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/config/.env.template",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/config/.env.template",
+      "operation": "modify"
+    },
+    {
+      "path": "deploy/systemd/fj-api.service",
+      "operation": "create"
+    },
+    {
+      "path": "deploy/systemd/fj-api.service",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/systemd/fj-api.service",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/systemd/fj-api.service",
+      "operation": "modify"
+    },
+    {
+      "path": "deploy/nginx/fj.conf",
+      "operation": "create"
+    },
+    {
+      "path": "deploy/nginx/fj.conf",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/nginx/fj.conf",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/nginx/fj.conf",
+      "operation": "modify"
+    },
+    {
+      "path": ".gitignore",
+      "operation": "create"
+    },
+    {
+      "path": ".gitignore",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/.gitignore",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/.gitignore",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/templates/report_default_v1.docx",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/templates/report_default_v1.docx",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/src/main/resources/templates/report_default_v1.docx",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/src/main/resources/templates/report_default_v1.docx",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/java/com/fj/api/FjApplication.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/java/com/fj/api/FjApplication.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/src/main/java/com/fj/api/FjApplication.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/src/main/java/com/fj/api/FjApplication.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-api/pom.xml",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-api/pom.xml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/pom.xml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/pom.xml",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/jpa/BaseEntity.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/jpa/BaseEntity.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/jpa/BaseEntity.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/jpa/BaseEntity.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/aspect/OperationLogAspect.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/aspect/OperationLogAspect.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/audit/aspect/OperationLogAspect.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/audit/aspect/OperationLogAspect.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/port/IssueReferenceChecker.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/port/IssueReferenceChecker.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/port/IssueReferenceChecker.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/port/IssueReferenceChecker.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-common/src/test/java/com/fj/common/audit/OperationLogAspectTest.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-common/src/test/java/com/fj/common/audit/OperationLogAspectTest.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/test/java/com/fj/common/audit/OperationLogAspectTest.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/test/java/com/fj/common/audit/OperationLogAspectTest.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/User.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/User.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/User.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/User.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Role.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Role.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Role.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Role.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Permission.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Permission.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Permission.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Permission.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseDTO.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseDTO.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseDTO.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseDTO.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseConverter.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseConverter.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseConverter.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseConverter.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/controller/UserController.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/controller/UserController.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/controller/UserController.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-system/src/main/java/com/fj/system/controller/UserController.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/ProjectAccessFilter.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/ProjectAccessFilter.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/ProjectAccessFilter.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/ProjectAccessFilter.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportSnapshotService.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportSnapshotService.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportSnapshotService.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportSnapshotService.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportIssueReferenceChecker.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportIssueReferenceChecker.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportIssueReferenceChecker.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/service/ReportIssueReferenceChecker.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportIssueSnapshotRepository.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportIssueSnapshotRepository.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportIssueSnapshotRepository.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportIssueSnapshotRepository.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-report/src/test/java/com/fj/report/service/ReportSnapshotServiceTest.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-report/src/test/java/com/fj/report/service/ReportSnapshotServiceTest.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-report/src/test/java/com/fj/report/service/ReportSnapshotServiceTest.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-report/src/test/java/com/fj/report/service/ReportSnapshotServiceTest.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueReviewService.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueReviewService.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueReviewService.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueReviewService.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/RectificationDeadlineCalculator.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/RectificationDeadlineCalculator.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-issue/src/main/java/com/fj/issue/service/RectificationDeadlineCalculator.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-issue/src/main/java/com/fj/issue/service/RectificationDeadlineCalculator.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/test/java/com/fj/issue/service/RectificationDeadlineCalculatorTest.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/test/java/com/fj/issue/service/RectificationDeadlineCalculatorTest.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-issue/src/test/java/com/fj/issue/service/RectificationDeadlineCalculatorTest.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-issue/src/test/java/com/fj/issue/service/RectificationDeadlineCalculatorTest.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/test/java/com/fj/issue/service/IssueReviewServiceTest.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/test/java/com/fj/issue/service/IssueReviewServiceTest.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-issue/src/test/java/com/fj/issue/service/IssueReviewServiceTest.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-issue/src/test/java/com/fj/issue/service/IssueReviewServiceTest.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/service/PoiTlExportEngine.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/service/PoiTlExportEngine.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-export/src/main/java/com/fj/export/service/PoiTlExportEngine.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-export/src/main/java/com/fj/export/service/PoiTlExportEngine.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/src/store/schema.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/store/schema.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/store/schema.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/store/schema.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/package.json",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/package.json",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/package.json",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/package.json",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 5,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-01T15:53:37.290Z",
+      "mode": "release",
+      "incoming_count": 344,
+      "previous_count": 0,
+      "total_count": 344
+    },
+    {
+      "timestamp": "2026-07-02T01:51:48.293Z",
+      "mode": "release",
+      "incoming_count": 360,
+      "previous_count": 0,
+      "total_count": 360
+    },
+    {
+      "timestamp": "2026-07-02T02:58:21.482Z",
+      "mode": "release",
+      "incoming_count": 4,
+      "previous_count": 0,
+      "total_count": 4
+    },
+    {
+      "timestamp": "2026-07-02T03:03:30.067Z",
+      "mode": "release",
+      "incoming_count": 160,
+      "previous_count": 0,
+      "total_count": 160
+    },
+    {
+      "timestamp": "2026-07-02T03:39:17.274Z",
+      "mode": "release",
+      "incoming_count": 160,
+      "previous_count": 0,
+      "total_count": 160
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-02T01:51:20.108Z"
+}

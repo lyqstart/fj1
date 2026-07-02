@@ -1,0 +1,1261 @@
+{
+  "timestamp": "2026-07-01T10:27:01.678Z",
+  "root": "/mnt/1t_back/project/fj1",
+  "files": [
+    {
+      "path": "doc/飞检现场管理系统_业务逻辑定稿_v1.14_最终干净版_开发输入.md",
+      "size": 265480,
+      "mtimeMs": 1782886939912.6792
+    },
+    {
+      "path": ".gitignore",
+      "size": 70,
+      "mtimeMs": 1782492545331.607
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/manifest.json",
+      "size": 99,
+      "mtimeMs": 1782885645854.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/modules/core/requirements.md",
+      "size": 45019,
+      "mtimeMs": 1782890846165.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/modules/core/design.md",
+      "size": 31619,
+      "mtimeMs": 1782890846166.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/spec_manifest.json",
+      "size": 810,
+      "mtimeMs": 1782890846168.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/extension_registry.json",
+      "size": 271,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/requirements_index.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/design_index.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/architecture.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/glossary.md",
+      "size": 38,
+      "mtimeMs": 1782885645860.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/decisions.md",
+      "size": 38,
+      "mtimeMs": 1782885645860.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/trace_matrix.md",
+      "size": 17375,
+      "mtimeMs": 1782890846167.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/work_item.json",
+      "size": 207544,
+      "mtimeMs": 1782890981210.778
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/intake.md",
+      "size": 4468,
+      "mtimeMs": 1782888156783.5254
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/change_classification.md",
+      "size": 1061,
+      "mtimeMs": 1782888277420.9233
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/impact_analysis.md",
+      "size": 2193,
+      "mtimeMs": 1782888290741.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/trigger_result.json",
+      "size": 340,
+      "mtimeMs": 1782888292628.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidates/project/modules/core/requirements.candidate.md",
+      "size": 45019,
+      "mtimeMs": 1782888874789.0457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidates/project/modules/core/design.candidate.md",
+      "size": 31619,
+      "mtimeMs": 1782889770534.863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidates/tasks.md",
+      "size": 45067,
+      "mtimeMs": 1782890395036.4866
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidates/trace_delta.md",
+      "size": 17375,
+      "mtimeMs": 1782890450336.7566
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/requirements.md",
+      "size": 45019,
+      "mtimeMs": 1782888874986.043
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/design.md",
+      "size": 31619,
+      "mtimeMs": 1782889770535.863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/tasks.md",
+      "size": 45067,
+      "mtimeMs": 1782890395047.4863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/trace_delta.md",
+      "size": 17375,
+      "mtimeMs": 1782890450336.7566
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidate_manifest.json",
+      "size": 1822,
+      "mtimeMs": 1782890519495.8474
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/entry_gate.json",
+      "size": 754,
+      "mtimeMs": 1782890546532.4922
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/workflow_selection_gate.json",
+      "size": 793,
+      "mtimeMs": 1782890546533.4922
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/schema_gate.json",
+      "size": 1739,
+      "mtimeMs": 1782890546534.4922
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/required_files_gate.json",
+      "size": 2194,
+      "mtimeMs": 1782890546535.4922
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/candidate_manifest_gate.json",
+      "size": 2599,
+      "mtimeMs": 1782890546536.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/path_policy_gate.json",
+      "size": 558,
+      "mtimeMs": 1782890546537.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/spec_consistency_gate.json",
+      "size": 595,
+      "mtimeMs": 1782890546537.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/trace_gate.json",
+      "size": 555,
+      "mtimeMs": 1782890546538.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/gate_summary_gate.json",
+      "size": 692,
+      "mtimeMs": 1782890546539.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/post_merge_gate.json",
+      "size": 779,
+      "mtimeMs": 1782890862846.334
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gate_summary.md",
+      "size": 267,
+      "mtimeMs": 1782890862846.334
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/user_decision.json",
+      "size": 942,
+      "mtimeMs": 1782890839039.647
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/merge_report.md",
+      "size": 948,
+      "mtimeMs": 1782890846173.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/filesystem_baseline.json",
+      "size": 2846,
+      "mtimeMs": 1782890981211.778
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/changed_files_audit.md",
+      "size": 651,
+      "mtimeMs": 1782891233937.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/write_guard_log.jsonl",
+      "size": 734,
+      "mtimeMs": 1782891403252.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/hard_stop.json",
+      "size": 386,
+      "mtimeMs": 1782891403252.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/runtime/events.jsonl",
+      "size": 9370,
+      "mtimeMs": 1782890981074.7798
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/runtime/state.json",
+      "size": 432,
+      "mtimeMs": 1782890981141.7788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/observability.json",
+      "size": 897,
+      "mtimeMs": 1782885645856.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/project-rules.md",
+      "size": 38,
+      "mtimeMs": 1782885645856.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/prod-environment.md",
+      "size": 38,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/project.json",
+      "size": 30,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/risk_policy.json",
+      "size": 45,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/skill_fragments.json",
+      "size": 49,
+      "mtimeMs": 1782885645858.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/.gitignore",
+      "size": 103,
+      "mtimeMs": 1782885645863.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/tool-calls.jsonl",
+      "size": 445066,
+      "mtimeMs": 1782891408907.1555
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/index.jsonl",
+      "size": 76299,
+      "mtimeMs": 1782891408945.155
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/03/03134b6392f20297870cd908823317b82cbda73d79440c6cc9a89f8555b0dad4.json",
+      "size": 551,
+      "mtimeMs": 1782887275638.2258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/03/03d18ae8f730d0ac4ceb81a0a41598ccbf657e1f2a642a288ebae59af3c017c4.json",
+      "size": 340,
+      "mtimeMs": 1782891408372.1626
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/03/03e50fbd0262f6fd56e94b31ece51480317e351b442523c50bfa254927d13a18.json",
+      "size": 346,
+      "mtimeMs": 1782891408922.1555
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/16/1627604d384ac51e0fe8c148aa07cf9a3386b5e93458e53e21ad6cb309afb46c.json",
+      "size": 337,
+      "mtimeMs": 1782887275641.2256
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/70/700188c5f8bb77b0a70bd9bf662b0caed1d81da93b33617cb00bb43d960810d1.json",
+      "size": 181,
+      "mtimeMs": 1782887275643.2256
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2f/2fc46434aa6bf08184652a27df5d4c6512e16f757c56a45089fbe4a20345cbd8.json",
+      "size": 59,
+      "mtimeMs": 1782887276040.2205
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2f/2f78358a3926a883d53b6acd4b80e8a7569d379f17d37f5dd2a019cebe1635ec.json",
+      "size": 863,
+      "mtimeMs": 1782890484875.3027
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/fc/fc8fac51930d0f63017acbaeb9d3d675b46f3402ed45284271561a33c09509a2.json",
+      "size": 652,
+      "mtimeMs": 1782887455399.839
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c8/c824ce59500b72f81c02992e0d90969bf9fe48131777ff86d9dd4b6ebc66f38f.json",
+      "size": 438,
+      "mtimeMs": 1782887455401.839
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/9a/9a01a8b18aa12c5bd47b870d7f1ebdef5f00233da133cb58efe2c760f13f8600.json",
+      "size": 187,
+      "mtimeMs": 1782887455407.8389
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/9a/9a56359274070a24f9e6abaf5b09cbf650d5a967e488df61bb4568ada629ee2a.json",
+      "size": 536,
+      "mtimeMs": 1782888466460.4258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/dc/dc96f9cc877d8df5154659612fcb5ac3d02acacf65b32fa31e0f8befd81298b2.json",
+      "size": 406,
+      "mtimeMs": 1782887455866.8328
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cb/cb00e5558eea0f0441d9f6fafac2696b8d160dba51e56c3692f492be06d4c879.json",
+      "size": 5473,
+      "mtimeMs": 1782888156569.528
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cb/cbf354252a931dc0c44ba8247132887def8432f7419a0faa65984f56e2c06901.json",
+      "size": 160,
+      "mtimeMs": 1782888292629.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/49/49c855360e24ffb013ceb457e0337ab1778cd4a3bfb50e76d10c502ce7f2b291.json",
+      "size": 5255,
+      "mtimeMs": 1782888156574.528
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/49/49fa0749dc157909f3734deab93ff923dcfc5a745c662254148e0830e6dabaa4.json",
+      "size": 155,
+      "mtimeMs": 1782888605864.589
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/8c/8c1fb1316af4efed8efca892841033cd394c3fc9a9dd663b93edf9df77911099.json",
+      "size": 185,
+      "mtimeMs": 1782888156772.5254
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1f/1fff9c9cc519899819a55381f360153ded05741eac468bef879037b10f7bdf00.json",
+      "size": 144,
+      "mtimeMs": 1782888156794.5251
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1f/1f034649985824c6318f8376c8e418c57f0e0f925e77f378efc91eec4c06bf1d.json",
+      "size": 363,
+      "mtimeMs": 1782889013294.2207
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1f/1fb682864de1d9e9f3c9c22afaad18287a0c0570d67f503fefb76b322510f5f7.json",
+      "size": 1136,
+      "mtimeMs": 1782889829208.3271
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5f/5f11515e26e8983238ee78b0fe3e4a5e259b449a677cccc69044cdec6fe2984c.json",
+      "size": 745,
+      "mtimeMs": 1782888214161.7634
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/21/2195947689a46bb17da230d3cfebc41ea46dc40697a4000073ef20fec98ad684.json",
+      "size": 531,
+      "mtimeMs": 1782888214163.7634
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/21/215dc4af6b0ed3328e1d7a4dbbe242b34264d61c45db118e6e3dcf78320e4cac.json",
+      "size": 345,
+      "mtimeMs": 1782890456645.6738
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/21/214126a7da90e80fe4a707f25a732d61586b4831f87dc7c1be20d3fb1e33bf88.json",
+      "size": 580,
+      "mtimeMs": 1782891403252.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3a/3a825b3a859d7f9b915a68c5fd91c982cbfc227ea97d07207996d3f1619340e7.json",
+      "size": 187,
+      "mtimeMs": 1782888214163.7634
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3a/3ab31b80dd7164df6cd9d23addcdf42a51849aa371bbb326b2640e1f01875501.json",
+      "size": 677,
+      "mtimeMs": 1782888316415.4055
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3a/3a75cca7d2bf956e35d9feba65f5caa861d02a3fe17d5c9d176bdab680d3c9f4.json",
+      "size": 362,
+      "mtimeMs": 1782889189417.9
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3a/3a3e7e2d559a286cc438eebd969ac786d10f158fe99ea3b034fc68d7ef7e5acc.json",
+      "size": 153,
+      "mtimeMs": 1782890456364.6775
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e2/e244f51f2c2df4d3ffc2bf792f385dae1d21ffa01924555eee5b751770d97a82.json",
+      "size": 314,
+      "mtimeMs": 1782888214411.76
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5e/5e85085bf08111e7255d0a73a663bf207ae826cf3768d4ef68f8748bbab605a5.json",
+      "size": 675,
+      "mtimeMs": 1782888260708.1453
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/06/060d576aa15c1d1988219dc1ce5af74d177a6b5edfdfbaf3f0c378050124c0fd.json",
+      "size": 461,
+      "mtimeMs": 1782888260727.145
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/06/06ed31f7d9279daffdc86853cdc1e0b866f6c5aeaac242d11db33606bb8ca170.json",
+      "size": 185,
+      "mtimeMs": 1782888292627.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cf/cfa9828d220cfd49807236f3d2ccd9f757ef84f172fa69763d6787501288974a.json",
+      "size": 187,
+      "mtimeMs": 1782888260728.145
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2c/2ca2818a92984d0aac9c27d78da9e5c86d1b394b5ef54533f284e3c0fa52e35b.json",
+      "size": 323,
+      "mtimeMs": 1782888261042.1409
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f3/f3e018d01e29cb2a90dec67da12fd94adba78c79af3bd108ec518a052be46937.json",
+      "size": 1978,
+      "mtimeMs": 1782888277400.9236
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f3/f37e96bca170736fbc931da4c63a108ec83e2dae9a0006d9105c7e84aff7fa39.json",
+      "size": 180,
+      "mtimeMs": 1782891408373.1626
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ec/ecc5f1cdb66c75880480e99706465bc2559d4b03b04729245eb0093a5b702d20.json",
+      "size": 1760,
+      "mtimeMs": 1782888277402.9236
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/59/596ec53050969263e487025042583a0dd3f3f31f9860cdfb19794b5ec5362f6a.json",
+      "size": 185,
+      "mtimeMs": 1782888277419.9233
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/59/59b35f10ef572ad91e893ca5185e235304cfd1cd514cf0ad8b21bd537619b8b5.json",
+      "size": 157,
+      "mtimeMs": 1782890484874.3027
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e5/e547d8c294c618cd765ed753127eb3150e8eea8650b6ab8a77bf74c94ecc1014.json",
+      "size": 174,
+      "mtimeMs": 1782888277420.9233
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/4e/4e726b0c9e6ee1dbc9a52d49906115871ff0592bd39dd3bf6f62a52f1e84b799.json",
+      "size": 3179,
+      "mtimeMs": 1782888290739.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f7/f7a22bae2d1eb4ba978e4e542c3f3e1b1466d500e4243656085435ecb97ee693.json",
+      "size": 2961,
+      "mtimeMs": 1782888290740.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/28/2835f10adde5f86a26f7d7f47d9cabb7fe670d5d09af584bd6dc2af427e5571a.json",
+      "size": 185,
+      "mtimeMs": 1782888290741.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/28/28ba7a4098d828e4d2e5f4592782e6983581d200f56673aae7d8c6e05b8ac1c6.json",
+      "size": 2561,
+      "mtimeMs": 1782889807625.5244
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/28/28647dbee9a50198335bfa2c463dcb5fc86d67272dd030bdb47d285f2cd5c6f6.json",
+      "size": 665,
+      "mtimeMs": 1782890535921.6316
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1e/1ebf0e76b73421e6d3c1c8f6fe484445c2ce757202753bb79b150f96236a3e11.json",
+      "size": 162,
+      "mtimeMs": 1782888290741.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ba/ba4f99e25a2c1b814b9007b5ee179a684a914a6d0c32d242d93ec607f0d7931f.json",
+      "size": 1274,
+      "mtimeMs": 1782888292624.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ba/baff10de7304ecf06d26b585659f6bbc87c295d34bb55c14d9a11c3ea5da5390.json",
+      "size": 197,
+      "mtimeMs": 1782889770535.863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ba/bad67d3c0a149e7e55d270bba71583056fc9094965b49c6cc8fb35a3e3e6b2a3.json",
+      "size": 191,
+      "mtimeMs": 1782890838666.6519
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/36/3688427edf9255f45bc3884a8c2b1c1765c7e65f449c27b17d24683d13d132da.json",
+      "size": 1056,
+      "mtimeMs": 1782888292627.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1a/1a6d0edf1cc6883e709e323a3c18f29739ef4650ad927563b27a3b2772d1a2bb.json",
+      "size": 748,
+      "mtimeMs": 1782888299469.6306
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ee/ee517efc8b13cb6f71a647b03ace36df1005d7e2d4455bcd4bfcf376d5b4576b.json",
+      "size": 534,
+      "mtimeMs": 1782888299471.6306
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5c/5c4d8bdaa5f11830a8c161a6bd118872cdfa4699fb25875332cf8399538ae2c3.json",
+      "size": 187,
+      "mtimeMs": 1782888299471.6306
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/8a/8a46c715d4ed193bbe7d8c4c9781d77fe1f5ac3dcd48bb54d8682f55dba8d95f.json",
+      "size": 368,
+      "mtimeMs": 1782888299712.6274
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/08/08e0a458211c8449c9ba8fa27b7626bf48684f1c1c44134e796f32eca160f530.json",
+      "size": 706,
+      "mtimeMs": 1782888305016.557
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/08/0850d856bab5d2c7a2aca2d12951b25f75d699146546a241c2d2743303ad377e.json",
+      "size": 564,
+      "mtimeMs": 1782891408391.1624
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d5577ccd696c207885b78d06b719e4c217197bc5bace0f0f7c1d03fb63b51d60.json",
+      "size": 492,
+      "mtimeMs": 1782888305017.557
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d5b831d17e87b39664d9fb6128b2a2703571b3e8b56b94bd1e0fd3ec4a432d51.json",
+      "size": 555,
+      "mtimeMs": 1782888605862.589
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d518f3ee4c16627479e3900e7b1b3a11441bb1d4ca168501146d0a1b0da38c23.json",
+      "size": 160,
+      "mtimeMs": 1782889189420.9
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d5d1df760e32928758657bd022f6913e097e5eb26e18775de205ff7db41e6b9a.json",
+      "size": 559,
+      "mtimeMs": 1782890456644.6738
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d59fe25fe9beb7b287b7f03134a2eded3420a65d817690ac10c27ed1ad5ecbb1.json",
+      "size": 1009,
+      "mtimeMs": 1782890981212.7778
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d5bc484fa981197625d39ccbb03bbb1854593db43c0a20db609c34581ccb9446.json",
+      "size": 261,
+      "mtimeMs": 1782891233937.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f0/f01d87c6c5c46e277dbd5a79db76e08fe31ff0c2735691c04c8b9804cee627d8.json",
+      "size": 187,
+      "mtimeMs": 1782888305018.557
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f0/f0712792fe55db3cc2bf24f54cc7a798f493c0e4c363eebaf8518e6d633b0b88.json",
+      "size": 2040,
+      "mtimeMs": 1782890546731.4895
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/8b/8b81b54ffdda30ecb0975b9c7e130fd439f06b797a84371c66d640e0b60e8ace.json",
+      "size": 369,
+      "mtimeMs": 1782888305255.5537
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/13/1373da7c784fa8a8a83829822c236ebad12f79e9b0b8ff6312cceffb9bfa2a55.json",
+      "size": 463,
+      "mtimeMs": 1782888316416.4055
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/91/91adee19f934109ca64bb15c9da86061c50b78f4a3b92380dea8b79e691932d2.json",
+      "size": 187,
+      "mtimeMs": 1782888316417.4055
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/77/7796e9a8c80dbbfcbd92262ba82ba4204750bc53b6281c3e885124dd84683819.json",
+      "size": 373,
+      "mtimeMs": 1782888316656.4023
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/df/df48132a7dd6bedb83139acd00809ae8e780e6099afa51528921c2db73115c35.json",
+      "size": 750,
+      "mtimeMs": 1782888466458.426
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/15/150c46bdd663f1cb345d93f6fe344aa0a1ee7227ad9a5ed6af48b604fb15ef85.json",
+      "size": 184,
+      "mtimeMs": 1782888466461.4258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/73/73bc73d1fa5ce7d75ee247a14d0ed28fcbb2a3548befafee213a194c1ffe3287.json",
+      "size": 76,
+      "mtimeMs": 1782888466466.4258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/73/7352fc78c4c0faa56797e2b9b3fd53693578b1ef484020b01640fcf9d74f2abe.json",
+      "size": 46449,
+      "mtimeMs": 1782888874786.0457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/73/7310408429e84ee4ced240b64c7098104418eb28642b9a7357cefdf24a76b433.json",
+      "size": 137,
+      "mtimeMs": 1782889013300.2205
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/bd/bd91e4b08b558d7ad0be8964c1fc6f703f071ea0b371b52c0f188b9fba11d3d1.json",
+      "size": 65,
+      "mtimeMs": 1782888466474.4258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b3/b3ed4fe128ed467e9ba7669b92e94a8ea2e178b37b639236ae1461b70120cbbd.json",
+      "size": 341,
+      "mtimeMs": 1782888605864.589
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/81/818b22d5ca7cd18b8146b3b0bdcb922788f4963244dc135ef2a783c6181b5145.json",
+      "size": 191,
+      "mtimeMs": 1782888606061.5864
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/81/81d7b2b50b2af090f36f773a331145341874e4e0cc24c3266de8608b7f3aa082.json",
+      "size": 554,
+      "mtimeMs": 1782891408371.1626
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c9/c9523ec6ea83d1112b9b9212d35b682e6fb2133c3de050644bd2a46fb989b8d1.json",
+      "size": 46667,
+      "mtimeMs": 1782888874783.0457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d2/d2e9222b9d95459b4044cf6f729acb14aa39503d52be25bfd7e2a4ee15a867e0.json",
+      "size": 159,
+      "mtimeMs": 1782888874788.0457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d2/d29c4dfc8e7b39eb39119ce87fb522078d91727cbbfd010a9df528d58137e154.json",
+      "size": 835,
+      "mtimeMs": 1782891233933.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b1/b15c869adee64be7b97dc92a781b7c7d4a4c10164babcd72e87bcd8f98ba0292.json",
+      "size": 209,
+      "mtimeMs": 1782888874986.043
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/69/6980897e43735a37fea5e5a54896de57e38cb0aaaff2ce59585270014bc7da9b.json",
+      "size": 3460,
+      "mtimeMs": 1782888935536.245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/69/698121e47c12e8a94d2c2fa94672eb2862d1794ef17bf731f39996917f02878e.json",
+      "size": 103503,
+      "mtimeMs": 1782889600318.4175
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/69/695f290c834d08832c65b44d1973390b28df02359062b767c334b188362c99c9.json",
+      "size": 159,
+      "mtimeMs": 1782890395014.4868
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b0/b09053751c45eccfbf2a556c3d8c79a42c85a57a1761d64a301b2b1c2d4f082a.json",
+      "size": 3245,
+      "mtimeMs": 1782888935538.245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b0/b0743408ca27af53711b5086a0c23721c602078c90bbd0c7d9a676319a7c342c.json",
+      "size": 570,
+      "mtimeMs": 1782890456359.6775
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f9/f92b3757d27508a78927f84b6388afac1cf2c53df0f8e69c64f3aca9cb21deef.json",
+      "size": 157,
+      "mtimeMs": 1782888935539.245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/43/43cbe7fa174125249d4e616a9f825651ba298cde361e6ea0b7395a03340668ae.json",
+      "size": 94,
+      "mtimeMs": 1782888935540.245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5b/5bc4a3bf9c21ad6101fe53bbdc03f62290cbae060fd3bf4131c513c8e60a1d84.json",
+      "size": 577,
+      "mtimeMs": 1782889013293.2207
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f5/f5ab7f2e1254da16fd49e7ae2659f86d36f66a90c30d4d2bccc0c90576eb80a5.json",
+      "size": 179,
+      "mtimeMs": 1782889013299.2205
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b2/b258b62965848441de00ea2c2cc524b632d5d9845528ec7258c8312df180fcb6.json",
+      "size": 710,
+      "mtimeMs": 1782889014092.2102
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f6/f65448ec2b08f3a503afa4296083fd51068c17e28dc277830dc60361cf6ade3f.json",
+      "size": 496,
+      "mtimeMs": 1782889014093.21
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/7a/7a877bc5b2fea5e960d882fff890d4605667f5236e531bf3ebb6193b0c6261e2.json",
+      "size": 184,
+      "mtimeMs": 1782889014099.21
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/10/108384b26fc69604533b843565e99a6943c45c0ab574b22defbfa21a170f841d.json",
+      "size": 576,
+      "mtimeMs": 1782889189415.9
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/10/10015b0337a9d33ad0c7029cfff2ebeae225103d75ad6c0467ec705dc20e6b8c.json",
+      "size": 180,
+      "mtimeMs": 1782891408608.1594
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c5/c5c4e5cdc583f2eab831b14efc8ced1e1b68284ddb84ed35596489e6362cd14c.json",
+      "size": 111,
+      "mtimeMs": 1782889189421.9
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ac/ac1aac57271d1ff429cfb437a7ff07305bf7eb27c4a908764d51e5c674542de5.json",
+      "size": 33177,
+      "mtimeMs": 1782889770321.865
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/71/71036b676b90a2a9df5f43769f5d5573c2e1ab89771e409455e4931d6c4ef6b5.json",
+      "size": 32958,
+      "mtimeMs": 1782889770323.865
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/71/710b9622fbda78f728c47f0b5769eba99ff63406fd5709ae2f7ec1259d119106.json",
+      "size": 180,
+      "mtimeMs": 1782891403245.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/71/7188b7c3fb94cd34febc4ab825dfc735895d458a7c652b2b0f1bc18b1e986c89.json",
+      "size": 560,
+      "mtimeMs": 1782891408908.1555
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/54/54cda9943bf1994259e94605c566314f0a1d7e577d4f82b8bc9e68ca508b7350.json",
+      "size": 159,
+      "mtimeMs": 1782889770330.865
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2d/2db11c794a4ef7969dd837e0979bd3911e0cc22e8ec3b35dfa8931f549e6121e.json",
+      "size": 565,
+      "mtimeMs": 1782889789026.694
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2d/2d93b8fe9ca47ca5eb339cbc6279408d3eaf927ce467d723a26bbc4f04f4bdbf.json",
+      "size": 368,
+      "mtimeMs": 1782890536171.6284
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/39/3978c77676cdd80770c33b2b87a9a3fe5d7ba9d22acd68d1fcbeca47e6255e06.json",
+      "size": 351,
+      "mtimeMs": 1782889789034.694
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/39/39d49ab18972e67252fc9c4a70d35a614dbf5e11ae565024f371220642ccc9e6.json",
+      "size": 12789,
+      "mtimeMs": 1782890980765.784
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d6/d6e5bda68452627faac2d859d6943b1933865103e127ade3cc21d75698240c5c.json",
+      "size": 153,
+      "mtimeMs": 1782889789044.694
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cd/cdc3e754e8eed505a37fc4dbbf206b386369bf5c383600353d697baa26f00f80.json",
+      "size": 125,
+      "mtimeMs": 1782889789055.6938
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cd/cdc8abfc55c70740bfbdd49ce63d88f8ea34b487e5ef4f6e9bbcbbc0277c439c.json",
+      "size": 548,
+      "mtimeMs": 1782890524917.7764
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cd/cdea3b21630e79224c496a3ea0d09924739a623f3135e44c46ed2664b64a0b9e.json",
+      "size": 164,
+      "mtimeMs": 1782891233933.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/99/992e56ecfc5c49d2e32963163164dcace7aae5898d90f0380cde181fed86ad2e.json",
+      "size": 2346,
+      "mtimeMs": 1782889807626.5244
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/99/9999049651e3afa012b6e4efcf112bcb4bd18b58625364b24355935847e1c0d6.json",
+      "size": 356,
+      "mtimeMs": 1782890456360.6775
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/01/01094ef86f6a68bfba97af8ba9b85215bcb2d1dba2a4c050cdd2c077ecb87331.json",
+      "size": 157,
+      "mtimeMs": 1782889807627.5242
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/01/015e13f661660942c7f56344b7aa40e1fef8336cabf23e27d9d897a8012029e6.json",
+      "size": 549,
+      "mtimeMs": 1782891408605.1597
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/46/469158881aa77030b74620a3b4f38f79a9bc6228a804cb162341e9b08f3da8b3.json",
+      "size": 922,
+      "mtimeMs": 1782889829208.3271
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/46/46e334da87c8ff18de315185988088bcf20e3b4a0843331e8fb93400918a522f.json",
+      "size": 179,
+      "mtimeMs": 1782890862710.3357
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/4f/4fee832220d981cbf87666d2167dd71d44a5bcac1492ca1e631696e36534a197.json",
+      "size": 157,
+      "mtimeMs": 1782889829209.3271
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/23/23c7b666f1ba4dfc400be351751358b1c66716c2e3b2b011773fbd71a6f3666f.json",
+      "size": 571,
+      "mtimeMs": 1782889829210.3271
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/23/23ed141aa036f55823f0709bb7c851d91095c4027dd6128be473cbd257020fa9.json",
+      "size": 350,
+      "mtimeMs": 1782891408393.1624
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ea/eae334b5f8212ce89cc68290aeca312332c6807e78742299a0b77f5be4ad1583.json",
+      "size": 702,
+      "mtimeMs": 1782889867163.9805
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/63/6335f5cd052b94d30cd8d571c123eb157a7dd68edf3787b141d6f61fe705a2df.json",
+      "size": 488,
+      "mtimeMs": 1782889867168.9805
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/a3/a3f7ca2008c152bdc7cdb27a75311f8c08c55bbb93c3965f124609ef5ec40e6d.json",
+      "size": 184,
+      "mtimeMs": 1782889867168.9805
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/0a/0a3eb1fea7d822ebb5f566936b758b44a2682ff4c4bad8a7d832b89d9a3e50c6.json",
+      "size": 101164,
+      "mtimeMs": 1782890257438.3284
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3e/3e24c3af57b9784bdd86a0f046401fc7edfd520f8639b105e1538393835f1b65.json",
+      "size": 46547,
+      "mtimeMs": 1782890394998.487
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2a/2a67919fdf454a4729b24a015ddb8179a88c818ebececf030f424c7b28c82075.json",
+      "size": 46328,
+      "mtimeMs": 1782890395005.487
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5a/5ab11fae59a4a85f73b6b0bbd76c00b8f449aa74ece3761d634aae741d3cb050.json",
+      "size": 164,
+      "mtimeMs": 1782890395058.4863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ae/ae214be092c68e1e2671b01e0c2f3c2a6ee7c55cedd8c44cb3b256df1c8000d8.json",
+      "size": 18348,
+      "mtimeMs": 1782890450329.7568
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ae/aeea67a70595b2e5ea2f18bfc3c65707300e0ab3f2310ebdc8df371de5cfe70e.json",
+      "size": 1049,
+      "mtimeMs": 1782891233927.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e8/e820fd962e32a1873fb33ac8ec39460655432c07be8748b4aca3326483150322.json",
+      "size": 18129,
+      "mtimeMs": 1782890450331.7568
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e8/e86b6ac0c4df6cec53b9fa591a9278f3c3cf1163c92788f86b9f662b9e6bfea1.json",
+      "size": 180,
+      "mtimeMs": 1782891408932.1553
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/90/90a9b7a7e3f55ed312cfa0f6816bd200899edc38ad1443e3dcdaf487dce90280.json",
+      "size": 159,
+      "mtimeMs": 1782890450335.7566
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/a7/a77b74d35f6ef0005eac6c12d8965ed3417d7847d9f41cdc1aad44d2c8ed9031.json",
+      "size": 155,
+      "mtimeMs": 1782890450336.7566
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/a7/a76a9cb07639db394c6316a4f8bc597aee50032c2c5093ecd04ab8a1c05ac6e9.json",
+      "size": 684,
+      "mtimeMs": 1782891408374.1626
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/04/044be747179253dde2f4f8377b955ccb76cef602b29b8d97a0790748dd13bd2a.json",
+      "size": 123,
+      "mtimeMs": 1782890456364.6775
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d7/d738630cbbd553c44a575cfec8c9e55225744c6fc898e58e59063a6b30cad94b.json",
+      "size": 157,
+      "mtimeMs": 1782890456645.6738
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/22/22e872f5eca84fab741217f3857ddbef9fd73c0eececfbc557d6ed5be943167a.json",
+      "size": 244,
+      "mtimeMs": 1782890456647.6736
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/7e/7e22a8e7e28e79aa1a63e4209ff3653cd5d3c25498e7c7fc6238607184fba423.json",
+      "size": 555,
+      "mtimeMs": 1782890472066.471
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/94/9486ccd114e2dd685f1186d251e4eeb97b2fbdf07a2bf639f2832a3964a060cf.json",
+      "size": 341,
+      "mtimeMs": 1782890472067.471
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/26/26539e17a7c5308bb643a55c03a69eb1e785e43a61a9037c85bbabc1269aaecb.json",
+      "size": 155,
+      "mtimeMs": 1782890472078.471
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/65/65971b0bfee90aa0589fb433e596526e05997b4841f237fee1f1f0c728cd999d.json",
+      "size": 110,
+      "mtimeMs": 1782890472097.4707
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/80/80739b0bb3266d41e7ba36887d35b1b42b0c43e10c4cecb5fa4c7ece30cb9c73.json",
+      "size": 1550,
+      "mtimeMs": 1782890484872.3027
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5d/5dfa4537ea809cd99958ea307d9b6e14283f3d3c5998b5f4ff63992e6dafa1c2.json",
+      "size": 1335,
+      "mtimeMs": 1782890484874.3027
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/a1/a186dd57d4defa452edeb81f542bd96488884259d75780070b8b1c513f99a5f8.json",
+      "size": 1023,
+      "mtimeMs": 1782890486681.2788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/29/29c5499ae50ac88e853d501c75efd11a7adca980d2f3b58fb38b82611d69544d.json",
+      "size": 809,
+      "mtimeMs": 1782890486682.2788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c3/c30121c241426b581efe45f66d53f2bb67a617b98b5e9a08013ad7344559b523.json",
+      "size": 157,
+      "mtimeMs": 1782890486685.2788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/bf/bff4b9c6793e6fae74ac1411fb037650c2640bec67a063caa493d40adc7e5943.json",
+      "size": 426,
+      "mtimeMs": 1782890486687.2788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d9/d941a170b2efbf5b6ae9cb870edd06bda9453592f31b36bc1b5b8285f53be818.json",
+      "size": 1601,
+      "mtimeMs": 1782890519476.8477
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f1/f1dc1da478d8cd5403465bb7ff8b25bd8554be6b15603f8ea0e7c372ceb8319d.json",
+      "size": 1383,
+      "mtimeMs": 1782890519489.8477
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3d/3dc8b5aec0b53994749d5052ec5c171ffdb6d3fd7fd449564b9a5d4851b7c6e1.json",
+      "size": 185,
+      "mtimeMs": 1782890519493.8477
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e6/e68b563b07b10f6cff3df8f06a923d23d61595e6f0439c11aab22ef0c7f2334d.json",
+      "size": 169,
+      "mtimeMs": 1782890519495.8474
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/bc/bc6b19c54864545ec55e0c00a16770de428a335965c2f3b0ef811884398116d0.json",
+      "size": 762,
+      "mtimeMs": 1782890524916.7764
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/bc/bca67c4640d5415e2a0a38388b905f35b6424c90bf5574c0f0b88391b745016c.json",
+      "size": 1034,
+      "mtimeMs": 1782890863062.331
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/32/323ddd0613c6feaafa4684484ddc1adc61dad9da04306d1eefc0e03cf09ee4dc.json",
+      "size": 187,
+      "mtimeMs": 1782890524918.7761
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/6c/6c27759a375b5b81248a3d4f61241114ac56f1845e31021f85065fc357ef21ad.json",
+      "size": 374,
+      "mtimeMs": 1782890525145.7732
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/6c/6c7b95603c822ee0928457b25bb00816249b4e385fbaffb89a8e62dde0a3e9c7.json",
+      "size": 724,
+      "mtimeMs": 1782890839509.6406
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/37/37464d24c95868e2646ee9cb6d5783f245b80226dcff2c5fc92513c88fe2f3cc.json",
+      "size": 451,
+      "mtimeMs": 1782890535922.6316
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d0/d05f8eecd4e9e47a61072e8bfe489d5fefdbe92ddcf91aa03f4b3d2a788156a4.json",
+      "size": 187,
+      "mtimeMs": 1782890535923.6316
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c2/c2904ad5a08dbc4f9f7058c92d43f356d4c489e72260a63aee4311074a47e44f.json",
+      "size": 551,
+      "mtimeMs": 1782890546331.4949
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/af/af5d610cdb70d272ba5e07fc683704fc7816d0dd0f6304a373e42fa0643c6247.json",
+      "size": 337,
+      "mtimeMs": 1782890546333.4946
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/45/45b82c15122f8c172fe351ff64f307d2b0e083eed2705c51ff79afb8d7738d3b.json",
+      "size": 179,
+      "mtimeMs": 1782890546333.4946
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/82/8201d3809cf303691eab5b0fffac502bd7e94e59b9567394a2e91505ed2a734e.json",
+      "size": 962,
+      "mtimeMs": 1782890838663.6519
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/de/de51345fcf7f0231510905d3bf5224e090c37c9c9ddd09862ce7ae132c932da8.json",
+      "size": 748,
+      "mtimeMs": 1782890838664.6519
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c7/c7a72dd65ad409659f59298b6cc19078f1c524dfb41470a8d9480c111524d9ad.json",
+      "size": 553,
+      "mtimeMs": 1782890846156.5535
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b5/b591caa1b46b2d3b86133b6aa275915f8ac1c1e02b0b933e226d2e6476a6fc1d.json",
+      "size": 339,
+      "mtimeMs": 1782890846158.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/93/930f371ee1df849a3034fa238920c4b7a3db16aa6d612298ca001ac83ca8a683.json",
+      "size": 180,
+      "mtimeMs": 1782890846159.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/76/767863758cba5ad39413932d7a6512dec9df0bbfe2f37537dc8521a853fa89e0.json",
+      "size": 1327,
+      "mtimeMs": 1782890846744.5457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/76/76f635a508d5023eb65d9faf58ce812bddd48510baa29f03f518228acf9a372e.json",
+      "size": 12573,
+      "mtimeMs": 1782890980767.7837
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/0e/0eb79a08368601905a82db31e6e2c7d03328aca84f9bbff4d4fe149ac918f2f8.json",
+      "size": 582,
+      "mtimeMs": 1782890862678.3362
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/24/24f1a66b2889366c4e2e0ecb766007f40b91e6f9ca54aeb36b71a6688fb26ac2.json",
+      "size": 368,
+      "mtimeMs": 1782890862687.336
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/41/41f6a74d4f729a88bec3068e29a8a10b33d0c8fbcd1cf8396ebdbdbcf85fa176.json",
+      "size": 186,
+      "mtimeMs": 1782890980767.7837
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/68/68e4ad6a794923899430056350f0a648efbeb128b04c25e705a87ab85e62a2b3.json",
+      "size": 685,
+      "mtimeMs": 1782891403243.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f4/f44e62474f051840c3dfedc9f7397c10b7155907afba010208ba99631f2b6415.json",
+      "size": 471,
+      "mtimeMs": 1782891403244.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cc/cc078f8f4c9bfe4f79e4d7f72fb736abdb4f2bde1446501ba4b56b476af922fa.json",
+      "size": 180,
+      "mtimeMs": 1782891408394.1624
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/eb/eb22fac5fc018ec4d205dcc2049bd8c6f1ae42e16b8d604cd67e201ca69f12cf.json",
+      "size": 335,
+      "mtimeMs": 1782891408607.1597
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/rpc.jsonl",
+      "size": 44787,
+      "mtimeMs": 1782891408945.155
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/dispatcher.jsonl",
+      "size": 71280,
+      "mtimeMs": 1782891408941.1553
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/errors/by-sha256/6f/6f60e6ae4d1d3ca7f285c62f27af7972b65bcf7a3d25b1e36d315a56dfb2545f.json",
+      "size": 334,
+      "mtimeMs": 1782889600330.4175
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/knowledge/graph.json",
+      "size": 52,
+      "mtimeMs": 1782888466463.4258
+    },
+    {
+      "path": ".specforge/manifest.json",
+      "size": 99,
+      "mtimeMs": 1782893540279.9512
+    },
+    {
+      "path": ".specforge/project/modules/core/requirements.md",
+      "size": 16548,
+      "mtimeMs": 1782901497775.2507
+    },
+    {
+      "path": ".specforge/project/modules/core/design.md",
+      "size": 44878,
+      "mtimeMs": 1782901497824.2502
+    },
+    {
+      "path": ".specforge/project/spec_manifest.json",
+      "size": 810,
+      "mtimeMs": 1782901497826.2502
+    },
+    {
+      "path": ".specforge/project/extension_registry.json",
+      "size": 271,
+      "mtimeMs": 1782893540284.9512
+    },
+    {
+      "path": ".specforge/project/requirements_index.md",
+      "size": 38,
+      "mtimeMs": 1782893540284.9512
+    },
+    {
+      "path": ".specforge/project/design_index.md",
+      "size": 38,
+      "mtimeMs": 1782893540284.9512
+    },
+    {
+      "path": ".specforge/project/architecture.md",
+      "size": 38,
+      "mtimeMs": 1782893540284.9512
+    },
+    {
+      "path": ".specforge/project/glossary.md",
+      "size": 38,
+      "mtimeMs": 1782893540285.9512
+    },
+    {
+      "path": ".specforge/project/decisions.md",
+      "size": 38,
+      "mtimeMs": 1782893540285.9512
+    },
+    {
+      "path": ".specforge/project/trace_matrix.md",
+      "size": 13557,
+      "mtimeMs": 1782901497825.2502
+    },
+    {
+      "path": ".specforge/config/observability.json",
+      "size": 897,
+      "mtimeMs": 1782893540281.9512
+    },
+    {
+      "path": ".specforge/config/project-rules.md",
+      "size": 38,
+      "mtimeMs": 1782893540281.9512
+    },
+    {
+      "path": ".specforge/config/prod-environment.md",
+      "size": 38,
+      "mtimeMs": 1782893540281.9512
+    },
+    {
+      "path": ".specforge/config/project.json",
+      "size": 30,
+      "mtimeMs": 1782893540282.9512
+    },
+    {
+      "path": ".specforge/config/risk_policy.json",
+      "size": 45,
+      "mtimeMs": 1782893540282.9512
+    },
+    {
+      "path": ".specforge/config/skill_fragments.json",
+      "size": 49,
+      "mtimeMs": 1782893540283.9512
+    },
+    {
+      "path": ".specforge/.gitignore",
+      "size": 39,
+      "mtimeMs": 1782893936849.8164
+    },
+    {
+      "path": ".specforge/knowledge/graph.json",
+      "size": 52,
+      "mtimeMs": 1782898412084.061
+    }
+  ]
+}

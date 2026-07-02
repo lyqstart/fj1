@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0001",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "generated_at": "2026-07-01T00:00:00Z",
+  "candidates": [
+    {
+      "type": "requirements",
+      "path": "candidates/project/modules/core/requirements.candidate.md",
+      "lint_passed": true,
+      "details": {
+        "req_count": 21,
+        "nfr_count": 11,
+        "br_count": 10,
+        "ears_statements": 132,
+        "p0_consensus_covered": [
+          "BR-1 deadline",
+          "BR-2 notification",
+          "BR-3 confirm-lock",
+          "BR-9 MVP scope"
+        ]
+      },
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "module_id": "core"
+    },
+    {
+      "type": "design",
+      "path": "candidates/project/modules/core/design.candidate.md",
+      "lint_passed": true,
+      "details": {
+        "dd_count": 11,
+        "intake_open_items_resolved": 11,
+        "req_covered": "21/21",
+        "nfr_covered": "11/11",
+        "key_decisions": [
+          "DD-1 WatermelonDB",
+          "DD-4 JWT",
+          "DD-5 REST+错误码",
+          "DD-6 server_seq同步",
+          "DD-7 PG13→16",
+          "DD-11 标准推荐三层规则"
+        ]
+      },
+      "target_path": ".specforge/project/modules/core/design.md",
+      "module_id": "core"
+    },
+    {
+      "type": "tasks",
+      "path": "candidates/tasks.md",
+      "lint_passed": true,
+      "details": {
+        "task_count": 44,
+        "stages": 7,
+        "estimated_files": 210,
+        "critical_path_length": 13,
+        "all_have_verification": true,
+        "all_have_files_to_modify": true
+      }
+    },
+    {
+      "type": "trace_delta",
+      "path": "candidates/trace_delta.md",
+      "lint_passed": true,
+      "details": {
+        "req_covered": "21/21 (100%)",
+        "dd_covered": "11/11 (100%)",
+        "br_covered": "10/10 (100%)",
+        "nfr_covered": "11/11 (100%)"
+      }
+    }
+  ],
+  "preflight_summary": {
+    "requirements_candidate_exists": true,
+    "design_candidate_exists": true,
+    "tasks_candidate_exists": true,
+    "trace_delta_exists": true,
+    "manifest_paths_verified": true,
+    "all_lint_passed": true
+  },
+  "entries": [
+    {
+      "candidate_path": "candidates/project/modules/core/requirements.candidate.md",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "operation": "replace",
+      "type": "requirements",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/project/modules/core/design.candidate.md",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "operation": "replace",
+      "type": "design",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/trace_delta.md",
+      "target_path": ".specforge/project/trace_matrix.md",
+      "operation": "replace",
+      "type": "trace_delta",
+      "inferred": false,
+      "normalized": true
+    }
+  ]
+}

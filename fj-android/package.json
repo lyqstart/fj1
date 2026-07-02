@@ -1,0 +1,40 @@
+{
+  "name": "fj-android",
+  "version": "0.1.0",
+  "private": true,
+  "description": "飞检现场管理系统 - 安卓端（React Native 0.74 离线作业）",
+  "scripts": {
+    "tsc": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@nozbe/watermelondb": "^0.27.0",
+    "@react-navigation/bottom-tabs": "^6.6.0",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/stack": "^6.3.29",
+    "react": "18.2.0",
+    "react-native": "0.74.0",
+    "react-native-gesture-handler": "^2.16.2",
+    "react-native-image-resizer": "^1.4.5",
+    "react-native-keychain": "^8.2.0",
+    "react-native-safe-area-context": "^4.10.5",
+    "react-native-screens": "^3.31.1",
+    "react-native-vision-camera": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.21.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-typescript": "^7.21.0",
+    "@babel/runtime": "^7.24.0",
+    "@react-native/babel-preset": "^0.74.84",
+    "@react-native/typescript-config": "^0.74.0",
+    "@types/react": "^18.2.79",
+    "typescript": "^5.4.5"
+  }
+}

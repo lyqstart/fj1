@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0002",
+  "generated_at": "2026-07-02T03:10:00Z",
+  "summary": {
+    "total_evidence": 9,
+    "passed": 7,
+    "pending": 2,
+    "failed": 0
+  },
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "unit_test",
+      "description": "RectificationDeadlineCalculatorTest — D1-A hours起算语义",
+      "result": "PASS",
+      "tests_run": 3,
+      "tests_failed": 0,
+      "command": "mvn test -pl fj-issue -am -Dtest=RectificationDeadlineCalculatorTest",
+      "details": "3场景全部通过：24h精确/0默认当日/跨日"
+    },
+    {
+      "id": "EV-002",
+      "type": "unit_test",
+      "description": "IssueReviewServiceTest — DD-9联动检查",
+      "result": "PASS",
+      "tests_run": 2,
+      "tests_failed": 0,
+      "command": "mvn test -pl fj-issue -am -Dtest=IssueReviewServiceTest",
+      "details": "被引用→CORRECTED/未引用→VOIDED 两分支验证通过"
+    },
+    {
+      "id": "EV-003",
+      "type": "unit_test",
+      "description": "OperationLogAspectTest — 越权留痕",
+      "result": "PASS",
+      "tests_run": 6,
+      "tests_failed": 0,
+      "command": "mvn test -pl fj-common -am -Dtest=OperationLogAspectTest",
+      "details": "权限拒绝→ACCESS_DENIED/非权限→不记录/写入失败→降级 6场景通过"
+    },
+    {
+      "id": "EV-004",
+      "type": "unit_test",
+      "description": "ReportSnapshotServiceTest — 照片快照填充",
+      "result": "PASS",
+      "tests_run": 2,
+      "tests_failed": 0,
+      "command": "mvn test -pl fj-report -am -Dtest=ReportSnapshotServiceTest",
+      "details": "有照片→JSON/无照片→空数组(非null) 验证通过"
+    },
+    {
+      "id": "EV-005",
+      "type": "compilation",
+      "description": "全模块编译",
+      "result": "PASS",
+      "command": "mvn compile",
+      "details": "13 Maven模块全部BUILD SUCCESS"
+    },
+    {
+      "id": "EV-006",
+      "type": "packaging",
+      "description": "Fat jar打包",
+      "result": "PASS",
+      "command": "mvn clean package -DskipTests",
+      "details": "fj-api-1.0.0.jar 78M, Spring Boot可执行格式, 模板在classpath"
+    },
+    {
+      "id": "EV-007",
+      "type": "code_review",
+      "description": "11个Gap代码级验证",
+      "result": "PASS",
+      "details": "G1-G8,G11 代码级全部验证通过 (G9文档化, G10 JS层完成)"
+    },
+    {
+      "id": "EV-008",
+      "type": "runtime",
+      "description": "运行时验证（Flyway迁移/API冒烟/种子数据/E2E）",
+      "result": "PENDING",
+      "details": "需用户完成PG16安装+DB初始化+服务器部署"
+    },
+    {
+      "id": "EV-009",
+      "type": "android",
+      "description": "Android Debug Build验证",
+      "result": "PENDING",
+      "details": "fj-android/android/原生工程从未生成，需先生成脚手架"
+    }
+  ]
+}

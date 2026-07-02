@@ -1,0 +1,7 @@
+{
+  "name": "fj-android",
+  "displayName": "飞检现场管理系统",
+  "version": "0.1.0",
+  "private": true,
+  "description": "飞检现场管理系统安卓端 - 离线优先作业应用"
+}

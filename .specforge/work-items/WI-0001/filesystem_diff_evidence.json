@@ -1,0 +1,2851 @@
+{
+  "baseline_timestamp": "2026-07-01T10:27:01.678Z",
+  "diff_timestamp": "2026-07-01T13:16:08.037Z",
+  "created": [
+    "scripts/ops/upgrade_pg13_to_16.sh",
+    "deploy/config/postgresql-16.conf",
+    "deploy/config/pg_hba.conf",
+    "fj-backend/fj-common/src/main/java/com/fj/common/response/ApiResponse.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/response/PageResponse.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/enume/BaseEnum.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/enume/IssueSeverity.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/enume/CorrectionStatus.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/exception/BusinessException.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/exception/ErrorCode.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/exception/GlobalExceptionHandler.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/dto/PageRequest.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/config/CacheConfig.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/export/OfficialReportExporter.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/jpa/BaseEntity.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/notification/entity/Notification.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/notification/repository/NotificationRepository.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/notification/service/NotificationService.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/notification/controller/NotificationController.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/audit/entity/OperationLog.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/audit/repository/OperationLogRepository.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/audit/service/OperationLogService.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/audit/LogOperation.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/audit/aspect/OperationLogAspect.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/entity/EditLock.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/repository/EditLockRepository.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/service/EditLockService.java",
+    "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/job/EditLockCleanupJob.java",
+    "fj-backend/fj-common/pom.xml",
+    "fj-backend/fj-common/target/classes/com/fj/common/enume/BaseEnum.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/enume/CorrectionStatus.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/enume/IssueSeverity.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/response/PageResponse.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/response/ApiResponse.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/exception/BusinessException.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/exception/ErrorCode.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/exception/GlobalExceptionHandler.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/dto/PageRequest.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/config/CacheConfig.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/export/OfficialReportExporter.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/LogOperation.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/service/OperationLogService.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/repository/OperationLogRepository.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/entity/OperationLog.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/aspect/OperationLogAspect.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/jpa/BaseEntity.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/concurrent/service/EditLockService.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/concurrent/repository/EditLockRepository.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/concurrent/entity/EditLock.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/concurrent/job/EditLockCleanupJob.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/notification/repository/NotificationRepository.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/notification/entity/Notification.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/notification/service/NotificationService.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/notification/controller/NotificationController.class",
+    "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/security/UserContext.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/security/SecurityContextHolder.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/security/RateLimiter.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/TokenBlacklistService.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/JwtTokenProvider.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/JwtAuthFilter.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/LoginRequest.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/RefreshRequest.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/LoginResponse.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/service/AuthService.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/controller/AuthController.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/RequirePermission.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/PermissionChecker.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/PermissionAspect.java",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/ProjectAccessFilter.java",
+    "fj-backend/fj-auth/pom.xml",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginRequest.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginResponse$UserInfo.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginResponse.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/dto/RefreshRequest.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/RequirePermission.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/PermissionAspect.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/PermissionChecker.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/ProjectAccessFilter.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/security/SecurityContextHolder.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/security/UserContext.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/security/RateLimiter.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/TokenBlacklistService.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtTokenProvider$TokenPair.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtTokenProvider.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtAuthFilter.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/service/AuthService.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/controller/AuthController.class",
+    "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/BaseEntity.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatus.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatusConverter.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/User.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/Permission.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/Role.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/repository/UserRepository.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/repository/RoleRepository.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/repository/OrganizationRepository.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/repository/UserProjectRoleRepository.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/service/UserService.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/controller/UserController.java",
+    "fj-backend/fj-system/pom.xml",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/UserStatus.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/UserProjectRole.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/BaseEntity.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/Role.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/Permission.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/Organization.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/User.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/UserStatusConverter.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/DataDictionary.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/ProjectOrganization.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/repository/UserProjectRoleRepository.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/repository/UserRepository.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/repository/RoleRepository.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/repository/OrganizationRepository.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/controller/UserController.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/service/UserService.class",
+    "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectStatus.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/Project.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectConfig.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/FormStatus.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectInspectionForm.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionFormItem.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/BindingType.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/CheckItemStandardBinding.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionTaskStatus.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/EquipmentStatus.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionTask.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/LocationDetail.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/entity/Equipment.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/repository/ProjectRepository.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/repository/ProjectConfigRepository.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionFormRepository.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionFormItemRepository.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/repository/CheckItemStandardBindingRepository.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionTaskRepository.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/repository/LocationDetailRepository.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/repository/EquipmentRepository.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/service/ProjectService.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/service/InspectionFormService.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/service/InspectionTaskService.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/controller/ProjectController.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/controller/InspectionFormController.java",
+    "fj-backend/fj-project/src/main/java/com/fj/project/controller/InspectionTaskController.java",
+    "fj-backend/fj-project/pom.xml",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/FormStatus.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/BindingType.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/CheckItemStandardBinding.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/Project.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectStatus.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionTask.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionTaskStatus.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectInspectionForm.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionFormItem.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectConfig.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/Equipment.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/EquipmentStatus.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/LocationDetail.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/CheckItemStandardBindingRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionTaskRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionFormRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionFormItemRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/ProjectRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/ProjectConfigRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/EquipmentRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/LocationDetailRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/controller/InspectionFormController.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/controller/ProjectController.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/controller/InspectionTaskController.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/service/InspectionFormService.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/service/ProjectService.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/service/InspectionTaskService.class",
+    "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportStatus.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/PhotoType.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/GpsStatus.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/FileUploadStatus.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReport.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportIssue.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportTask.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportInspectedParty.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/Photo.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/DailyReportRepository.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/DailyReportIssueRepository.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/PhotoRepository.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportValidator.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportSubmitService.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportConfirmService.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/controller/DailyReportController.java",
+    "fj-backend/fj-inspection/src/main/java/com/fj/inspection/controller/DailyReportConfirmController.java",
+    "fj-backend/fj-inspection/pom.xml",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportInspectedParty.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReport.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportIssue.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/Photo.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportStatus.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/PhotoType.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/GpsStatus.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/FileUploadStatus.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportTask.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportValidator.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportConfirmService.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportSubmitService.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/DailyReportRepository.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/DailyReportIssueRepository.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/PhotoRepository.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController$ConfirmRequest.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController$VoidRequest.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportController.class",
+    "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/IssueStatus.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/RelationType.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/ProjectIssue.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/IssueRelation.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/repository/ProjectIssueRepository.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/repository/IssueRelationRepository.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/dto/DailyReportIssueImport.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/service/RectificationDeadlineCalculator.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssuePoolService.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueStatusService.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueReviewService.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/service/ReviewAction.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueRelationService.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/job/OverdueDetectionJob.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/controller/IssueController.java",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/controller/IssueReviewController.java",
+    "fj-backend/fj-issue/pom.xml",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/dto/DailyReportIssueImport.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueReviewService$1.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueReviewService.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueStatusService.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/ReviewAction.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueRelationService.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/RectificationDeadlineCalculator$1.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/RectificationDeadlineCalculator.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssuePoolService.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/repository/ProjectIssueRepository.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/repository/IssueRelationRepository.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/entity/ProjectIssue.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/entity/IssueStatus.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/entity/RelationType.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/entity/IssueRelation.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController$ReviewRequest.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController$RelationRequest.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueController.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/job/OverdueDetectionJob.class",
+    "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-report/src/main/java/com/fj/report/entity/ReportStatus.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/entity/Report.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/entity/ReportIssueSnapshot.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportRepository.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportIssueSnapshotRepository.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportService.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportSnapshotService.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportApprovalService.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportPublishService.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportController.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportSnapshotController.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportApprovalController.java",
+    "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportPublishController.java",
+    "fj-backend/fj-report/pom.xml",
+    "fj-backend/fj-report/target/classes/com/fj/report/repository/ReportRepository.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/repository/ReportIssueSnapshotRepository.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/entity/Report.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/entity/ReportStatus.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/entity/ReportIssueSnapshot.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportPublishController.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportController.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportSnapshotController.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportApprovalController.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/service/ReportPublishService.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/service/ReportApprovalService.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/service/ReportService.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/service/ReportSnapshotService.class",
+    "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalFlowType.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalFlowConfig.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalStatus.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalTaskStatus.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalAction.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalInstance.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalTask.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalRecord.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalFlowConfigRepository.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalInstanceRepository.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalTaskRepository.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalRecordRepository.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/service/ApprovalFlowConfigService.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/service/ApprovalEngineService.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/controller/ApprovalFlowConfigController.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/controller/ApprovalController.java",
+    "fj-backend/fj-approval/src/main/java/com/fj/approval/dto/ApprovalNodeConfig.java",
+    "fj-backend/fj-approval/pom.xml",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalTaskStatus.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalFlowConfig.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalFlowType.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalInstance.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalTask.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalRecord.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalAction.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalStatus.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalFlowConfigRepository.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalInstanceRepository.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalTaskRepository.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalRecordRepository.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/controller/ApprovalController.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/controller/ApprovalFlowConfigController.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalEngineService$1.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalEngineService.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalFlowConfigService.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/dto/ApprovalNodeConfig.class",
+    "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-export/src/main/java/com/fj/export/entity/ExportFileType.java",
+    "fj-backend/fj-export/src/main/java/com/fj/export/entity/ExportFile.java",
+    "fj-backend/fj-export/src/main/java/com/fj/export/repository/ExportFileRepository.java",
+    "fj-backend/fj-export/src/main/java/com/fj/export/service/ExportService.java",
+    "fj-backend/fj-export/src/main/java/com/fj/export/service/PoiTlExportEngine.java",
+    "fj-backend/fj-export/src/main/java/com/fj/export/controller/ExportController.java",
+    "fj-backend/fj-export/pom.xml",
+    "fj-backend/fj-export/target/classes/com/fj/export/service/PoiTlExportEngine$RenderResult.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/service/PoiTlExportEngine.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/service/ExportService.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/repository/ExportFileRepository.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/entity/ExportFile.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/entity/ExportFileType.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/controller/ExportController.class",
+    "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatchStatus.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatch.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/ClientSyncState.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/repository/SyncBatchRepository.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/repository/ClientSyncStateRepository.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncRecord.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPushRequest.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPushResponse.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPullResponse.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/seq/ServerSeqAllocator.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncChangeApplier.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/service/DefaultSyncChangeApplier.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPushService.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPullService.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncChangeProvider.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/controller/SyncController.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/FileAccessException.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/HmacUrlSigner.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/PhotoStorageService.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/PhotoUploadController.java",
+    "fj-backend/fj-sync/pom.xml",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/repository/ClientSyncStateRepository.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/repository/SyncBatchRepository.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/entity/ClientSyncState.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/entity/SyncBatch.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/entity/SyncBatchStatus.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPullResponse.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse$AcceptedRecord.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse$ConflictRecord.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncRecord.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushRequest.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncPullService.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeProvider.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/DefaultSyncChangeApplier.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeApplier$ApplyOutcome.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeApplier.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncPushService.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/seq/ServerSeqAllocator.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/photo/FileAccessException.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/photo/PhotoStorageService.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/photo/HmacUrlSigner.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/photo/PhotoUploadController.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/controller/SyncController.class",
+    "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardDocumentStatus.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardDocument.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardClause.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardIssueTemplate.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardRecommendationResult.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardDocumentRepository.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardClauseRepository.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardIssueTemplateRepository.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardRecommendationResultRepository.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/service/StandardLibraryService.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/service/StandardRecommendationService.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/controller/StandardLibraryController.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/controller/RecommendationController.java",
+    "fj-backend/fj-recommend/pom.xml",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardIssueTemplate.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardRecommendationResult.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardClause.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardDocument.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardDocumentStatus.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardClauseRepository.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardDocumentRepository.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardRecommendationResultRepository.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardIssueTemplateRepository.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardRecommendationService$ScoreAccumulator.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardRecommendationService.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardLibraryService.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/controller/RecommendationController.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/controller/StandardLibraryController.class",
+    "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-api/src/main/java/com/fj/api/FjApplication.java",
+    "fj-backend/fj-api/src/main/java/com/fj/api/config/WebMvcConfig.java",
+    "fj-backend/fj-api/src/main/java/com/fj/api/config/CorsConfig.java",
+    "fj-backend/fj-api/src/main/resources/application.yml",
+    "fj-backend/fj-api/src/main/resources/application-prod.yml",
+    "fj-backend/fj-api/src/main/resources/db/migration/.gitkeep",
+    "fj-backend/fj-api/src/main/resources/db/migration/V1__base_tables.sql",
+    "fj-backend/fj-api/src/main/resources/db/migration/V2__seed_data.sql",
+    "fj-backend/fj-api/src/main/resources/db/migration/V3__project_tables.sql",
+    "fj-backend/fj-api/src/main/resources/db/migration/V4__task_tables.sql",
+    "fj-backend/fj-api/src/main/resources/db/migration/V5__daily_report_tables.sql",
+    "fj-backend/fj-api/src/main/resources/db/migration/V6__approval_tables.sql",
+    "fj-backend/fj-api/src/main/resources/db/migration/V7__report_tables.sql",
+    "fj-backend/fj-api/pom.xml",
+    "fj-backend/fj-api/target/classes/application-prod.yml",
+    "fj-backend/fj-api/target/classes/db/migration/.gitkeep",
+    "fj-backend/fj-api/target/classes/db/migration/V1__base_tables.sql",
+    "fj-backend/fj-api/target/classes/db/migration/V2__seed_data.sql",
+    "fj-backend/fj-api/target/classes/db/migration/V3__project_tables.sql",
+    "fj-backend/fj-api/target/classes/db/migration/V4__task_tables.sql",
+    "fj-backend/fj-api/target/classes/db/migration/V5__daily_report_tables.sql",
+    "fj-backend/fj-api/target/classes/db/migration/V6__approval_tables.sql",
+    "fj-backend/fj-api/target/classes/db/migration/V7__report_tables.sql",
+    "fj-backend/fj-api/target/classes/com/fj/api/config/WebMvcConfig.class",
+    "fj-backend/fj-api/target/classes/com/fj/api/config/CorsConfig.class",
+    "fj-backend/fj-api/target/classes/com/fj/api/FjApplication.class",
+    "fj-backend/fj-api/target/classes/application.yml",
+    "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/.mvn/wrapper/maven-wrapper.properties",
+    "fj-backend/pom.xml",
+    "fj-web/package.json",
+    "fj-web/vite.config.ts",
+    "fj-web/tsconfig.json",
+    "fj-web/index.html",
+    "fj-web/src/main.tsx",
+    "fj-web/src/App.tsx",
+    "fj-web/src/router/index.tsx",
+    "fj-web/src/router/AuthGuard.tsx",
+    "fj-web/src/store/authStore.ts",
+    "fj-web/src/api/client.ts",
+    "fj-web/src/api/interceptors.ts",
+    "fj-web/src/api/types.ts",
+    "fj-web/src/api/reportConfirmApi.ts",
+    "fj-web/src/api/issueApi.ts",
+    "fj-web/src/api/reportApi.ts",
+    "fj-web/src/api/systemApi.ts",
+    "fj-web/src/shared/DataTable.tsx",
+    "fj-web/src/shared/PermissionDirective.tsx",
+    "fj-web/src/shared/Layout.tsx",
+    "fj-web/src/shared/dateUtils.ts",
+    "fj-web/src/auth/LoginPage.tsx",
+    "fj-web/src/report-confirm/IssueActionButtons.tsx",
+    "fj-web/src/report-confirm/DailyReportDetailPanel.tsx",
+    "fj-web/src/report-confirm/IssueReviewPanel.tsx",
+    "fj-web/src/report-confirm/DailyReportConfirmPage.tsx",
+    "fj-web/src/issue-pool/IssueDetailDrawer.tsx",
+    "fj-web/src/issue-pool/IssuePoolPage.tsx",
+    "fj-web/src/issue-pool/MyIssuesPage.tsx",
+    "fj-web/src/report/IssueSelectionPanel.tsx",
+    "fj-web/src/report/ReportWorkspacePage.tsx",
+    "fj-web/src/report/SnapshotComparisonView.tsx",
+    "fj-web/src/report/ReportSnapshotEditorPage.tsx",
+    "fj-web/src/approval/ApprovalHistoryPanel.tsx",
+    "fj-web/src/approval/ReportApprovalPage.tsx",
+    "fj-web/src/approval/PublishedReportPage.tsx",
+    "fj-web/src/system/UserManagementPage.tsx",
+    "fj-web/src/system/OrganizationManagementPage.tsx",
+    "fj-web/src/system/RolePermissionPage.tsx",
+    "fj-web/src/system/rolePermissions.ts",
+    "fj-web/src/system/DictionaryManagementPage.tsx",
+    "fj-web/package-lock.json",
+    "fj-android/package.json",
+    "fj-android/app.json",
+    "fj-android/tsconfig.json",
+    "fj-android/babel.config.js",
+    "fj-android/src/store/schema.ts",
+    "fj-android/src/store/models/DailyReportModel.ts",
+    "fj-android/src/store/models/DailyReportIssueModel.ts",
+    "fj-android/src/store/models/PhotoModel.ts",
+    "fj-android/src/store/models/InspectionTaskModel.ts",
+    "fj-android/src/store/migrations/index.ts",
+    "fj-android/src/store/database.ts",
+    "fj-android/src/navigation/AppNavigator.tsx",
+    "fj-android/src/api/ApiClient.ts",
+    "fj-android/src/api/ClientSyncStateManager.ts",
+    "fj-android/src/api/SyncEngine.ts",
+    "fj-android/src/api/PhotoUploadQueue.ts",
+    "fj-android/src/api/NetworkMonitor.ts",
+    "fj-android/src/di/SyncEnginePort.tsx",
+    "fj-android/src/screens/today/TodayInspectionScreen.tsx",
+    "fj-android/src/screens/today/TaskCard.tsx",
+    "fj-android/src/screens/inspection/TaskDetailScreen.tsx",
+    "fj-android/src/screens/inspection/InspectionInProgressScreen.tsx",
+    "fj-android/src/screens/inspection/IssueCreateButton.tsx",
+    "fj-android/src/screens/inspection/IssueEvidenceScreen.tsx",
+    "fj-android/src/screens/issue-basket/IssueBasketScreen.tsx",
+    "fj-android/src/screens/submit/SubmitReportScreen.tsx",
+    "fj-android/src/components/photo/WatermarkOverlay.tsx",
+    "fj-android/src/components/photo/PhotoCapture.tsx",
+    "fj-android/src/components/photo/PhotoCompressor.tsx",
+    "fj-android/package-lock.json"
+  ],
+  "modified": [],
+  "deleted": [],
+  "all_changes": [
+    {
+      "path": "scripts/ops/upgrade_pg13_to_16.sh",
+      "change": "created"
+    },
+    {
+      "path": "deploy/config/postgresql-16.conf",
+      "change": "created"
+    },
+    {
+      "path": "deploy/config/pg_hba.conf",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/response/ApiResponse.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/response/PageResponse.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/enume/BaseEnum.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/enume/IssueSeverity.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/enume/CorrectionStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/exception/BusinessException.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/exception/ErrorCode.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/exception/GlobalExceptionHandler.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/dto/PageRequest.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/config/CacheConfig.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/export/OfficialReportExporter.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/jpa/BaseEntity.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/notification/entity/Notification.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/notification/repository/NotificationRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/notification/service/NotificationService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/notification/controller/NotificationController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/entity/OperationLog.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/repository/OperationLogRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/service/OperationLogService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/LogOperation.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/aspect/OperationLogAspect.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/entity/EditLock.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/repository/EditLockRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/service/EditLockService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/job/EditLockCleanupJob.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/enume/BaseEnum.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/enume/CorrectionStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/enume/IssueSeverity.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/response/PageResponse.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/response/ApiResponse.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/exception/BusinessException.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/exception/ErrorCode.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/exception/GlobalExceptionHandler.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/dto/PageRequest.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/config/CacheConfig.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/export/OfficialReportExporter.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/LogOperation.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/service/OperationLogService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/repository/OperationLogRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/entity/OperationLog.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/aspect/OperationLogAspect.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/jpa/BaseEntity.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/concurrent/service/EditLockService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/concurrent/repository/EditLockRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/concurrent/entity/EditLock.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/concurrent/job/EditLockCleanupJob.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/notification/repository/NotificationRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/notification/entity/Notification.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/notification/service/NotificationService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/notification/controller/NotificationController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/security/UserContext.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/security/SecurityContextHolder.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/security/RateLimiter.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/TokenBlacklistService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/JwtTokenProvider.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/JwtAuthFilter.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/LoginRequest.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/RefreshRequest.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/LoginResponse.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/service/AuthService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/controller/AuthController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/RequirePermission.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/PermissionChecker.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/PermissionAspect.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/ProjectAccessFilter.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginRequest.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginResponse$UserInfo.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginResponse.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/dto/RefreshRequest.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/RequirePermission.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/PermissionAspect.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/PermissionChecker.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/ProjectAccessFilter.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/security/SecurityContextHolder.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/security/UserContext.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/security/RateLimiter.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/TokenBlacklistService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtTokenProvider$TokenPair.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtTokenProvider.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtAuthFilter.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/service/AuthService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/controller/AuthController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/BaseEntity.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatusConverter.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/User.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Permission.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Role.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/repository/UserRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/repository/RoleRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/repository/OrganizationRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/repository/UserProjectRoleRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/service/UserService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/controller/UserController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/UserStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/UserProjectRole.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/BaseEntity.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/Role.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/Permission.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/Organization.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/User.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/UserStatusConverter.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/DataDictionary.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/ProjectOrganization.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/repository/UserProjectRoleRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/repository/UserRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/repository/RoleRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/repository/OrganizationRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/controller/UserController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/service/UserService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/Project.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectConfig.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/FormStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectInspectionForm.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionFormItem.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/BindingType.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/CheckItemStandardBinding.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionTaskStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/EquipmentStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionTask.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/LocationDetail.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/Equipment.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/ProjectRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/ProjectConfigRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionFormRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionFormItemRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/CheckItemStandardBindingRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionTaskRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/LocationDetailRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/EquipmentRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/service/ProjectService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/service/InspectionFormService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/service/InspectionTaskService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/controller/ProjectController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/controller/InspectionFormController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/controller/InspectionTaskController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/FormStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/BindingType.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/CheckItemStandardBinding.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/Project.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionTask.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionTaskStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectInspectionForm.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionFormItem.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectConfig.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/Equipment.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/EquipmentStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/LocationDetail.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/CheckItemStandardBindingRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionTaskRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionFormRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionFormItemRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/ProjectRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/ProjectConfigRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/EquipmentRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/LocationDetailRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/controller/InspectionFormController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/controller/ProjectController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/controller/InspectionTaskController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/service/InspectionFormService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/service/ProjectService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/service/InspectionTaskService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/PhotoType.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/GpsStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/FileUploadStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReport.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportIssue.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportTask.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportInspectedParty.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/Photo.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/DailyReportRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/DailyReportIssueRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/PhotoRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportValidator.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportSubmitService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportConfirmService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/controller/DailyReportController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/controller/DailyReportConfirmController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportInspectedParty.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReport.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportIssue.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/Photo.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/PhotoType.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/GpsStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/FileUploadStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportTask.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportValidator.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportConfirmService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportSubmitService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/DailyReportRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/DailyReportIssueRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/PhotoRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController$ConfirmRequest.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController$VoidRequest.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/IssueStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/RelationType.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/ProjectIssue.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/IssueRelation.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/repository/ProjectIssueRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/repository/IssueRelationRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/dto/DailyReportIssueImport.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/RectificationDeadlineCalculator.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssuePoolService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueStatusService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueReviewService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/ReviewAction.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueRelationService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/job/OverdueDetectionJob.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/controller/IssueController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/controller/IssueReviewController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/dto/DailyReportIssueImport.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueReviewService$1.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueReviewService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueStatusService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/ReviewAction.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueRelationService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/RectificationDeadlineCalculator$1.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/RectificationDeadlineCalculator.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssuePoolService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/repository/ProjectIssueRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/repository/IssueRelationRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/entity/ProjectIssue.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/entity/IssueStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/entity/RelationType.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/entity/IssueRelation.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController$ReviewRequest.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController$RelationRequest.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/job/OverdueDetectionJob.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/entity/ReportStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/entity/Report.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/entity/ReportIssueSnapshot.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportIssueSnapshotRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportSnapshotService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportApprovalService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportPublishService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportSnapshotController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportApprovalController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportPublishController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/repository/ReportRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/repository/ReportIssueSnapshotRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/entity/Report.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/entity/ReportStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/entity/ReportIssueSnapshot.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportPublishController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportSnapshotController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportApprovalController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportPublishService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportApprovalService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportSnapshotService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalFlowType.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalFlowConfig.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalTaskStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalAction.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalInstance.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalTask.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalRecord.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalFlowConfigRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalInstanceRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalTaskRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalRecordRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/service/ApprovalFlowConfigService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/service/ApprovalEngineService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/controller/ApprovalFlowConfigController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/controller/ApprovalController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/dto/ApprovalNodeConfig.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalTaskStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalFlowConfig.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalFlowType.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalInstance.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalTask.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalRecord.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalAction.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalFlowConfigRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalInstanceRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalTaskRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalRecordRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/controller/ApprovalController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/controller/ApprovalFlowConfigController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalEngineService$1.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalEngineService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalFlowConfigService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/dto/ApprovalNodeConfig.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/entity/ExportFileType.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/entity/ExportFile.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/repository/ExportFileRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/service/ExportService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/service/PoiTlExportEngine.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/controller/ExportController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/service/PoiTlExportEngine$RenderResult.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/service/PoiTlExportEngine.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/service/ExportService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/repository/ExportFileRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/entity/ExportFile.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/entity/ExportFileType.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/controller/ExportController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatchStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatch.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/ClientSyncState.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/repository/SyncBatchRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/repository/ClientSyncStateRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncRecord.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPushRequest.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPushResponse.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPullResponse.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/seq/ServerSeqAllocator.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncChangeApplier.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/DefaultSyncChangeApplier.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPushService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPullService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncChangeProvider.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/controller/SyncController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/FileAccessException.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/HmacUrlSigner.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/PhotoStorageService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/PhotoUploadController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/repository/ClientSyncStateRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/repository/SyncBatchRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/entity/ClientSyncState.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/entity/SyncBatch.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/entity/SyncBatchStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPullResponse.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse$AcceptedRecord.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse$ConflictRecord.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncRecord.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushRequest.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncPullService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeProvider.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/DefaultSyncChangeApplier.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeApplier$ApplyOutcome.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeApplier.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncPushService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/seq/ServerSeqAllocator.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/photo/FileAccessException.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/photo/PhotoStorageService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/photo/HmacUrlSigner.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/photo/PhotoUploadController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/controller/SyncController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardDocumentStatus.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardDocument.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardClause.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardIssueTemplate.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardRecommendationResult.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardDocumentRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardClauseRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardIssueTemplateRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardRecommendationResultRepository.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/service/StandardLibraryService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/service/StandardRecommendationService.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/controller/StandardLibraryController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/controller/RecommendationController.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardIssueTemplate.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardRecommendationResult.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardClause.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardDocument.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardDocumentStatus.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardClauseRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardDocumentRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardRecommendationResultRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardIssueTemplateRepository.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardRecommendationService$ScoreAccumulator.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardRecommendationService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardLibraryService.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/controller/RecommendationController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/controller/StandardLibraryController.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/java/com/fj/api/FjApplication.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/java/com/fj/api/config/WebMvcConfig.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/java/com/fj/api/config/CorsConfig.java",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/application.yml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/.gitkeep",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V1__base_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V2__seed_data.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V3__project_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V4__task_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V5__daily_report_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V6__approval_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V7__report_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/application-prod.yml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/.gitkeep",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V1__base_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V2__seed_data.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V3__project_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V4__task_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V5__daily_report_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V6__approval_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V7__report_tables.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/com/fj/api/config/WebMvcConfig.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/com/fj/api/config/CorsConfig.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/com/fj/api/FjApplication.class",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/application.yml",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/.mvn/wrapper/maven-wrapper.properties",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/pom.xml",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/package.json",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/vite.config.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/tsconfig.json",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/index.html",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/main.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/App.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/router/index.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/router/AuthGuard.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/store/authStore.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/api/client.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/api/interceptors.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/api/types.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/api/reportConfirmApi.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/api/issueApi.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/api/reportApi.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/api/systemApi.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/shared/DataTable.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/shared/PermissionDirective.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/shared/Layout.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/shared/dateUtils.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/auth/LoginPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/report-confirm/IssueActionButtons.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/report-confirm/DailyReportDetailPanel.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/report-confirm/IssueReviewPanel.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/report-confirm/DailyReportConfirmPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/issue-pool/IssueDetailDrawer.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/issue-pool/IssuePoolPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/issue-pool/MyIssuesPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/report/IssueSelectionPanel.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/report/ReportWorkspacePage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/report/SnapshotComparisonView.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/report/ReportSnapshotEditorPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/approval/ApprovalHistoryPanel.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/approval/ReportApprovalPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/approval/PublishedReportPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/system/UserManagementPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/system/OrganizationManagementPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/system/RolePermissionPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/system/rolePermissions.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/src/system/DictionaryManagementPage.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-web/package-lock.json",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/package.json",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/app.json",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/tsconfig.json",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/babel.config.js",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/store/schema.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/store/models/DailyReportModel.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/store/models/DailyReportIssueModel.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/store/models/PhotoModel.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/store/models/InspectionTaskModel.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/store/migrations/index.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/store/database.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/navigation/AppNavigator.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/api/ApiClient.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/api/ClientSyncStateManager.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/api/SyncEngine.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/api/PhotoUploadQueue.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/api/NetworkMonitor.ts",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/di/SyncEnginePort.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/screens/today/TodayInspectionScreen.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/screens/today/TaskCard.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/screens/inspection/TaskDetailScreen.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/screens/inspection/InspectionInProgressScreen.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/screens/inspection/IssueCreateButton.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/screens/inspection/IssueEvidenceScreen.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/screens/issue-basket/IssueBasketScreen.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/screens/submit/SubmitReportScreen.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/components/photo/WatermarkOverlay.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/components/photo/PhotoCapture.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/src/components/photo/PhotoCompressor.tsx",
+      "change": "created"
+    },
+    {
+      "path": "fj-android/package-lock.json",
+      "change": "created"
+    }
+  ],
+  "untracked_changes": [
+    "fj-backend/fj-common/target/classes/com/fj/common/enume/BaseEnum.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/enume/CorrectionStatus.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/enume/IssueSeverity.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/response/PageResponse.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/response/ApiResponse.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/exception/BusinessException.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/exception/ErrorCode.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/exception/GlobalExceptionHandler.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/dto/PageRequest.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/config/CacheConfig.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/export/OfficialReportExporter.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/LogOperation.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/service/OperationLogService.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/repository/OperationLogRepository.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/entity/OperationLog.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/audit/aspect/OperationLogAspect.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/jpa/BaseEntity.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/concurrent/service/EditLockService.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/concurrent/repository/EditLockRepository.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/concurrent/entity/EditLock.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/concurrent/job/EditLockCleanupJob.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/notification/repository/NotificationRepository.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/notification/entity/Notification.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/notification/service/NotificationService.class",
+    "fj-backend/fj-common/target/classes/com/fj/common/notification/controller/NotificationController.class",
+    "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginRequest.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginResponse$UserInfo.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginResponse.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/dto/RefreshRequest.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/RequirePermission.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/PermissionAspect.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/PermissionChecker.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/ProjectAccessFilter.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/security/SecurityContextHolder.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/security/UserContext.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/security/RateLimiter.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/TokenBlacklistService.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtTokenProvider$TokenPair.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtTokenProvider.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtAuthFilter.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/service/AuthService.class",
+    "fj-backend/fj-auth/target/classes/com/fj/auth/controller/AuthController.class",
+    "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/UserStatus.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/UserProjectRole.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/BaseEntity.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/Role.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/Permission.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/Organization.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/User.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/UserStatusConverter.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/DataDictionary.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/entity/ProjectOrganization.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/repository/UserProjectRoleRepository.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/repository/UserRepository.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/repository/RoleRepository.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/repository/OrganizationRepository.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/controller/UserController.class",
+    "fj-backend/fj-system/target/classes/com/fj/system/service/UserService.class",
+    "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/FormStatus.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/BindingType.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/CheckItemStandardBinding.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/Project.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectStatus.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionTask.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionTaskStatus.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectInspectionForm.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionFormItem.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectConfig.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/Equipment.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/EquipmentStatus.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/entity/LocationDetail.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/CheckItemStandardBindingRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionTaskRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionFormRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionFormItemRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/ProjectRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/ProjectConfigRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/EquipmentRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/repository/LocationDetailRepository.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/controller/InspectionFormController.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/controller/ProjectController.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/controller/InspectionTaskController.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/service/InspectionFormService.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/service/ProjectService.class",
+    "fj-backend/fj-project/target/classes/com/fj/project/service/InspectionTaskService.class",
+    "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportInspectedParty.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReport.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportIssue.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/Photo.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportStatus.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/PhotoType.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/GpsStatus.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/FileUploadStatus.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportTask.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportValidator.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportConfirmService.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportSubmitService.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/DailyReportRepository.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/DailyReportIssueRepository.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/PhotoRepository.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController$ConfirmRequest.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController$VoidRequest.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController.class",
+    "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportController.class",
+    "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/dto/DailyReportIssueImport.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueReviewService$1.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueReviewService.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueStatusService.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/ReviewAction.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueRelationService.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/RectificationDeadlineCalculator$1.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/RectificationDeadlineCalculator.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssuePoolService.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/repository/ProjectIssueRepository.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/repository/IssueRelationRepository.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/entity/ProjectIssue.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/entity/IssueStatus.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/entity/RelationType.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/entity/IssueRelation.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController$ReviewRequest.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController$RelationRequest.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueController.class",
+    "fj-backend/fj-issue/target/classes/com/fj/issue/job/OverdueDetectionJob.class",
+    "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-report/target/classes/com/fj/report/repository/ReportRepository.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/repository/ReportIssueSnapshotRepository.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/entity/Report.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/entity/ReportStatus.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/entity/ReportIssueSnapshot.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportPublishController.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportController.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportSnapshotController.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportApprovalController.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/service/ReportPublishService.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/service/ReportApprovalService.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/service/ReportService.class",
+    "fj-backend/fj-report/target/classes/com/fj/report/service/ReportSnapshotService.class",
+    "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalTaskStatus.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalFlowConfig.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalFlowType.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalInstance.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalTask.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalRecord.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalAction.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalStatus.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalFlowConfigRepository.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalInstanceRepository.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalTaskRepository.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalRecordRepository.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/controller/ApprovalController.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/controller/ApprovalFlowConfigController.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalEngineService$1.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalEngineService.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalFlowConfigService.class",
+    "fj-backend/fj-approval/target/classes/com/fj/approval/dto/ApprovalNodeConfig.class",
+    "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-export/target/classes/com/fj/export/service/PoiTlExportEngine$RenderResult.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/service/PoiTlExportEngine.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/service/ExportService.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/repository/ExportFileRepository.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/entity/ExportFile.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/entity/ExportFileType.class",
+    "fj-backend/fj-export/target/classes/com/fj/export/controller/ExportController.class",
+    "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/repository/ClientSyncStateRepository.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/repository/SyncBatchRepository.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/entity/ClientSyncState.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/entity/SyncBatch.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/entity/SyncBatchStatus.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPullResponse.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse$AcceptedRecord.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse$ConflictRecord.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncRecord.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushRequest.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncPullService.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeProvider.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/DefaultSyncChangeApplier.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeApplier$ApplyOutcome.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeApplier.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncPushService.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/seq/ServerSeqAllocator.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/photo/FileAccessException.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/photo/PhotoStorageService.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/photo/HmacUrlSigner.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/photo/PhotoUploadController.class",
+    "fj-backend/fj-sync/target/classes/com/fj/sync/controller/SyncController.class",
+    "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardIssueTemplate.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardRecommendationResult.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardClause.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardDocument.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardDocumentStatus.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardClauseRepository.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardDocumentRepository.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardRecommendationResultRepository.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardIssueTemplateRepository.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardRecommendationService$ScoreAccumulator.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardRecommendationService.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardLibraryService.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/controller/RecommendationController.class",
+    "fj-backend/fj-recommend/target/classes/com/fj/recommend/controller/StandardLibraryController.class",
+    "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-backend/fj-api/target/classes/com/fj/api/config/WebMvcConfig.class",
+    "fj-backend/fj-api/target/classes/com/fj/api/config/CorsConfig.class",
+    "fj-backend/fj-api/target/classes/com/fj/api/FjApplication.class",
+    "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+    "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+    "fj-web/package-lock.json",
+    "fj-android/package-lock.json"
+  ],
+  "ignored_runtime_files": 0
+}

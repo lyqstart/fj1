@@ -1,0 +1,14 @@
+{
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "trigger_source": "user_request",
+  "greenfield": true,
+  "complexity": "moderate",
+  "objects_count": 7,
+  "has_rbac": true,
+  "has_state_machine": false,
+  "unknowns": [],
+  "schema_version": "1.1",
+  "work_item_id": "WI-0001",
+  "status": "triggered"
+}

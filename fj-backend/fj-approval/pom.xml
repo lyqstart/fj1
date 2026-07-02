@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.fj</groupId>
+        <artifactId>fj-backend</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>fj-approval</artifactId>
+    <name>fj-approval</name>
+    <description>审批引擎：审批流配置、实例、任务、记录</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fj</groupId>
+            <artifactId>fj-system</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- Jackson：解析 ApprovalFlowConfig.config_json 审批节点 JSON（版本由 Spring Boot BOM 管理） -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

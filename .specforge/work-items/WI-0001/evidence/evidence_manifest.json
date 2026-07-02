@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0001",
+  "collected_at": "2026-07-01T13:15:00Z",
+  "file_counts": {
+    "backend_java": 188,
+    "web_ts_tsx": 36,
+    "android_ts_tsx": 25,
+    "flyway_migrations": 7,
+    "total_source_files": 249
+  },
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "build_output",
+      "description": "Backend Maven reactor compile - 13 modules BUILD SUCCESS",
+      "command": "JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.19.0.10-1.el8.x86_64 mvn -f fj-backend/pom.xml compile",
+      "exit_code": 0,
+      "status": "pass",
+      "output_summary": "fj-backend...SUCCESS, fj-common...SUCCESS, fj-system...SUCCESS, fj-auth...SUCCESS, fj-project...SUCCESS, fj-issue...SUCCESS, fj-approval...SUCCESS, fj-inspection...SUCCESS, fj-report...SUCCESS, fj-export...SUCCESS, fj-sync...SUCCESS, fj-recommend...SUCCESS, fj-api...SUCCESS, BUILD SUCCESS"
+    },
+    {
+      "id": "EV-002",
+      "type": "build_output",
+      "description": "Web frontend production build - tsc + vite 0 errors",
+      "command": "npm --prefix fj-web run build",
+      "exit_code": 0,
+      "status": "pass",
+      "output_summary": "tsc --noEmit passed (0 errors) -> vite v5.4.21 building -> 1567 modules transformed -> built in 4.83s"
+    },
+    {
+      "id": "EV-003",
+      "type": "type_check",
+      "description": "Android TypeScript strict mode check - 0 errors",
+      "command": "npx --prefix fj-android tsc --noEmit",
+      "exit_code": 0,
+      "status": "pass",
+      "output_summary": "TSC_PASS - exit code 0, no type errors"
+    },
+    {
+      "id": "EV-004",
+      "type": "file_existence",
+      "description": "Flyway migration files V1~V7",
+      "command": "ls fj-backend/fj-api/src/main/resources/db/migration/V*.sql",
+      "exit_code": 0,
+      "status": "pass",
+      "files": [
+        "V1__base_tables.sql",
+        "V2__seed_data.sql",
+        "V3__project_tables.sql",
+        "V4__task_tables.sql",
+        "V5__daily_report_tables.sql",
+        "V6__approval_tables.sql",
+        "V7__report_tables.sql"
+      ]
+    },
+    {
+      "id": "EV-005",
+      "type": "code_grep",
+      "description": "BR-1 rectification deadline rule in code",
+      "pattern": "23:59:59|major_issue_deadline_hours",
+      "matches": 15,
+      "status": "pass",
+      "key_files": [
+        "RectificationDeadlineCalculator.java",
+        "IssueSeverity.java",
+        "ProjectConfig.java"
+      ]
+    },
+    {
+      "id": "EV-006",
+      "type": "code_grep",
+      "description": "BR-3 confirm-lock same transaction",
+      "pattern": "confirmed_at.*locked_at|locked_at.*confirmed_at",
+      "matches": 10,
+      "status": "pass",
+      "key_files": [
+        "DailyReportConfirmService.java",
+        "IssuePoolService.java"
+      ]
+    },
+    {
+      "id": "EV-007",
+      "type": "code_grep",
+      "description": "DD-4 JWT + BCrypt auth",
+      "pattern": "BCrypt|JwtTokenProvider",
+      "matches": 22,
+      "status": "pass"
+    },
+    {
+      "id": "EV-008",
+      "type": "code_grep",
+      "description": "DD-6 server_seq sync protocol",
+      "pattern": "server_seq|client_uuid",
+      "matches": 65,
+      "status": "pass"
+    },
+    {
+      "id": "EV-009",
+      "type": "code_grep",
+      "description": "DD-8 confirmed_at/locked_at separate fields",
+      "pattern": "confirmedAt|lockedAt",
+      "matches": 30,
+      "status": "pass"
+    },
+    {
+      "id": "EV-010",
+      "type": "code_grep",
+      "description": "DD-9 CORRECTED terminal state",
+      "pattern": "CORRECTED",
+      "matches": 23,
+      "status": "pass"
+    },
+    {
+      "id": "EV-011",
+      "type": "code_grep",
+      "description": "OperationLog SHA-256 chain hash audit trail",
+      "pattern": "log_hash|SHA-256|prev_hash|prevHash",
+      "matches": 58,
+      "status": "pass"
+    },
+    {
+      "id": "EV-012",
+      "type": "audit",
+      "description": "Changed files audit - all writes in scope",
+      "total_files": 286,
+      "in_scope": 286,
+      "out_of_scope": 0,
+      "blocked_write_attempts": 0,
+      "status": "pass"
+    }
+  ]
+}

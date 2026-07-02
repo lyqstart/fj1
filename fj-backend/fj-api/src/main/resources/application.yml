@@ -1,0 +1,90 @@
+# 飞检现场管理系统 — 基础配置（开发/默认 profile）
+# 生产环境覆盖配置见 application-prod.yml
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: fj-api
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
+  # ===== 数据源：PostgreSQL 16 =====
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:fj_inspect}
+    username: ${DB_USER:fj_app}
+    password: ${DB_PASSWORD:fj_app_pwd}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  # ===== Flyway 数据库迁移 =====
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    baseline-version: 0
+    validate-on-migrate: true
+
+  # ===== JPA / Hibernate =====
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+    open-in-view: false
+
+  # ===== Jackson 序列化 =====
+  # 注意：使用默认 camelCase 命名策略，与前端 TS 类型保持一致。
+  # 历史曾配置 SNAKE_CASE，会破坏前端 50+ 处 camelCase 字段访问，已回滚。
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+# ===== 业务安全配置 =====
+fj:
+  security:
+    jwt:
+      # JWT 签名密钥（生产环境必须通过环境变量覆盖）
+      secret: ${JWT_SECRET:fj_inspect_default_jwt_secret_key_change_in_production_min_32_chars}
+      # 访问令牌有效期（分钟）— DD-4 要求 access_token 30 分钟
+      expire-minutes: 30
+      # 刷新令牌有效期（天）— 7 天
+      refresh-expire-days: 7
+    cors:
+      # 允许的前端来源（逗号分隔：开发域名 + 生产域名）
+      allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,https://fj.example.com}
+      allow-credentials: true
+
+  # ===== Caffeine 缓存规格 =====
+  cache:
+    caffeine:
+      expire-minutes: 30
+      max-size: 10000
+
+# ===== 日志 =====
+logging:
+  level:
+    root: INFO
+    com.fj: DEBUG
+    org.hibernate.SQL: WARN
+
+# ===== Actuator 健康检查 =====
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized

@@ -1,0 +1,17 @@
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/DailyReportRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportValidator.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportInspectedParty.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportStatus.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/FileUploadStatus.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/PhotoType.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/controller/DailyReportConfirmController.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportTask.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/Photo.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/PhotoRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReport.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportIssue.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/DailyReportIssueRepository.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/controller/DailyReportController.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportConfirmService.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportSubmitService.java
+/mnt/1t_back/project/fj1/fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/GpsStatus.java

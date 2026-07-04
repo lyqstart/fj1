@@ -10,3 +10,6 @@ coverage/
 # 生产配置中的真实密钥文件（模板可提交）
 deploy/config/application-prod.local.yml
 fj-api.env
+
+# Maven build artifacts
+target/

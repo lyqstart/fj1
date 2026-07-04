@@ -4,8 +4,6 @@ server:
     context-path: /api
 
 spring:
-  profiles:
-    active: prod
   datasource:
     url: jdbc:postgresql://127.0.0.1:5432/fj_inspect
     username: ${DB_USER:fj_app}

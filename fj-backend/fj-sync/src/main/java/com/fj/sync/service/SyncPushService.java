@@ -69,14 +69,14 @@ public class SyncPushService {
             return buildIdempotentResponse(existing);
         }
 
-        // ===== 2. 创建批次记录（PROCESSING） =====
+        // ===== 2. 创建批次记录（RECEIVED） =====
         SyncBatch batch = new SyncBatch();
         batch.setClientBatchUuid(request.getClientBatchUuid());
         batch.setUserId(userId);
         batch.setDeviceId(request.getDeviceId());
         batch.setProjectId(request.getProjectId());
         batch.setBaseServerSeq(request.getBaseServerSeq() == null ? 0L : request.getBaseServerSeq());
-        batch.setStatus(SyncBatchStatus.PROCESSING);
+        batch.setStatus(SyncBatchStatus.RECEIVED);
         batch = syncBatchRepository.save(batch);
 
         // ===== 3. 逐表分发：分配 server_seq 并应用变更 =====
@@ -116,9 +116,9 @@ public class SyncPushService {
             accepted.put(tableName, tableAccepted);
         }
 
-        // ===== 4. 更新批次记录（COMPLETED） =====
+        // ===== 4. 更新批次记录（SUCCESS） =====
         long latestSeq = serverSeqAllocator.current();
-        batch.setStatus(SyncBatchStatus.COMPLETED);
+        batch.setStatus(SyncBatchStatus.SUCCESS);
         batch.setRecordCount(totalRecords);
         batch.setConflictCount(conflicts.size());
         batch.setServerSeqAfter(latestSeq);

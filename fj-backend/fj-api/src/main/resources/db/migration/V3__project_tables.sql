@@ -219,6 +219,13 @@ CREATE INDEX idx_cisb_clause     ON check_item_standard_bindings (standard_claus
 
 -- ===== 10. 补充 V1 占位外键（projects 表建立后） =====
 -- user_project_roles.project_id / project_organizations.project_id 在 V1 中未建外键
+
+-- 系统占位项目：用于 user_project_roles 中 project_id=0 的全局角色关联（admin 跨项目权限锚点）
+-- 必须在 fk_upr_project 约束建立前插入，否则 V2 种子数据会触发 FK 违规
+INSERT INTO projects (id, name, code, status, description, created_at, updated_at)
+VALUES (0, '系统占位项目', 'SYSTEM', 'ARCHIVED', '全局角色关联锚点（非业务项目，禁止删除）', NOW(), NOW())
+OVERRIDING SYSTEM VALUE;
+
 ALTER TABLE user_project_roles
     ADD CONSTRAINT fk_upr_project FOREIGN KEY (project_id) REFERENCES projects (id) ON DELETE CASCADE;
 

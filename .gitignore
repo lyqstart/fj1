@@ -13,3 +13,14 @@ fj-api.env
 
 # Maven build artifacts
 target/
+
+# Android Release 签名密钥（不入仓库，丢失无法更新 App）
+fj-android/android/app/fj-release.keystore
+
+# Android / Gradle generated files
+fj-android/android/.gradle/
+fj-android/android/app/.cxx/
+fj-android/android/app/build/
+fj-android/android/build/
+*.apk
+*.aab

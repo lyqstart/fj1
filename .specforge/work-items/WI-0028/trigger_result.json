@@ -1,0 +1,20 @@
+{
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "classification": "feature",
+  "reason": "New logging infrastructure + boot diagnostics. Adds new capability (structured logging with persistence and remote upload). Changes index.js entry point defensively.",
+  "unknowns": [],
+  "scope": [
+    "index.js",
+    "src/utils/Logger.ts",
+    "src/utils/LogPersistence.ts",
+    "App.tsx",
+    "src/AppRoot.tsx",
+    "src/store/auth/AuthContext.tsx",
+    "src/api/ApiClient.ts",
+    "android styles.xml"
+  ],
+  "schema_version": "1.1",
+  "work_item_id": "WI-0028",
+  "status": "triggered"
+}

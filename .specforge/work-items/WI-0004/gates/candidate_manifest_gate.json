@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0004",
+  "gate_id": "candidate_manifest_gate",
+  "gate_type": "hard_gate",
+  "required": true,
+  "status": "passed",
+  "input_files": [
+    "/mnt/1t_back/project/fj1/.specforge/work-items/WI-0004/candidate_manifest.json"
+  ],
+  "checks": [
+    {
+      "check_id": "manifest_parse",
+      "description": "candidate_manifest.json is valid JSON",
+      "passed": true
+    },
+    {
+      "check_id": "manifest_entries_array",
+      "description": "entries is an array",
+      "passed": true
+    },
+    {
+      "check_id": "manifest_entries_nonempty_for_spec_merge",
+      "description": "entries is non-empty for spec-changing workflow",
+      "passed": true
+    },
+    {
+      "check_id": "manifest_entries_match_governance_inference",
+      "description": "entries match inferManifestEntries(); approval and merge will evaluate the same normalized manifest",
+      "passed": true
+    },
+    {
+      "check_id": "manifest_inferred_entries_count",
+      "description": "inferManifestEntries count: 3",
+      "passed": true
+    },
+    {
+      "check_id": "entry_0_candidate_path",
+      "description": "Entry 0: candidate_path starts with candidates/",
+      "passed": true
+    },
+    {
+      "check_id": "entry_0_target_path",
+      "description": "Entry 0: target_path in .specforge/project/",
+      "passed": true
+    },
+    {
+      "check_id": "entry_0_candidate_exists",
+      "description": "Entry 0: candidate file exists",
+      "passed": true
+    },
+    {
+      "check_id": "entry_1_candidate_path",
+      "description": "Entry 1: candidate_path starts with candidates/",
+      "passed": true
+    },
+    {
+      "check_id": "entry_1_target_path",
+      "description": "Entry 1: target_path in .specforge/project/",
+      "passed": true
+    },
+    {
+      "check_id": "entry_1_candidate_exists",
+      "description": "Entry 1: candidate file exists",
+      "passed": true
+    },
+    {
+      "check_id": "entry_2_candidate_path",
+      "description": "Entry 2: candidate_path starts with candidates/",
+      "passed": true
+    },
+    {
+      "check_id": "entry_2_target_path",
+      "description": "Entry 2: target_path in .specforge/project/",
+      "passed": true
+    },
+    {
+      "check_id": "entry_2_candidate_exists",
+      "description": "Entry 2: candidate file exists",
+      "passed": true
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [],
+  "waiver_allowed": false,
+  "waiver_required": false,
+  "waiver_ids": [],
+  "started_at": "2026-07-03T16:39:11.056Z",
+  "finished_at": "2026-07-03T16:39:11.056Z",
+  "runner": "gate_runner"
+}

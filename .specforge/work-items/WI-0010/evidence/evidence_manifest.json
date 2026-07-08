@@ -1,0 +1,54 @@
+{
+  "work_item_id": "WI-0010",
+  "schema_version": "1.1",
+  "evidence_collected_at": "2026-07-04T16:07:00.000Z",
+  "total_evidence": 4,
+  "ac_coverage": {
+    "AC-1": [
+      "EA-1"
+    ],
+    "AC-2": [
+      "EA-2"
+    ],
+    "AC-3": [
+      "EA-3"
+    ],
+    "AC-4": [
+      "EA-4"
+    ]
+  },
+  "entries": [
+    {
+      "evidence_id": "EA-1",
+      "type": "file_diff",
+      "description": ".gitignore 修改：新增 target/ 排除规则",
+      "ac_refs": [
+        "AC-1"
+      ]
+    },
+    {
+      "evidence_id": "EA-2",
+      "type": "command_output",
+      "description": "git ls-files '*/target/*' = 0 (构建产物索引清零)",
+      "ac_refs": [
+        "AC-2"
+      ]
+    },
+    {
+      "evidence_id": "EA-3",
+      "type": "git_log",
+      "description": "commit 71bde29, 307 files changed, 83 insertions(+), 2170 deletions(-)",
+      "ac_refs": [
+        "AC-3"
+      ]
+    },
+    {
+      "evidence_id": "EA-4",
+      "type": "command_output",
+      "description": "git status --short: 源码区 0 行 clean",
+      "ac_refs": [
+        "AC-4"
+      ]
+    }
+  ]
+}

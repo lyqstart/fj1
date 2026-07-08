@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0020",
+  "collected_at": "2026-07-05T11:16:00Z",
+  "collected_by": "sf-verifier",
+  "summary": {
+    "total_ac": 6,
+    "passed": 6,
+    "failed": 0,
+    "overall_verdict": "pass"
+  },
+  "entries": [
+    {
+      "id": "EV-001",
+      "ac_id": "AC-1",
+      "type": "build_log",
+      "path": "fj-android/build-wi20f.log",
+      "location_lines": "268, 527",
+      "description": "vision-camera compileDebugKotlin (line 268) + assembleDebug (line 527) 成功",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-002",
+      "ac_id": "AC-2",
+      "type": "build_log",
+      "path": "fj-android/build-wi20f.log",
+      "location_lines": "35",
+      "description": "image-resizer writeDebugAarMetadata 完成 (line 35)",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-003",
+      "ac_id": "AC-3",
+      "type": "build_log",
+      "path": "fj-android/build-wi20f.log",
+      "location_lines": "209",
+      "description": "safe-area-context bundleLibRuntimeToJarDebug 完成 (line 209)",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-004",
+      "ac_id": "AC-4",
+      "type": "command_output",
+      "path": "tsc",
+      "description": "npx tsc --noEmit TSC_EXIT=0（执行者声明，无独立日志）",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-005",
+      "ac_id": "AC-5",
+      "type": "build_log",
+      "path": "fj-android/build-wi20f.log",
+      "location_lines": "532, 534",
+      "description": "BUILD SUCCESSFUL in 2m 5s (line 532) + EXIT_CODE=0 (line 534), 212 tasks executed, APK 133MB",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-006",
+      "ac_id": "AC-6",
+      "type": "file_inspection",
+      "path": "fj-android/react-native.config.js",
+      "description": "gesture-handler + screens 保留屏蔽（双 platforms.android:null 确认）；build log grep 两模块零 task 匹配",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-007",
+      "ac_id": "AC-5",
+      "type": "file_inspection",
+      "path": "fj-android/android/gradle.properties",
+      "location_lines": "37",
+      "description": "newArchEnabled=true 确认 (line 37)",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-008",
+      "ac_id": "AC-5",
+      "type": "file_inspection",
+      "path": "fj-android/android/app/build.gradle",
+      "location_lines": "118, 119",
+      "description": "androidx.core:core + core-ktx force 1.13.1 确认 (line 118-119)",
+      "verdict": "pass"
+    }
+  ]
+}

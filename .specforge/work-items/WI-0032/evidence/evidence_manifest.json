@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0032",
+  "generated_at": "2026-07-06T13:00:00Z",
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "command_output",
+      "description": "grep confirms newArchEnabled=false",
+      "command": "grep newArchEnabled gradle.properties",
+      "result": "pass",
+      "details": {
+        "output": "37:newArchEnabled=false"
+      }
+    },
+    {
+      "id": "EV-002",
+      "type": "audit",
+      "description": "Changed files audit passed",
+      "command": "sf_changed_files_audit",
+      "result": "pass",
+      "details": {
+        "in_scope": 1,
+        "out_of_scope": 0
+      }
+    },
+    {
+      "id": "EV-003",
+      "type": "build_output",
+      "description": "Docker clean + assembleRelease success",
+      "command": "docker run fj-builder assembleRelease",
+      "result": "pass",
+      "details": {
+        "artifact": "app-release.apk",
+        "size_bytes": 58548459
+      }
+    }
+  ]
+}

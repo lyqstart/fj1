@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0009",
+  "status": "created",
+  "workflow_type": "bugfix_spec",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0009",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-04T08:04:49.881Z",
+  "updated_at": "2026-07-04T10:30:21.107Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "deploy/config/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "deploy/config/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/config/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/deploy/config/application-prod.yml",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "extend",
+  "code_permission_release_count": 2,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-04T08:29:05.599Z",
+      "mode": "release",
+      "incoming_count": 4,
+      "previous_count": 0,
+      "total_count": 4
+    },
+    {
+      "timestamp": "2026-07-04T10:29:24.033Z",
+      "mode": "extend",
+      "incoming_count": 8,
+      "previous_count": 4,
+      "total_count": 8
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-04T10:30:15.549Z"
+}

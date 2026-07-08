@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0008",
+  "status": "created",
+  "workflow_type": "ops_task",
+  "workflow_path": "task_change_path",
+  "title": "Work Item WI-0008",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-04T01:30:10.411Z",
+  "updated_at": "2026-07-04T12:58:19.741Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-api/target",
+      "operation": "create"
+    },
+    {
+      "path": "fj-api/target",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-api/target",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-api/target",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-api/target/fj-api-1.0.0.jar",
+      "operation": "create"
+    },
+    {
+      "path": "fj-api/target/fj-api-1.0.0.jar",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-api/target/fj-api-1.0.0.jar",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-api/target/fj-api-1.0.0.jar",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-api/target/fj-api-1.0.0.jar",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-api/target/fj-api-1.0.0.jar",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/target/fj-api-1.0.0.jar",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/target/fj-api-1.0.0.jar",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-backend/fj-api/target",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-api/target",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/target",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-api/target",
+      "operation": "modify"
+    },
+    {
+      "path": "../../../../tmp/fj-sync-new.jar",
+      "operation": "create"
+    },
+    {
+      "path": "../../../../tmp/fj-sync-new.jar",
+      "operation": "modify"
+    },
+    {
+      "path": "/tmp/fj-sync-new.jar",
+      "operation": "create"
+    },
+    {
+      "path": "/tmp/fj-sync-new.jar",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "extend",
+  "code_permission_release_count": 2,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-04T02:11:02.266Z",
+      "mode": "release",
+      "incoming_count": 8,
+      "previous_count": 0,
+      "total_count": 8
+    },
+    {
+      "timestamp": "2026-07-04T05:04:30.518Z",
+      "mode": "extend",
+      "incoming_count": 12,
+      "previous_count": 8,
+      "total_count": 20
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-04T12:58:10.040Z"
+}

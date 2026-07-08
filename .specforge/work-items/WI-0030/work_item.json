@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0030",
+  "status": "created",
+  "workflow_type": "quick_change",
+  "workflow_path": "code_only_fast_path",
+  "title": "Work Item WI-0030",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-06T10:39:57.074Z",
+  "updated_at": "2026-07-06T10:47:02.283Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-06T10:42:24.223Z",
+      "mode": "release",
+      "incoming_count": 4,
+      "previous_count": 0,
+      "total_count": 4
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-06T10:45:42.049Z"
+}

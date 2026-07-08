@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0034",
+  "generated_at": "2026-07-08T00:40:00Z",
+  "all_passed": true,
+  "entries": [
+    {
+      "id": "EV-W34-1",
+      "type": "file_content",
+      "description": "react-native.config.js 屏蔽已清除",
+      "file_path": "fj-android/react-native.config.js",
+      "expected": "module.exports = {};",
+      "actual": "module.exports = {};",
+      "status": "pass"
+    },
+    {
+      "id": "EV-W34-2",
+      "type": "file_content",
+      "description": "newArchEnabled 已关闭",
+      "file_path": "fj-android/android/gradle.properties",
+      "expected": "newArchEnabled=false",
+      "actual": "newArchEnabled=false (第37行)",
+      "status": "pass"
+    },
+    {
+      "id": "EV-W34-3",
+      "type": "file_content",
+      "description": "gesture-handler 版本升级",
+      "file_path": "fj-android/package.json",
+      "expected": "^2.20.2",
+      "actual": "^2.20.2 (lockfile 解析 2.32.0)",
+      "status": "pass"
+    },
+    {
+      "id": "EV-W34-4",
+      "type": "build_log",
+      "description": "Release APK 构建成功",
+      "file_path": "fj-android/build-w34-v14.log",
+      "expected": "BUILD SUCCESSFUL",
+      "actual": "BUILD SUCCESSFUL in 7m 32s, 314 actionable tasks: 314 executed",
+      "status": "pass"
+    },
+    {
+      "id": "EV-W34-5",
+      "type": "artifact",
+      "description": "APK 产物文件存在",
+      "file_path": "fj-android/fj-app-w34-release.apk",
+      "expected": "文件存在, ~58MB",
+      "actual": "60440502 字节 (≈57.6MB), mtime Jul 7 11:18",
+      "status": "pass"
+    },
+    {
+      "id": "EV-W34-6",
+      "type": "user_confirmation",
+      "description": "真机白屏消失，登录页可见",
+      "source": "用户真机测试",
+      "user_quote": "打开app，可以看到登录页面了",
+      "level": "L5",
+      "status": "pass"
+    },
+    {
+      "id": "EV-W34-7",
+      "type": "audit_report",
+      "description": "变更审计通过",
+      "source": "sf_changed_files_audit",
+      "result": "in_scope=4, out_of_scope=0, unresolved_blocked_write_attempts=0",
+      "status": "pass"
+    }
+  ]
+}

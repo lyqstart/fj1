@@ -1,0 +1,15 @@
+{
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "classification": "bugfix",
+  "reason": "WI-0028 补救：接通日志远程上传管道。后端新增文件存储的日志接收端点，前端接通 flush 调用链。",
+  "unknowns": [],
+  "scope": [
+    "backend AppLogController/Service",
+    "SecurityConfig",
+    "Logger.ts"
+  ],
+  "schema_version": "1.1",
+  "work_item_id": "WI-0029",
+  "status": "triggered"
+}

@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0003",
+  "collected_at": "2026-07-03T10:53:00Z",
+  "collector": "sf-verifier",
+  "summary": {
+    "total_evidence": 11,
+    "passed": 11,
+    "failed": 0
+  },
+  "entries": [
+    {
+      "id": "EV-I1",
+      "ac_ref": "AC-I1",
+      "type": "command_output",
+      "description": "后端 actuator/health 直连检查",
+      "command": "curl -s http://localhost:8080/api/actuator/health",
+      "output": "{\"status\":\"UP\"}",
+      "passed": true
+    },
+    {
+      "id": "EV-I2a",
+      "ac_ref": "AC-I2",
+      "type": "command_output",
+      "description": "前端页面 HTTP 状态",
+      "command": "curl -sI http://10.0.12.12/ | head -5",
+      "output": "HTTP/1.1 200 OK, Server: nginx/1.20.1, Content-Type: text/html, Content-Length: 338",
+      "passed": true
+    },
+    {
+      "id": "EV-I2b",
+      "ac_ref": "AC-I2",
+      "type": "command_output",
+      "description": "前端 SPA root 容器",
+      "command": "curl -s http://10.0.12.12/ | grep id=root",
+      "output": "SPA_OK",
+      "passed": true
+    },
+    {
+      "id": "EV-I3",
+      "ac_ref": "AC-I3",
+      "type": "command_output",
+      "description": "经 Nginx 全链路 API health",
+      "command": "curl -s http://10.0.12.12/api/actuator/health",
+      "output": "{\"status\":\"UP\"}",
+      "passed": true
+    },
+    {
+      "id": "EV-I4a",
+      "ac_ref": "AC-I4",
+      "type": "command_output",
+      "description": "可用内存",
+      "command": "free -m | awk /Mem:/{print $7}",
+      "output": "1864",
+      "threshold": ">=500",
+      "passed": true
+    },
+    {
+      "id": "EV-I4b",
+      "ac_ref": "AC-I4",
+      "type": "command_output",
+      "description": "OOM 杀进程检查",
+      "command": "dmesg | grep -i 'killed process' | grep java",
+      "output": "NO_OOM",
+      "passed": true
+    },
+    {
+      "id": "EV-I5",
+      "ac_ref": "AC-I5",
+      "type": "command_output",
+      "description": "服务日志错误检查 (5min, excl warn)",
+      "command": "journalctl -u fj1-api.service --since '5 min ago' | grep error|exception | grep -v warn",
+      "output": "NO_ERROR",
+      "passed": true
+    },
+    {
+      "id": "EV-SVC-fj1api",
+      "ac_ref": "AC-SVC",
+      "type": "command_output",
+      "description": "fj1-api 服务状态",
+      "command": "systemctl is-active fj1-api.service",
+      "output": "active",
+      "passed": true
+    },
+    {
+      "id": "EV-SVC-nginx",
+      "ac_ref": "AC-SVC",
+      "type": "command_output",
+      "description": "nginx 服务状态",
+      "command": "systemctl is-active nginx",
+      "output": "active",
+      "passed": true
+    },
+    {
+      "id": "EV-SVC-pg",
+      "ac_ref": "AC-SVC",
+      "type": "command_output",
+      "description": "PostgreSQL-16 服务状态",
+      "command": "systemctl is-active postgresql-16",
+      "output": "active",
+      "passed": true
+    },
+    {
+      "id": "EV-FLYWAY",
+      "ac_ref": "AC-FLYWAY",
+      "type": "command_output",
+      "description": "Flyway 迁移历史 (V1-V7)",
+      "command": "runuser -u postgres -- psql -d fj1_inspect -c 'SELECT version, description, success FROM flyway_schema_history ORDER BY installed_rank;'",
+      "output": "7 rows all success=t: V1 base tables, V2 seed data, V3 project tables, V4 task tables, V5 daily report tables, V6 approval tables, V7 report tables",
+      "cross_evidence": "App log: 'Successfully validated 7 migrations' + 'Schema public is up to date'",
+      "passed": true
+    }
+  ]
+}

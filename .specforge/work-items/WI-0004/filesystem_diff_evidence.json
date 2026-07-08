@@ -1,0 +1,50 @@
+{
+  "baseline_timestamp": "2026-07-03T16:48:49.391Z",
+  "diff_timestamp": "2026-07-03T16:59:13.898Z",
+  "created": [
+    "fj-backend/fj-api/src/main/resources/db/migration/V8__fix_schema_mismatches.sql"
+  ],
+  "modified": [
+    "scripts/ops/install_pg16.sh",
+    "deploy/config/application-prod.yml",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatus.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatusConverter.java",
+    "fj-backend/fj-api/src/main/resources/db/migration/V3__project_tables.sql"
+  ],
+  "deleted": [],
+  "all_changes": [
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V8__fix_schema_mismatches.sql",
+      "change": "created"
+    },
+    {
+      "path": "scripts/ops/install_pg16.sh",
+      "change": "modified"
+    },
+    {
+      "path": "deploy/config/application-prod.yml",
+      "change": "modified"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatus.java",
+      "change": "modified"
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatusConverter.java",
+      "change": "modified"
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V3__project_tables.sql",
+      "change": "modified"
+    }
+  ],
+  "untracked_changes": [
+    "fj-backend/fj-api/src/main/resources/db/migration/V8__fix_schema_mismatches.sql",
+    "scripts/ops/install_pg16.sh",
+    "deploy/config/application-prod.yml",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatus.java",
+    "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatusConverter.java",
+    "fj-backend/fj-api/src/main/resources/db/migration/V3__project_tables.sql"
+  ],
+  "ignored_runtime_files": 0
+}

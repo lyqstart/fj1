@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0016",
+  "generated_at": "2026-07-05T08:30:00.000Z",
+  "generated_by": "sf-orchestrator",
+  "summary": {
+    "total_evidence": 12,
+    "passed": 12,
+    "failed": 0,
+    "overall_status": "PASS"
+  },
+  "entries": [
+    {
+      "evidence_id": "EV-001",
+      "task_id": "TASK-1",
+      "evidence_type": "grep_count",
+      "claim": "createStackNavigator 已导入",
+      "command": "grep -c createStackNavigator AppNavigator.tsx",
+      "expected": "≥1",
+      "actual": "2",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-002",
+      "task_id": "TASK-1",
+      "evidence_type": "grep_count",
+      "claim": "5 个 Stack 路由全注册",
+      "command": "grep -cE name=(TodayInspection|TaskDetail|InspectionInProgress|SubmitReport|IssueEvidence) AppNavigator.tsx",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-003",
+      "task_id": "TASK-1",
+      "evidence_type": "grep_count",
+      "claim": "Today Tab 切换到 InspectionStackScreen",
+      "command": "grep -c component={InspectionStackScreen}",
+      "expected": "≥1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-004",
+      "task_id": "TASK-1",
+      "evidence_type": "grep_count",
+      "claim": "旧 TodayScreen 函数已删除",
+      "command": "grep -c 'function TodayScreen' AppNavigator.tsx",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-005",
+      "task_id": "TASK-1",
+      "evidence_type": "line_count",
+      "claim": "AppNavigator.tsx 行数在 200-300 区间",
+      "command": "wc -l AppNavigator.tsx",
+      "expected": "200-300",
+      "actual": "221",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-006",
+      "task_id": "TASK-1",
+      "evidence_type": "grep_count",
+      "claim": "RootNavigator 仍引用 AppNavigator",
+      "command": "grep -c AppNavigator RootNavigator.tsx",
+      "expected": "≥1",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-007",
+      "task_id": "TASK-2",
+      "evidence_type": "tsc_exit_code",
+      "claim": "TypeScript 类型检查零错误",
+      "command": "docker run ... npx tsc --noEmit",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "log_file": "fj-android/tsc-wi16.log",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-008",
+      "task_id": "TASK-2",
+      "evidence_type": "tsc_log_grep",
+      "claim": "tsc 日志无 error TS 行",
+      "command": "grep -c 'error TS' tsc-wi16.log",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-009",
+      "task_id": "TASK-3",
+      "evidence_type": "build_log_marker",
+      "claim": "Gradle assembleDebug 构建成功",
+      "command": "grep -c 'BUILD SUCCESSFUL' build-wi16.log",
+      "expected": "≥1",
+      "actual": "1",
+      "build_duration": "50s",
+      "log_file": "fj-android/build-wi16.log",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-010",
+      "task_id": "TASK-3",
+      "evidence_type": "file_existence",
+      "claim": "Debug APK 已产出",
+      "command": "test -f app-debug.apk",
+      "expected": "exists",
+      "actual": "exists",
+      "apk_path": "fj-android/android/app/build/outputs/apk/debug/app-debug.apk",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-011",
+      "task_id": "TASK-3",
+      "evidence_type": "file_size",
+      "claim": "APK 体积 > 1 MiB",
+      "command": "stat -c %s app-debug.apk",
+      "expected_min_bytes": 1048576,
+      "actual_bytes": 130749900,
+      "actual_mib": 124.69,
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-012",
+      "task_id": "TASK-3",
+      "evidence_type": "build_log_marker",
+      "claim": "构建退出码标记为 0",
+      "command": "grep -c EXIT_CODE=0 build-wi16.log",
+      "expected": "≥1",
+      "actual": "1",
+      "passed": true
+    }
+  ]
+}

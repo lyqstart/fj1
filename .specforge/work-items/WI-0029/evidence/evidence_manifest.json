@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0029",
+  "generated_at": "2026-07-06T10:30:00Z",
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "compilation",
+      "description": "Backend mvn compile",
+      "result": "pass",
+      "details": {
+        "exit_code": 0,
+        "modules": "all"
+      }
+    },
+    {
+      "id": "EV-002",
+      "type": "tsc_compilation",
+      "description": "Frontend tsc",
+      "result": "pass",
+      "details": {
+        "exit_code": 0
+      }
+    },
+    {
+      "id": "EV-003",
+      "type": "file_creation",
+      "description": "AppLogController",
+      "target_file": "fj-backend/fj-common/.../applog/AppLogController.java",
+      "result": "pass"
+    },
+    {
+      "id": "EV-004",
+      "type": "file_creation",
+      "description": "AppLogService",
+      "target_file": "fj-backend/fj-common/.../applog/AppLogService.java",
+      "result": "pass"
+    },
+    {
+      "id": "EV-005",
+      "type": "file_modification",
+      "description": "SecurityConfig permitAll /api/v1/logs/**",
+      "target_file": "fj-backend/fj-api/.../config/SecurityConfig.java",
+      "result": "pass"
+    },
+    {
+      "id": "EV-006",
+      "type": "file_modification",
+      "description": "Logger.ts flush connected to RemoteLogTransport",
+      "target_file": "fj-android/src/utils/Logger.ts",
+      "result": "pass"
+    },
+    {
+      "id": "EV-007",
+      "type": "build_log",
+      "description": "Docker Release build",
+      "target_file": "fj-android/build-wi29.log",
+      "result": "pass",
+      "details": {
+        "result": "BUILD SUCCESSFUL in 3m 23s",
+        "apk_size": "57M"
+      }
+    },
+    {
+      "id": "EV-008",
+      "type": "audit_result",
+      "description": "Changed files audit",
+      "result": "pass",
+      "details": {
+        "total_files": 6,
+        "in_scope": 6,
+        "out_of_scope": 0
+      }
+    }
+  ]
+}

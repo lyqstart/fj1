@@ -1,0 +1,50 @@
+{
+  "baseline_timestamp": "2026-07-04T00:26:31.680Z",
+  "diff_timestamp": "2026-07-04T00:30:45.184Z",
+  "created": [
+    "fj-backend/fj-api/src/main/resources/db/migration/V9__fix_enum_check_constraints.sql"
+  ],
+  "modified": [
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/ProjectIssue.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatchStatus.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatch.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPushService.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardRecommendationResult.java"
+  ],
+  "deleted": [],
+  "all_changes": [
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V9__fix_enum_check_constraints.sql",
+      "change": "created"
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/ProjectIssue.java",
+      "change": "modified"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatchStatus.java",
+      "change": "modified"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatch.java",
+      "change": "modified"
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPushService.java",
+      "change": "modified"
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardRecommendationResult.java",
+      "change": "modified"
+    }
+  ],
+  "untracked_changes": [
+    "fj-backend/fj-api/src/main/resources/db/migration/V9__fix_enum_check_constraints.sql",
+    "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/ProjectIssue.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatchStatus.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatch.java",
+    "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPushService.java",
+    "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardRecommendationResult.java"
+  ],
+  "ignored_runtime_files": 0
+}

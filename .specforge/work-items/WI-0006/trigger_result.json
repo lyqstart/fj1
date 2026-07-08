@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0006",
+  "source_work_items": [
+    "WI-0003",
+    "WI-0004",
+    "WI-0005"
+  ],
+  "analyzed_at": "2026-07-03T18:10:00Z",
+  "trigger_type": "investigation",
+  "trigger_description": "Full-project @Entity schema-validate audit to discover remaining JPA/DDL mismatches",
+  "intent_classification": "investigation",
+  "workflow_type": "investigation",
+  "workflow_path": "requirement_change_path",
+  "path_selection_reasoning": [
+    "Investigation task: read-only static analysis, no code changes",
+    "Produce findings report, not implementation",
+    "investigation workflow_type mandated by daemon to pair with requirement_change_path"
+  ],
+  "complexity": "medium",
+  "scope": {
+    "entity_classes": 38,
+    "modules": 12,
+    "tables": 40,
+    "comparison_dimensions": [
+      "column_name",
+      "data_type",
+      "length",
+      "nullable",
+      "precision_scale",
+      "enum_backing",
+      "foreign_key"
+    ]
+  },
+  "severity_levels": [
+    "Critical",
+    "Warning",
+    "Info"
+  ],
+  "risk_level": "low",
+  "read_only": true,
+  "gate_mode": "investigation",
+  "status": "triggered",
+  "unknowns": []
+}

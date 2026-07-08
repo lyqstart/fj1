@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0004",
+  "workflow_type": "bugfix_spec",
+  "workflow_path": "requirement_change_path",
+  "generated_at": "2026-07-03T16:30:00Z",
+  "candidates": [
+    {
+      "type": "requirements",
+      "path": "candidates/project/modules/core/requirements.candidate.md",
+      "absolute_path": ".specforge/work-items/WI-0004/requirements.md",
+      "size_bytes": 27302,
+      "lint_passed": true,
+      "note": "bugfix_spec requirements artifact (bugfix analysis with 4 required sections: current/expected/invariant behavior + root cause)",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "module_id": "core"
+    },
+    {
+      "type": "design",
+      "path": "candidates/project/modules/core/design.candidate.md",
+      "absolute_path": ".specforge/work-items/WI-0004/design.md",
+      "size_bytes": 35816,
+      "lint_passed": true,
+      "target_path": ".specforge/project/modules/core/design.md",
+      "module_id": "core"
+    },
+    {
+      "type": "tasks",
+      "path": "candidates/tasks.md",
+      "absolute_path": ".specforge/work-items/WI-0004/tasks.md",
+      "size_bytes": 28207,
+      "lint_passed": true
+    },
+    {
+      "type": "trace_delta",
+      "path": "candidates/trace_delta.md",
+      "absolute_path": ".specforge/work-items/WI-0004/trace_delta.md",
+      "size_bytes": 10885,
+      "lint_passed": true
+    }
+  ],
+  "preflight_verified": {
+    "requirements_exists": true,
+    "design_exists": true,
+    "tasks_exists": true,
+    "trace_delta_exists": true,
+    "manifest_paths_match_actual": true
+  },
+  "entries": [
+    {
+      "candidate_path": "candidates/project/modules/core/requirements.candidate.md",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "operation": "replace",
+      "type": "requirements",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/project/modules/core/design.candidate.md",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "operation": "replace",
+      "type": "design",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/trace_delta.md",
+      "target_path": ".specforge/project/trace_matrix.md",
+      "operation": "replace",
+      "type": "trace_delta",
+      "inferred": false,
+      "normalized": true
+    }
+  ]
+}

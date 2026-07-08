@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0012",
+  "generated_at": "2026-07-05T03:45:00Z",
+  "entries": [
+    {
+      "id": "EV-001",
+      "task_id": "TASK-6",
+      "type": "build_log",
+      "description": "Gradle assembleDebug build log",
+      "source": "fj-android/build3.log",
+      "result": "BUILD SUCCESSFUL in 6m 4s, 43 actionable tasks: 43 executed",
+      "timestamp": "2026-07-05T03:40:00Z"
+    },
+    {
+      "id": "EV-002",
+      "task_id": "TASK-6",
+      "type": "container_exit",
+      "description": "Docker container fj-build3 exit code",
+      "source": "docker ps -a",
+      "result": "Exited (0)",
+      "timestamp": "2026-07-05T03:40:06Z"
+    },
+    {
+      "id": "EV-003",
+      "task_id": "TASK-7",
+      "type": "apk_exists",
+      "description": "APK file exists at expected path",
+      "source": "fj-android/android/app/build/outputs/apk/debug/app-debug.apk",
+      "result": "124MB file present",
+      "timestamp": "2026-07-05T03:42:00Z"
+    },
+    {
+      "id": "EV-004",
+      "task_id": "TASK-7",
+      "type": "apk_content",
+      "description": "APK contains required components",
+      "source": "unzip -l app-debug.apk",
+      "result": "582 files: classes.dex (4 files, main 10.5MB), lib/arm64-v8a (40+ .so), lib/armeabi-v7a, AndroidManifest.xml (4.5KB), resources.arsc (324KB), res/ (icons+layouts), META-INF/CERT.RSA (debug signed)",
+      "timestamp": "2026-07-05T03:42:00Z"
+    },
+    {
+      "id": "EV-005",
+      "task_id": "TASK-7",
+      "type": "native_libs",
+      "description": "Hermes JS engine and React Native JNI libraries present",
+      "source": "unzip -l | grep libhermes",
+      "result": "libhermes.so (3.3MB arm64), libreactnativejni.so (3.2MB arm64), libfabricjni.so (7.7MB arm64), libhermes_executor.so, libhermesinstancejni.so",
+      "timestamp": "2026-07-05T03:42:00Z"
+    },
+    {
+      "id": "EV-006",
+      "task_id": "TASK-7",
+      "type": "abi_support",
+      "description": "APK supports multiple CPU architectures",
+      "source": "unzip -l | grep lib/",
+      "result": "arm64-v8a and armeabi-v7a included (configured for 4 ABIs: armeabi-v7a,arm64-v8a,x86,x86_64)",
+      "timestamp": "2026-07-05T03:42:00Z"
+    },
+    {
+      "id": "EV-007",
+      "task_id": "TASK-6",
+      "type": "build_environment",
+      "description": "Build environment verification",
+      "source": "docker top + build3.log",
+      "result": "Java 17 (OpenJDK), Gradle 8.6, React Native 0.74, Hermes enabled, container fj-builder:react-native-0.74",
+      "timestamp": "2026-07-05T03:40:00Z"
+    }
+  ]
+}

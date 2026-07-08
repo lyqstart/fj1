@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0014",
+  "status": "created",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0014",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-05T06:13:10.207Z",
+  "updated_at": "2026-07-05T07:11:26.559Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-android/android/app/fj-release.keystore",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/fj-release.keystore",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/fj-release.keystore",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/fj-release.keystore",
+      "operation": "modify"
+    },
+    {
+      "path": ".gitignore",
+      "operation": "create"
+    },
+    {
+      "path": ".gitignore",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/.gitignore",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/.gitignore",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build.gradle",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build.gradle",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build.gradle",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build.gradle",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/proguard-rules.pro",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/proguard-rules.pro",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/proguard-rules.pro",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/proguard-rules.pro",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/mapping/release/mapping.txt",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/mapping/release/mapping.txt",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/mapping/release/mapping.txt",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/mapping/release/mapping.txt",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/release/output-metadata.json",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/release/output-metadata.json",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/release/output-metadata.json",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/release/output-metadata.json",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/intermediates/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/intermediates/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/intermediates/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/intermediates/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/tmp/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/tmp/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/tmp/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/tmp/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/generated/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/generated/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/generated/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/generated/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/mapping/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/mapping/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/mapping/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/mapping/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/**",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-05T06:44:09.259Z",
+      "mode": "release",
+      "incoming_count": 48,
+      "previous_count": 0,
+      "total_count": 48
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-05T07:11:26.345Z"
+}

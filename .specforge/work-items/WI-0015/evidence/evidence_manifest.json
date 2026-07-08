@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0015",
+  "collected_by": "sf-verifier",
+  "collected_at": "2026-07-05T15:50:00Z",
+  "verification_scope": "build + typecheck + static source verification (runtime test suite not yet established in project)",
+  "entries": [
+    {
+      "evidence_id": "EV-001",
+      "type": "command_output",
+      "description": "react-native.config.js 中 @nozbe/watermelondb 与 nozbe 屏蔽条目均已删除（grep match_count=0 for watermelondb/nozbe as blocking keys）；同时保留 5 个其他模块的 platforms.android=null 屏蔽（match_count=5）",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:46:00Z",
+      "location": "fj-android/react-native.config.js",
+      "command": "sf_batch_verify(target=fj-android/react-native.config.js, checks=[watermelondb absent, nozbe absent, 5 modules retained])",
+      "result": "8/8 checks passed; watermelondb=0, nozbe=0, platforms:{android:null}=5",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1"
+        ],
+        "task_ids": [
+          "TASK-1"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-002",
+      "type": "file_snapshot",
+      "description": "database.ts 已从 206 行简化为 115 行（≤120 上限）。已删除 FJDatabaseNativeModule / generateHexKey / getOrCreateEncryptionKey / Keychain 类导入；保留 schema/migrations/MODEL_CLASSES/initDatabase/getDatabase/resetDatabaseInstance；TD-ANDROID-001 标注存在（match_count=4）。注：SQLCipher 字样仅出现在 TD-ANDROID-001 文档注释中（line 7, 29），无任何 SQLCipher 实现代码",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:46:00Z",
+      "location": "fj-android/src/store/database.ts",
+      "command": "sf_batch_verify + grep SQLCipher|sqlcipher",
+      "result": "11/12 checks passed; 1 'fail' 是误报（SQLCipher 仅在 TD 注释中，非实现代码）。wc -l = 115",
+      "related_refs": {
+        "req_ids": [
+          "REQ-2"
+        ],
+        "task_ids": [
+          "TASK-2"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-003",
+      "type": "command_output",
+      "description": "SyncDatabaseAdapter.ts（404 行）实现 SyncDatabasePort 接口的全部 4 个方法：collectDirtyRecords / applyPulledChanges / applyAcceptedRecords / markConflictRecords。TABLE_TO_MODEL 映射 4 表（daily_reports / daily_report_issues / photos / inspection_tasks，match_count=20）。database.write 事务 ×3，database.batch 批量 ×3",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:46:00Z",
+      "location": "fj-android/src/store/SyncDatabaseAdapter.ts",
+      "command": "sf_batch_verify(target=fj-android/src/store/SyncDatabaseAdapter.ts)",
+      "result": "8/8 checks passed; implements SyncDatabasePort confirmed; 4 methods present; 4 tables mapped; 3 write + 3 batch",
+      "related_refs": {
+        "req_ids": [
+          "REQ-4"
+        ],
+        "task_ids": [
+          "TASK-3"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-004",
+      "type": "command_output",
+      "description": "SyncEnginePort.tsx 导出 createSyncEngine 工厂函数（export function createSyncEngine，match_count=1）。工厂内实例化 ClientSyncStateManager + SyncDatabaseAdapter + SyncEngine",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:46:00Z",
+      "location": "fj-android/src/di/SyncEnginePort.tsx",
+      "command": "sf_batch_verify grep 'export function createSyncEngine'",
+      "result": "pass (match_count=1)",
+      "related_refs": {
+        "req_ids": [
+          "REQ-5"
+        ],
+        "task_ids": [
+          "TASK-4"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-005",
+      "type": "command_output",
+      "description": "SyncEnginePort.tsx 导出 SyncEngineInitializer 组件（match_count=1），内含 InMemoryKeyValueStorage 默认 storage（match_count=1）、useMemo 稳定 engine 引用（match_count=1）、fire-and-forget engine.fullSync()（match_count=3）、auth.status === 'authenticated' 触发条件（match_count=1）、TD AsyncStorage 非持久化标注（match_count=5）",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:46:00Z",
+      "location": "fj-android/src/di/SyncEnginePort.tsx",
+      "command": "sf_batch_verify(7 checks)",
+      "result": "7/7 checks passed",
+      "related_refs": {
+        "req_ids": [
+          "REQ-5",
+          "REQ-6"
+        ],
+        "task_ids": [
+          "TASK-4"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-006",
+      "type": "command_output",
+      "description": "AuthContext.tsx 的 useMemo value 含 apiClient：{ state, login, logout, clearError, apiClient }（match_count=1），依赖数组 [state, login, logout, clearError, apiClient]（match_count=1）。types.ts line 81 含 apiClient: ApiClient 字段定义",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:46:00Z",
+      "location": "fj-android/src/store/auth/AuthContext.tsx + fj-android/src/store/auth/types.ts",
+      "command": "sf_batch_verify + grep apiClient in types.ts",
+      "result": "AuthContext 2/2 checks passed; types.ts line 81 apiClient: ApiClient confirmed",
+      "related_refs": {
+        "req_ids": [
+          "REQ-5",
+          "REQ-6"
+        ],
+        "task_ids": [
+          "TASK-5"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-007",
+      "type": "file_snapshot",
+      "description": "AppRoot.tsx 存在（99 行），含 DatabaseProvider（来自 @nozbe/watermelondb/react）、SyncEngineInitializer、initDatabase、resetDatabaseInstance 调用。管理 loading/error/ready 三态，error 态含重试按钮。AppInner 渲染 RootNavigator",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:46:00Z",
+      "location": "fj-android/src/AppRoot.tsx",
+      "command": "read tool (full file)",
+      "result": "File exists, 99 lines, all expected imports/structure present",
+      "related_refs": {
+        "req_ids": [
+          "REQ-3"
+        ],
+        "task_ids": [
+          "TASK-6"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-008",
+      "type": "command_output",
+      "description": "App.tsx（21 行）实现四层架构 ErrorBoundary > AuthProvider > AppRoot。RootNavigator 已从 App.tsx 移出（grep RootNavigator in App.tsx = 0，match_count=0 confirmed pass）",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:46:00Z",
+      "location": "fj-android/App.tsx",
+      "command": "sf_batch_verify(4 checks)",
+      "result": "4/4 checks passed; <ErrorBoundary>, <AuthProvider>, <AppRoot /> present; RootNavigator absent",
+      "related_refs": {
+        "req_ids": [
+          "REQ-3"
+        ],
+        "task_ids": [
+          "TASK-6"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-009",
+      "type": "log",
+      "description": "Docker 构建日志 build-wi15.log（8375 字节，164 行）确认：BUILD SUCCESSFUL in 1m 18s（line 162），98 actionable tasks: 98 executed（line 163），EXIT_CODE=0（line 164）。watermelondb 原生模块编译通过：:nozbe_watermelondb:compileDebugJavaWithJavac（line 69，仅 2 个 deprecation warning 非 error）、:nozbe_watermelondb:assembleDebug（line 134）。构建变体为 Debug（:app:assembleDebug line 160，无 Release task）",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:47:00Z",
+      "location": "fj-android/build-wi15.log",
+      "command": "read tool (full log) + sf_safe_bash grep BUILD SUCCESSFUL",
+      "result": "BUILD SUCCESSFUL in 1m 18s; EXIT_CODE=0; :nozbe_watermelondb:assembleDebug completed",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1",
+          "REQ-7"
+        ],
+        "task_ids": [
+          "TASK-7"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-010",
+      "type": "file_snapshot",
+      "description": "app-debug.apk 存在：/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/debug/app-debug.apk，大小 130,749,900 字节（124.7 MB），远超 TASK-7 Done When 阈值 1,048,576 字节（1 MiB）。该 APK 是 build-wi15.log 所记录的 Debug 构建产物。注：app-release.apk（52,621,364 字节）为先前构建遗留产物，本次 WI 仅验证 Debug 变体",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:47:00Z",
+      "location": "fj-android/android/app/build/outputs/apk/debug/app-debug.apk",
+      "command": "stat -c '%n %s bytes'",
+      "result": "app-debug.apk = 130,749,900 bytes (124.7 MB) > 1,048,576 threshold; PASS",
+      "related_refs": {
+        "req_ids": [
+          "REQ-7"
+        ],
+        "task_ids": [
+          "TASK-7"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EV-011",
+      "type": "command_output",
+      "description": "TypeScript 类型检查通过：在 fj-android 目录执行 `timeout 240 npx tsc --noEmit`，EXIT_CODE=0（零错误），耗时 1859ms。覆盖 TASK-3 SyncDatabaseAdapter 接口对齐、TASK-4 createSyncEngine/SyncEngineInitializer 类型、TASK-5 AuthContextValue.apiClient 字段、TASK-6 AppRoot/App.tsx 组件树",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:48:00Z",
+      "location": "fj-android/ (tsc 工作目录)",
+      "command": "timeout 240 npx tsc --noEmit (cwd=fj-android)",
+      "result": "EXIT_CODE=0; zero TypeScript errors; 1859ms duration",
+      "related_refs": {
+        "req_ids": [
+          "REQ-7"
+        ],
+        "task_ids": [
+          "TASK-8"
+        ]
+      }
+    }
+  ]
+}

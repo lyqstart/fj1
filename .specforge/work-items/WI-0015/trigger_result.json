@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0015",
+  "trigger_date": "2026-07-05T07:12:00Z",
+  "intent": "infrastructure_activation",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "decision_reason": "激活已有骨架代码（database.ts + SyncEngine.ts），属于业务屏幕实装的前置基础设施。需要需求分析确定激活范围和降级策略。",
+  "selected_path": "requirement_change_path",
+  "unknowns": [],
+  "predecessor_wi": "WI-0014",
+  "successor_wi": "WI-0016",
+  "status": "triggered"
+}

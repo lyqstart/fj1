@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0022",
+  "workflow_type": "quick_change",
+  "workflow_path": "code_only_fast_path",
+  "unknowns": [],
+  "selected_at": "2026-07-05T14:59:30Z",
+  "status": "triggered"
+}

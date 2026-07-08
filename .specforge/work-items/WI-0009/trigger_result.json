@@ -1,0 +1,25 @@
+{
+  "work_item_id": "WI-0009",
+  "source_work_item": "WI-0008",
+  "trigger_type": "bugfix_spec",
+  "trigger_description": "修复 application-prod.yml 非法 spring.profiles.active 声明，解除 WI-0008 部署阻塞",
+  "intent_classification": "bug_report",
+  "workflow_type": "bugfix_spec",
+  "workflow_path": "requirement_change_path",
+  "workflow_skill": "sf-workflow-bugfix-spec",
+  "selection_reason": "缺陷修复：Spring Boot profile-specific 资源含非法 spring.profiles.active 声明导致启动失败。bugfix_spec 走 requirement_change_path。",
+  "risk_level": "very_low",
+  "unknowns": [],
+  "downtime_estimate": "none (source code fix only, deployment handled by WI-0008)",
+  "has_rollback": true,
+  "rollback_triggers": [
+    "git checkout application-prod.yml"
+  ],
+  "requires_user_confirmation_steps": [],
+  "modules_affected": [
+    "fj-api (config)"
+  ],
+  "forward_compatible": true,
+  "schema_version": "1.1",
+  "status": "triggered"
+}

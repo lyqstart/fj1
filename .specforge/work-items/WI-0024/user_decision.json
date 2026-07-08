@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "UD-WI-0024-1783267310408",
+  "work_item_id": "WI-0024",
+  "workflow_path": "requirement_change_path",
+  "base_spec_version": "PSV-0001",
+  "candidate_manifest_path": "candidate_manifest.json",
+  "manifest_hash": "sha256:1f78a97b85233618fc6b76e94037deba07cf4ac2723149349cb438a97ff9a761",
+  "candidate_hash": "sha256:cbc3892e81aec7bc58f2b40ceb1b4ec96ba588f9770d7b87d26c9275c5cf86bd",
+  "gate_summary_path": "gate_summary.md",
+  "gate_summary_hash": "sha256:46960c42a4071896ece37b317e7004d3b79030a66b9ef4675dd71430a28774f4",
+  "decision_status": "approved",
+  "decision_type": "user_approved",
+  "decided_by": "user",
+  "decided_at": "2026-07-05T16:01:50.408Z",
+  "decision_scope": "full",
+  "waivers": [],
+  "recorded_by": "sf-orchestrator",
+  "recorder_role": "user_decision_recorder",
+  "recorded_at": "2026-07-05T16:01:50.408Z",
+  "user_response_quote": "全部"
+}

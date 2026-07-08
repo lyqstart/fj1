@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "UD-WI-0003-1782988201959",
+  "work_item_id": "WI-0003",
+  "workflow_path": "task_change_path",
+  "base_spec_version": "PSV-0004",
+  "candidate_manifest_path": "candidate_manifest.json",
+  "manifest_hash": "sha256:8aa5159b41994fa2d7bdea6e80ab0141fcc9a5c1353ca0096c11375416ada850",
+  "candidate_hash": "sha256:e70b5147de4f56f6bfb427ee1d01d91e2cb0e521faf098f25273b13da4e1a410",
+  "gate_summary_path": "gate_summary.md",
+  "gate_summary_hash": "sha256:1708cd4ade91dd33d6c15290be846ddd64bc7392c50e758904259aa79cc7cfea",
+  "decision_status": "approved",
+  "decision_type": "user_approved",
+  "decided_by": "user",
+  "decided_at": "2026-07-02T10:30:01.959Z",
+  "decision_scope": "full",
+  "waivers": [],
+  "recorded_by": "sf-orchestrator",
+  "recorder_role": "user_decision_recorder",
+  "recorded_at": "2026-07-02T10:30:01.960Z",
+  "user_response_quote": "批准"
+}

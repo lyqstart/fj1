@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0004",
+  "source_work_item": "WI-0003",
+  "analyzed_at": "2026-07-03T16:12:00Z",
+  "trigger_type": "bug_report",
+  "trigger_description": "5 source-code bugs discovered during WI-0003 deployment, require root-cause fix in source repo",
+  "intent_classification": "bug_report",
+  "bug_count": 5,
+  "bugs": [
+    {
+      "id": "Bug-1",
+      "category": "config",
+      "file": "deploy/config/application-prod.yml",
+      "severity": "high",
+      "blocks_deployment": true
+    },
+    {
+      "id": "Bug-2",
+      "category": "flyway_migration",
+      "files": [
+        "V2__seed_data.sql",
+        "V3__projects.sql"
+      ],
+      "severity": "critical",
+      "blocks_deployment": true,
+      "forward_compatible_conflict": true
+    },
+    {
+      "id": "Bug-3",
+      "category": "flyway_migration",
+      "files": [
+        "V7__report_tables.sql",
+        "ExportFile.java"
+      ],
+      "severity": "high",
+      "blocks_deployment": true,
+      "fixable_via_V8": true
+    },
+    {
+      "id": "Bug-4",
+      "category": "flyway_migration",
+      "files": [
+        "V1__base_tables.sql",
+        "User.java"
+      ],
+      "severity": "high",
+      "blocks_deployment": true,
+      "fixable_via_V8": true
+    },
+    {
+      "id": "Bug-2-extra",
+      "category": "flyway_migration",
+      "file": "V7__report_tables.sql",
+      "field": "file_hash",
+      "severity": "medium",
+      "note": "newly discovered: VARCHAR(64) vs entity length=128",
+      "fixable_via_V8": true
+    },
+    {
+      "id": "Bug-5",
+      "category": "ops_script",
+      "file": "scripts/ops/install_pg16.sh",
+      "severity": "medium",
+      "blocks_clean_install": true
+    }
+  ],
+  "workflow_type": "bugfix_spec",
+  "workflow_path": "requirement_change_path",
+  "path_selection_reasoning": [
+    "5 bugs span multiple files (yml config, 4 SQL migrations, 2 Java entities, 1 shell script)",
+    "NOT code_only_fast_path: multi-file, requires analysis, has unknowns (Bug-2 forward-compat conflict, newly discovered file_hash mismatch)",
+    "bugfix_spec is the canonical workflow identity for source bug fixes",
+    "requirement_change_path pairs with bugfix_spec per V12 governance"
+  ],
+  "complexity": "medium",
+  "unknowns": [
+    "Bug-2 forward-compatible strategy: modify V2/V3 (breaks svr-lg checksum, needs flyway repair) vs accept execution-time risk",
+    "Whether to merge Bug-3+4+file_hash into single V8 migration",
+    "Full schema-validate audit may reveal more entity/DDL mismatches (deferred to separate WI)"
+  ],
+  "forward_compatible_constraint": "svr-lg fj1_inspect DB has V1-V7 migrated (success=t); fixes must not break it. Bug-3/4/file_hash via additive V8. Bug-2 requires design decision + user confirmation.",
+  "risk_level": "medium",
+  "gate_mode": "standard",
+  "status": "triggered"
+}

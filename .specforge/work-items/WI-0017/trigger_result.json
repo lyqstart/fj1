@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0017",
+  "trigger_date": "2026-07-05T08:20:00Z",
+  "intent": "feature_activation",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "decision_reason": "激活检查流程屏幕，集成骨架到导航。",
+  "selected_path": "requirement_change_path",
+  "unknowns": [],
+  "predecessor_wi": "WI-0016",
+  "successor_wi": "WI-0018",
+  "status": "triggered"
+}

@@ -1,0 +1,4241 @@
+{
+  "timestamp": "2026-07-03T16:48:49.391Z",
+  "root": "/mnt/1t_back/project/fj1",
+  "files": [
+    {
+      "path": "doc/飞检现场管理系统_业务逻辑定稿_v1.14_最终干净版_开发输入.md",
+      "size": 265480,
+      "mtimeMs": 1782886939912.6792
+    },
+    {
+      "path": ".gitignore",
+      "size": 183,
+      "mtimeMs": 1782921317980.8245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/manifest.json",
+      "size": 99,
+      "mtimeMs": 1782885645854.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/modules/core/requirements.md",
+      "size": 45019,
+      "mtimeMs": 1782890846165.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/modules/core/design.md",
+      "size": 31619,
+      "mtimeMs": 1782890846166.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/spec_manifest.json",
+      "size": 810,
+      "mtimeMs": 1782890846168.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/extension_registry.json",
+      "size": 271,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/requirements_index.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/design_index.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/architecture.md",
+      "size": 38,
+      "mtimeMs": 1782885645859.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/glossary.md",
+      "size": 38,
+      "mtimeMs": 1782885645860.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/decisions.md",
+      "size": 38,
+      "mtimeMs": 1782885645860.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/project/trace_matrix.md",
+      "size": 17375,
+      "mtimeMs": 1782890846167.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/work_item.json",
+      "size": 207544,
+      "mtimeMs": 1782890981210.778
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/intake.md",
+      "size": 4468,
+      "mtimeMs": 1782888156783.5254
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/change_classification.md",
+      "size": 1061,
+      "mtimeMs": 1782888277420.9233
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/impact_analysis.md",
+      "size": 2193,
+      "mtimeMs": 1782888290741.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/trigger_result.json",
+      "size": 340,
+      "mtimeMs": 1782888292628.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidates/project/modules/core/requirements.candidate.md",
+      "size": 45019,
+      "mtimeMs": 1782888874789.0457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidates/project/modules/core/design.candidate.md",
+      "size": 31619,
+      "mtimeMs": 1782889770534.863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidates/tasks.md",
+      "size": 45067,
+      "mtimeMs": 1782890395036.4866
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidates/trace_delta.md",
+      "size": 17375,
+      "mtimeMs": 1782890450336.7566
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/requirements.md",
+      "size": 45019,
+      "mtimeMs": 1782888874986.043
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/design.md",
+      "size": 31619,
+      "mtimeMs": 1782889770535.863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/tasks.md",
+      "size": 45067,
+      "mtimeMs": 1782890395047.4863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/trace_delta.md",
+      "size": 17375,
+      "mtimeMs": 1782890450336.7566
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/candidate_manifest.json",
+      "size": 1822,
+      "mtimeMs": 1782890519495.8474
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/entry_gate.json",
+      "size": 754,
+      "mtimeMs": 1782890546532.4922
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/workflow_selection_gate.json",
+      "size": 793,
+      "mtimeMs": 1782890546533.4922
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/schema_gate.json",
+      "size": 1739,
+      "mtimeMs": 1782890546534.4922
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/required_files_gate.json",
+      "size": 2194,
+      "mtimeMs": 1782890546535.4922
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/candidate_manifest_gate.json",
+      "size": 2599,
+      "mtimeMs": 1782890546536.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/path_policy_gate.json",
+      "size": 558,
+      "mtimeMs": 1782890546537.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/spec_consistency_gate.json",
+      "size": 595,
+      "mtimeMs": 1782890546537.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/trace_gate.json",
+      "size": 555,
+      "mtimeMs": 1782890546538.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/gate_summary_gate.json",
+      "size": 692,
+      "mtimeMs": 1782890546539.492
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gates/post_merge_gate.json",
+      "size": 779,
+      "mtimeMs": 1782890862846.334
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/gate_summary.md",
+      "size": 267,
+      "mtimeMs": 1782890862846.334
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/user_decision.json",
+      "size": 942,
+      "mtimeMs": 1782890839039.647
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/merge_report.md",
+      "size": 948,
+      "mtimeMs": 1782890846173.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/filesystem_baseline.json",
+      "size": 2846,
+      "mtimeMs": 1782890981211.778
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/changed_files_audit.md",
+      "size": 651,
+      "mtimeMs": 1782891233937.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/write_guard_log.jsonl",
+      "size": 734,
+      "mtimeMs": 1782891403252.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/work-items/WI-0001/hard_stop.json",
+      "size": 386,
+      "mtimeMs": 1782891403252.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/runtime/events.jsonl",
+      "size": 9370,
+      "mtimeMs": 1782890981074.7798
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/runtime/state.json",
+      "size": 432,
+      "mtimeMs": 1782890981141.7788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/observability.json",
+      "size": 897,
+      "mtimeMs": 1782885645856.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/project-rules.md",
+      "size": 38,
+      "mtimeMs": 1782885645856.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/prod-environment.md",
+      "size": 38,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/project.json",
+      "size": 30,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/risk_policy.json",
+      "size": 45,
+      "mtimeMs": 1782885645857.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/config/skill_fragments.json",
+      "size": 49,
+      "mtimeMs": 1782885645858.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/.gitignore",
+      "size": 103,
+      "mtimeMs": 1782885645863.8772
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/tool-calls.jsonl",
+      "size": 445066,
+      "mtimeMs": 1782891408907.1555
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/index.jsonl",
+      "size": 76299,
+      "mtimeMs": 1782891408945.155
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/03/03134b6392f20297870cd908823317b82cbda73d79440c6cc9a89f8555b0dad4.json",
+      "size": 551,
+      "mtimeMs": 1782887275638.2258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/03/03d18ae8f730d0ac4ceb81a0a41598ccbf657e1f2a642a288ebae59af3c017c4.json",
+      "size": 340,
+      "mtimeMs": 1782891408372.1626
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/03/03e50fbd0262f6fd56e94b31ece51480317e351b442523c50bfa254927d13a18.json",
+      "size": 346,
+      "mtimeMs": 1782891408922.1555
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/16/1627604d384ac51e0fe8c148aa07cf9a3386b5e93458e53e21ad6cb309afb46c.json",
+      "size": 337,
+      "mtimeMs": 1782887275641.2256
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/70/700188c5f8bb77b0a70bd9bf662b0caed1d81da93b33617cb00bb43d960810d1.json",
+      "size": 181,
+      "mtimeMs": 1782887275643.2256
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2f/2fc46434aa6bf08184652a27df5d4c6512e16f757c56a45089fbe4a20345cbd8.json",
+      "size": 59,
+      "mtimeMs": 1782887276040.2205
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2f/2f78358a3926a883d53b6acd4b80e8a7569d379f17d37f5dd2a019cebe1635ec.json",
+      "size": 863,
+      "mtimeMs": 1782890484875.3027
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/fc/fc8fac51930d0f63017acbaeb9d3d675b46f3402ed45284271561a33c09509a2.json",
+      "size": 652,
+      "mtimeMs": 1782887455399.839
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c8/c824ce59500b72f81c02992e0d90969bf9fe48131777ff86d9dd4b6ebc66f38f.json",
+      "size": 438,
+      "mtimeMs": 1782887455401.839
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/9a/9a01a8b18aa12c5bd47b870d7f1ebdef5f00233da133cb58efe2c760f13f8600.json",
+      "size": 187,
+      "mtimeMs": 1782887455407.8389
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/9a/9a56359274070a24f9e6abaf5b09cbf650d5a967e488df61bb4568ada629ee2a.json",
+      "size": 536,
+      "mtimeMs": 1782888466460.4258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/dc/dc96f9cc877d8df5154659612fcb5ac3d02acacf65b32fa31e0f8befd81298b2.json",
+      "size": 406,
+      "mtimeMs": 1782887455866.8328
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cb/cb00e5558eea0f0441d9f6fafac2696b8d160dba51e56c3692f492be06d4c879.json",
+      "size": 5473,
+      "mtimeMs": 1782888156569.528
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cb/cbf354252a931dc0c44ba8247132887def8432f7419a0faa65984f56e2c06901.json",
+      "size": 160,
+      "mtimeMs": 1782888292629.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/49/49c855360e24ffb013ceb457e0337ab1778cd4a3bfb50e76d10c502ce7f2b291.json",
+      "size": 5255,
+      "mtimeMs": 1782888156574.528
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/49/49fa0749dc157909f3734deab93ff923dcfc5a745c662254148e0830e6dabaa4.json",
+      "size": 155,
+      "mtimeMs": 1782888605864.589
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/8c/8c1fb1316af4efed8efca892841033cd394c3fc9a9dd663b93edf9df77911099.json",
+      "size": 185,
+      "mtimeMs": 1782888156772.5254
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1f/1fff9c9cc519899819a55381f360153ded05741eac468bef879037b10f7bdf00.json",
+      "size": 144,
+      "mtimeMs": 1782888156794.5251
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1f/1f034649985824c6318f8376c8e418c57f0e0f925e77f378efc91eec4c06bf1d.json",
+      "size": 363,
+      "mtimeMs": 1782889013294.2207
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1f/1fb682864de1d9e9f3c9c22afaad18287a0c0570d67f503fefb76b322510f5f7.json",
+      "size": 1136,
+      "mtimeMs": 1782889829208.3271
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5f/5f11515e26e8983238ee78b0fe3e4a5e259b449a677cccc69044cdec6fe2984c.json",
+      "size": 745,
+      "mtimeMs": 1782888214161.7634
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/21/2195947689a46bb17da230d3cfebc41ea46dc40697a4000073ef20fec98ad684.json",
+      "size": 531,
+      "mtimeMs": 1782888214163.7634
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/21/215dc4af6b0ed3328e1d7a4dbbe242b34264d61c45db118e6e3dcf78320e4cac.json",
+      "size": 345,
+      "mtimeMs": 1782890456645.6738
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/21/214126a7da90e80fe4a707f25a732d61586b4831f87dc7c1be20d3fb1e33bf88.json",
+      "size": 580,
+      "mtimeMs": 1782891403252.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3a/3a825b3a859d7f9b915a68c5fd91c982cbfc227ea97d07207996d3f1619340e7.json",
+      "size": 187,
+      "mtimeMs": 1782888214163.7634
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3a/3ab31b80dd7164df6cd9d23addcdf42a51849aa371bbb326b2640e1f01875501.json",
+      "size": 677,
+      "mtimeMs": 1782888316415.4055
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3a/3a75cca7d2bf956e35d9feba65f5caa861d02a3fe17d5c9d176bdab680d3c9f4.json",
+      "size": 362,
+      "mtimeMs": 1782889189417.9
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3a/3a3e7e2d559a286cc438eebd969ac786d10f158fe99ea3b034fc68d7ef7e5acc.json",
+      "size": 153,
+      "mtimeMs": 1782890456364.6775
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e2/e244f51f2c2df4d3ffc2bf792f385dae1d21ffa01924555eee5b751770d97a82.json",
+      "size": 314,
+      "mtimeMs": 1782888214411.76
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5e/5e85085bf08111e7255d0a73a663bf207ae826cf3768d4ef68f8748bbab605a5.json",
+      "size": 675,
+      "mtimeMs": 1782888260708.1453
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/06/060d576aa15c1d1988219dc1ce5af74d177a6b5edfdfbaf3f0c378050124c0fd.json",
+      "size": 461,
+      "mtimeMs": 1782888260727.145
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/06/06ed31f7d9279daffdc86853cdc1e0b866f6c5aeaac242d11db33606bb8ca170.json",
+      "size": 185,
+      "mtimeMs": 1782888292627.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cf/cfa9828d220cfd49807236f3d2ccd9f757ef84f172fa69763d6787501288974a.json",
+      "size": 187,
+      "mtimeMs": 1782888260728.145
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2c/2ca2818a92984d0aac9c27d78da9e5c86d1b394b5ef54533f284e3c0fa52e35b.json",
+      "size": 323,
+      "mtimeMs": 1782888261042.1409
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f3/f3e018d01e29cb2a90dec67da12fd94adba78c79af3bd108ec518a052be46937.json",
+      "size": 1978,
+      "mtimeMs": 1782888277400.9236
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f3/f37e96bca170736fbc931da4c63a108ec83e2dae9a0006d9105c7e84aff7fa39.json",
+      "size": 180,
+      "mtimeMs": 1782891408373.1626
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ec/ecc5f1cdb66c75880480e99706465bc2559d4b03b04729245eb0093a5b702d20.json",
+      "size": 1760,
+      "mtimeMs": 1782888277402.9236
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/59/596ec53050969263e487025042583a0dd3f3f31f9860cdfb19794b5ec5362f6a.json",
+      "size": 185,
+      "mtimeMs": 1782888277419.9233
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/59/59b35f10ef572ad91e893ca5185e235304cfd1cd514cf0ad8b21bd537619b8b5.json",
+      "size": 157,
+      "mtimeMs": 1782890484874.3027
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e5/e547d8c294c618cd765ed753127eb3150e8eea8650b6ab8a77bf74c94ecc1014.json",
+      "size": 174,
+      "mtimeMs": 1782888277420.9233
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/4e/4e726b0c9e6ee1dbc9a52d49906115871ff0592bd39dd3bf6f62a52f1e84b799.json",
+      "size": 3179,
+      "mtimeMs": 1782888290739.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f7/f7a22bae2d1eb4ba978e4e542c3f3e1b1466d500e4243656085435ecb97ee693.json",
+      "size": 2961,
+      "mtimeMs": 1782888290740.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/28/2835f10adde5f86a26f7d7f47d9cabb7fe670d5d09af584bd6dc2af427e5571a.json",
+      "size": 185,
+      "mtimeMs": 1782888290741.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/28/28ba7a4098d828e4d2e5f4592782e6983581d200f56673aae7d8c6e05b8ac1c6.json",
+      "size": 2561,
+      "mtimeMs": 1782889807625.5244
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/28/28647dbee9a50198335bfa2c463dcb5fc86d67272dd030bdb47d285f2cd5c6f6.json",
+      "size": 665,
+      "mtimeMs": 1782890535921.6316
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1e/1ebf0e76b73421e6d3c1c8f6fe484445c2ce757202753bb79b150f96236a3e11.json",
+      "size": 162,
+      "mtimeMs": 1782888290741.7466
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ba/ba4f99e25a2c1b814b9007b5ee179a684a914a6d0c32d242d93ec607f0d7931f.json",
+      "size": 1274,
+      "mtimeMs": 1782888292624.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ba/baff10de7304ecf06d26b585659f6bbc87c295d34bb55c14d9a11c3ea5da5390.json",
+      "size": 197,
+      "mtimeMs": 1782889770535.863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ba/bad67d3c0a149e7e55d270bba71583056fc9094965b49c6cc8fb35a3e3e6b2a3.json",
+      "size": 191,
+      "mtimeMs": 1782890838666.6519
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/36/3688427edf9255f45bc3884a8c2b1c1765c7e65f449c27b17d24683d13d132da.json",
+      "size": 1056,
+      "mtimeMs": 1782888292627.7214
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/1a/1a6d0edf1cc6883e709e323a3c18f29739ef4650ad927563b27a3b2772d1a2bb.json",
+      "size": 748,
+      "mtimeMs": 1782888299469.6306
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ee/ee517efc8b13cb6f71a647b03ace36df1005d7e2d4455bcd4bfcf376d5b4576b.json",
+      "size": 534,
+      "mtimeMs": 1782888299471.6306
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5c/5c4d8bdaa5f11830a8c161a6bd118872cdfa4699fb25875332cf8399538ae2c3.json",
+      "size": 187,
+      "mtimeMs": 1782888299471.6306
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/8a/8a46c715d4ed193bbe7d8c4c9781d77fe1f5ac3dcd48bb54d8682f55dba8d95f.json",
+      "size": 368,
+      "mtimeMs": 1782888299712.6274
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/08/08e0a458211c8449c9ba8fa27b7626bf48684f1c1c44134e796f32eca160f530.json",
+      "size": 706,
+      "mtimeMs": 1782888305016.557
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/08/0850d856bab5d2c7a2aca2d12951b25f75d699146546a241c2d2743303ad377e.json",
+      "size": 564,
+      "mtimeMs": 1782891408391.1624
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d5577ccd696c207885b78d06b719e4c217197bc5bace0f0f7c1d03fb63b51d60.json",
+      "size": 492,
+      "mtimeMs": 1782888305017.557
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d5b831d17e87b39664d9fb6128b2a2703571b3e8b56b94bd1e0fd3ec4a432d51.json",
+      "size": 555,
+      "mtimeMs": 1782888605862.589
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d518f3ee4c16627479e3900e7b1b3a11441bb1d4ca168501146d0a1b0da38c23.json",
+      "size": 160,
+      "mtimeMs": 1782889189420.9
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d5d1df760e32928758657bd022f6913e097e5eb26e18775de205ff7db41e6b9a.json",
+      "size": 559,
+      "mtimeMs": 1782890456644.6738
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d59fe25fe9beb7b287b7f03134a2eded3420a65d817690ac10c27ed1ad5ecbb1.json",
+      "size": 1009,
+      "mtimeMs": 1782890981212.7778
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d5/d5bc484fa981197625d39ccbb03bbb1854593db43c0a20db609c34581ccb9446.json",
+      "size": 261,
+      "mtimeMs": 1782891233937.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f0/f01d87c6c5c46e277dbd5a79db76e08fe31ff0c2735691c04c8b9804cee627d8.json",
+      "size": 187,
+      "mtimeMs": 1782888305018.557
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f0/f0712792fe55db3cc2bf24f54cc7a798f493c0e4c363eebaf8518e6d633b0b88.json",
+      "size": 2040,
+      "mtimeMs": 1782890546731.4895
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/8b/8b81b54ffdda30ecb0975b9c7e130fd439f06b797a84371c66d640e0b60e8ace.json",
+      "size": 369,
+      "mtimeMs": 1782888305255.5537
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/13/1373da7c784fa8a8a83829822c236ebad12f79e9b0b8ff6312cceffb9bfa2a55.json",
+      "size": 463,
+      "mtimeMs": 1782888316416.4055
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/91/91adee19f934109ca64bb15c9da86061c50b78f4a3b92380dea8b79e691932d2.json",
+      "size": 187,
+      "mtimeMs": 1782888316417.4055
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/77/7796e9a8c80dbbfcbd92262ba82ba4204750bc53b6281c3e885124dd84683819.json",
+      "size": 373,
+      "mtimeMs": 1782888316656.4023
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/df/df48132a7dd6bedb83139acd00809ae8e780e6099afa51528921c2db73115c35.json",
+      "size": 750,
+      "mtimeMs": 1782888466458.426
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/15/150c46bdd663f1cb345d93f6fe344aa0a1ee7227ad9a5ed6af48b604fb15ef85.json",
+      "size": 184,
+      "mtimeMs": 1782888466461.4258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/73/73bc73d1fa5ce7d75ee247a14d0ed28fcbb2a3548befafee213a194c1ffe3287.json",
+      "size": 76,
+      "mtimeMs": 1782888466466.4258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/73/7352fc78c4c0faa56797e2b9b3fd53693578b1ef484020b01640fcf9d74f2abe.json",
+      "size": 46449,
+      "mtimeMs": 1782888874786.0457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/73/7310408429e84ee4ced240b64c7098104418eb28642b9a7357cefdf24a76b433.json",
+      "size": 137,
+      "mtimeMs": 1782889013300.2205
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/bd/bd91e4b08b558d7ad0be8964c1fc6f703f071ea0b371b52c0f188b9fba11d3d1.json",
+      "size": 65,
+      "mtimeMs": 1782888466474.4258
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b3/b3ed4fe128ed467e9ba7669b92e94a8ea2e178b37b639236ae1461b70120cbbd.json",
+      "size": 341,
+      "mtimeMs": 1782888605864.589
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/81/818b22d5ca7cd18b8146b3b0bdcb922788f4963244dc135ef2a783c6181b5145.json",
+      "size": 191,
+      "mtimeMs": 1782888606061.5864
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/81/81d7b2b50b2af090f36f773a331145341874e4e0cc24c3266de8608b7f3aa082.json",
+      "size": 554,
+      "mtimeMs": 1782891408371.1626
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c9/c9523ec6ea83d1112b9b9212d35b682e6fb2133c3de050644bd2a46fb989b8d1.json",
+      "size": 46667,
+      "mtimeMs": 1782888874783.0457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d2/d2e9222b9d95459b4044cf6f729acb14aa39503d52be25bfd7e2a4ee15a867e0.json",
+      "size": 159,
+      "mtimeMs": 1782888874788.0457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d2/d29c4dfc8e7b39eb39119ce87fb522078d91727cbbfd010a9df528d58137e154.json",
+      "size": 835,
+      "mtimeMs": 1782891233933.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b1/b15c869adee64be7b97dc92a781b7c7d4a4c10164babcd72e87bcd8f98ba0292.json",
+      "size": 209,
+      "mtimeMs": 1782888874986.043
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/69/6980897e43735a37fea5e5a54896de57e38cb0aaaff2ce59585270014bc7da9b.json",
+      "size": 3460,
+      "mtimeMs": 1782888935536.245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/69/698121e47c12e8a94d2c2fa94672eb2862d1794ef17bf731f39996917f02878e.json",
+      "size": 103503,
+      "mtimeMs": 1782889600318.4175
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/69/695f290c834d08832c65b44d1973390b28df02359062b767c334b188362c99c9.json",
+      "size": 159,
+      "mtimeMs": 1782890395014.4868
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b0/b09053751c45eccfbf2a556c3d8c79a42c85a57a1761d64a301b2b1c2d4f082a.json",
+      "size": 3245,
+      "mtimeMs": 1782888935538.245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b0/b0743408ca27af53711b5086a0c23721c602078c90bbd0c7d9a676319a7c342c.json",
+      "size": 570,
+      "mtimeMs": 1782890456359.6775
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f9/f92b3757d27508a78927f84b6388afac1cf2c53df0f8e69c64f3aca9cb21deef.json",
+      "size": 157,
+      "mtimeMs": 1782888935539.245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/43/43cbe7fa174125249d4e616a9f825651ba298cde361e6ea0b7395a03340668ae.json",
+      "size": 94,
+      "mtimeMs": 1782888935540.245
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5b/5bc4a3bf9c21ad6101fe53bbdc03f62290cbae060fd3bf4131c513c8e60a1d84.json",
+      "size": 577,
+      "mtimeMs": 1782889013293.2207
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f5/f5ab7f2e1254da16fd49e7ae2659f86d36f66a90c30d4d2bccc0c90576eb80a5.json",
+      "size": 179,
+      "mtimeMs": 1782889013299.2205
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b2/b258b62965848441de00ea2c2cc524b632d5d9845528ec7258c8312df180fcb6.json",
+      "size": 710,
+      "mtimeMs": 1782889014092.2102
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f6/f65448ec2b08f3a503afa4296083fd51068c17e28dc277830dc60361cf6ade3f.json",
+      "size": 496,
+      "mtimeMs": 1782889014093.21
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/7a/7a877bc5b2fea5e960d882fff890d4605667f5236e531bf3ebb6193b0c6261e2.json",
+      "size": 184,
+      "mtimeMs": 1782889014099.21
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/10/108384b26fc69604533b843565e99a6943c45c0ab574b22defbfa21a170f841d.json",
+      "size": 576,
+      "mtimeMs": 1782889189415.9
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/10/10015b0337a9d33ad0c7029cfff2ebeae225103d75ad6c0467ec705dc20e6b8c.json",
+      "size": 180,
+      "mtimeMs": 1782891408608.1594
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c5/c5c4e5cdc583f2eab831b14efc8ced1e1b68284ddb84ed35596489e6362cd14c.json",
+      "size": 111,
+      "mtimeMs": 1782889189421.9
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ac/ac1aac57271d1ff429cfb437a7ff07305bf7eb27c4a908764d51e5c674542de5.json",
+      "size": 33177,
+      "mtimeMs": 1782889770321.865
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/71/71036b676b90a2a9df5f43769f5d5573c2e1ab89771e409455e4931d6c4ef6b5.json",
+      "size": 32958,
+      "mtimeMs": 1782889770323.865
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/71/710b9622fbda78f728c47f0b5769eba99ff63406fd5709ae2f7ec1259d119106.json",
+      "size": 180,
+      "mtimeMs": 1782891403245.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/71/7188b7c3fb94cd34febc4ab825dfc735895d458a7c652b2b0f1bc18b1e986c89.json",
+      "size": 560,
+      "mtimeMs": 1782891408908.1555
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/54/54cda9943bf1994259e94605c566314f0a1d7e577d4f82b8bc9e68ca508b7350.json",
+      "size": 159,
+      "mtimeMs": 1782889770330.865
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2d/2db11c794a4ef7969dd837e0979bd3911e0cc22e8ec3b35dfa8931f549e6121e.json",
+      "size": 565,
+      "mtimeMs": 1782889789026.694
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2d/2d93b8fe9ca47ca5eb339cbc6279408d3eaf927ce467d723a26bbc4f04f4bdbf.json",
+      "size": 368,
+      "mtimeMs": 1782890536171.6284
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/39/3978c77676cdd80770c33b2b87a9a3fe5d7ba9d22acd68d1fcbeca47e6255e06.json",
+      "size": 351,
+      "mtimeMs": 1782889789034.694
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/39/39d49ab18972e67252fc9c4a70d35a614dbf5e11ae565024f371220642ccc9e6.json",
+      "size": 12789,
+      "mtimeMs": 1782890980765.784
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d6/d6e5bda68452627faac2d859d6943b1933865103e127ade3cc21d75698240c5c.json",
+      "size": 153,
+      "mtimeMs": 1782889789044.694
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cd/cdc3e754e8eed505a37fc4dbbf206b386369bf5c383600353d697baa26f00f80.json",
+      "size": 125,
+      "mtimeMs": 1782889789055.6938
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cd/cdc8abfc55c70740bfbdd49ce63d88f8ea34b487e5ef4f6e9bbcbbc0277c439c.json",
+      "size": 548,
+      "mtimeMs": 1782890524917.7764
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cd/cdea3b21630e79224c496a3ea0d09924739a623f3135e44c46ed2664b64a0b9e.json",
+      "size": 164,
+      "mtimeMs": 1782891233933.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/99/992e56ecfc5c49d2e32963163164dcace7aae5898d90f0380cde181fed86ad2e.json",
+      "size": 2346,
+      "mtimeMs": 1782889807626.5244
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/99/9999049651e3afa012b6e4efcf112bcb4bd18b58625364b24355935847e1c0d6.json",
+      "size": 356,
+      "mtimeMs": 1782890456360.6775
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/01/01094ef86f6a68bfba97af8ba9b85215bcb2d1dba2a4c050cdd2c077ecb87331.json",
+      "size": 157,
+      "mtimeMs": 1782889807627.5242
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/01/015e13f661660942c7f56344b7aa40e1fef8336cabf23e27d9d897a8012029e6.json",
+      "size": 549,
+      "mtimeMs": 1782891408605.1597
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/46/469158881aa77030b74620a3b4f38f79a9bc6228a804cb162341e9b08f3da8b3.json",
+      "size": 922,
+      "mtimeMs": 1782889829208.3271
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/46/46e334da87c8ff18de315185988088bcf20e3b4a0843331e8fb93400918a522f.json",
+      "size": 179,
+      "mtimeMs": 1782890862710.3357
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/4f/4fee832220d981cbf87666d2167dd71d44a5bcac1492ca1e631696e36534a197.json",
+      "size": 157,
+      "mtimeMs": 1782889829209.3271
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/23/23c7b666f1ba4dfc400be351751358b1c66716c2e3b2b011773fbd71a6f3666f.json",
+      "size": 571,
+      "mtimeMs": 1782889829210.3271
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/23/23ed141aa036f55823f0709bb7c851d91095c4027dd6128be473cbd257020fa9.json",
+      "size": 350,
+      "mtimeMs": 1782891408393.1624
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ea/eae334b5f8212ce89cc68290aeca312332c6807e78742299a0b77f5be4ad1583.json",
+      "size": 702,
+      "mtimeMs": 1782889867163.9805
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/63/6335f5cd052b94d30cd8d571c123eb157a7dd68edf3787b141d6f61fe705a2df.json",
+      "size": 488,
+      "mtimeMs": 1782889867168.9805
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/a3/a3f7ca2008c152bdc7cdb27a75311f8c08c55bbb93c3965f124609ef5ec40e6d.json",
+      "size": 184,
+      "mtimeMs": 1782889867168.9805
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/0a/0a3eb1fea7d822ebb5f566936b758b44a2682ff4c4bad8a7d832b89d9a3e50c6.json",
+      "size": 101164,
+      "mtimeMs": 1782890257438.3284
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3e/3e24c3af57b9784bdd86a0f046401fc7edfd520f8639b105e1538393835f1b65.json",
+      "size": 46547,
+      "mtimeMs": 1782890394998.487
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/2a/2a67919fdf454a4729b24a015ddb8179a88c818ebececf030f424c7b28c82075.json",
+      "size": 46328,
+      "mtimeMs": 1782890395005.487
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5a/5ab11fae59a4a85f73b6b0bbd76c00b8f449aa74ece3761d634aae741d3cb050.json",
+      "size": 164,
+      "mtimeMs": 1782890395058.4863
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ae/ae214be092c68e1e2671b01e0c2f3c2a6ee7c55cedd8c44cb3b256df1c8000d8.json",
+      "size": 18348,
+      "mtimeMs": 1782890450329.7568
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/ae/aeea67a70595b2e5ea2f18bfc3c65707300e0ab3f2310ebdc8df371de5cfe70e.json",
+      "size": 1049,
+      "mtimeMs": 1782891233927.4558
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e8/e820fd962e32a1873fb33ac8ec39460655432c07be8748b4aca3326483150322.json",
+      "size": 18129,
+      "mtimeMs": 1782890450331.7568
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e8/e86b6ac0c4df6cec53b9fa591a9278f3c3cf1163c92788f86b9f662b9e6bfea1.json",
+      "size": 180,
+      "mtimeMs": 1782891408932.1553
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/90/90a9b7a7e3f55ed312cfa0f6816bd200899edc38ad1443e3dcdaf487dce90280.json",
+      "size": 159,
+      "mtimeMs": 1782890450335.7566
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/a7/a77b74d35f6ef0005eac6c12d8965ed3417d7847d9f41cdc1aad44d2c8ed9031.json",
+      "size": 155,
+      "mtimeMs": 1782890450336.7566
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/a7/a76a9cb07639db394c6316a4f8bc597aee50032c2c5093ecd04ab8a1c05ac6e9.json",
+      "size": 684,
+      "mtimeMs": 1782891408374.1626
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/04/044be747179253dde2f4f8377b955ccb76cef602b29b8d97a0790748dd13bd2a.json",
+      "size": 123,
+      "mtimeMs": 1782890456364.6775
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d7/d738630cbbd553c44a575cfec8c9e55225744c6fc898e58e59063a6b30cad94b.json",
+      "size": 157,
+      "mtimeMs": 1782890456645.6738
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/22/22e872f5eca84fab741217f3857ddbef9fd73c0eececfbc557d6ed5be943167a.json",
+      "size": 244,
+      "mtimeMs": 1782890456647.6736
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/7e/7e22a8e7e28e79aa1a63e4209ff3653cd5d3c25498e7c7fc6238607184fba423.json",
+      "size": 555,
+      "mtimeMs": 1782890472066.471
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/94/9486ccd114e2dd685f1186d251e4eeb97b2fbdf07a2bf639f2832a3964a060cf.json",
+      "size": 341,
+      "mtimeMs": 1782890472067.471
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/26/26539e17a7c5308bb643a55c03a69eb1e785e43a61a9037c85bbabc1269aaecb.json",
+      "size": 155,
+      "mtimeMs": 1782890472078.471
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/65/65971b0bfee90aa0589fb433e596526e05997b4841f237fee1f1f0c728cd999d.json",
+      "size": 110,
+      "mtimeMs": 1782890472097.4707
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/80/80739b0bb3266d41e7ba36887d35b1b42b0c43e10c4cecb5fa4c7ece30cb9c73.json",
+      "size": 1550,
+      "mtimeMs": 1782890484872.3027
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/5d/5dfa4537ea809cd99958ea307d9b6e14283f3d3c5998b5f4ff63992e6dafa1c2.json",
+      "size": 1335,
+      "mtimeMs": 1782890484874.3027
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/a1/a186dd57d4defa452edeb81f542bd96488884259d75780070b8b1c513f99a5f8.json",
+      "size": 1023,
+      "mtimeMs": 1782890486681.2788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/29/29c5499ae50ac88e853d501c75efd11a7adca980d2f3b58fb38b82611d69544d.json",
+      "size": 809,
+      "mtimeMs": 1782890486682.2788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c3/c30121c241426b581efe45f66d53f2bb67a617b98b5e9a08013ad7344559b523.json",
+      "size": 157,
+      "mtimeMs": 1782890486685.2788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/bf/bff4b9c6793e6fae74ac1411fb037650c2640bec67a063caa493d40adc7e5943.json",
+      "size": 426,
+      "mtimeMs": 1782890486687.2788
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d9/d941a170b2efbf5b6ae9cb870edd06bda9453592f31b36bc1b5b8285f53be818.json",
+      "size": 1601,
+      "mtimeMs": 1782890519476.8477
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f1/f1dc1da478d8cd5403465bb7ff8b25bd8554be6b15603f8ea0e7c372ceb8319d.json",
+      "size": 1383,
+      "mtimeMs": 1782890519489.8477
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/3d/3dc8b5aec0b53994749d5052ec5c171ffdb6d3fd7fd449564b9a5d4851b7c6e1.json",
+      "size": 185,
+      "mtimeMs": 1782890519493.8477
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/e6/e68b563b07b10f6cff3df8f06a923d23d61595e6f0439c11aab22ef0c7f2334d.json",
+      "size": 169,
+      "mtimeMs": 1782890519495.8474
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/bc/bc6b19c54864545ec55e0c00a16770de428a335965c2f3b0ef811884398116d0.json",
+      "size": 762,
+      "mtimeMs": 1782890524916.7764
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/bc/bca67c4640d5415e2a0a38388b905f35b6424c90bf5574c0f0b88391b745016c.json",
+      "size": 1034,
+      "mtimeMs": 1782890863062.331
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/32/323ddd0613c6feaafa4684484ddc1adc61dad9da04306d1eefc0e03cf09ee4dc.json",
+      "size": 187,
+      "mtimeMs": 1782890524918.7761
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/6c/6c27759a375b5b81248a3d4f61241114ac56f1845e31021f85065fc357ef21ad.json",
+      "size": 374,
+      "mtimeMs": 1782890525145.7732
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/6c/6c7b95603c822ee0928457b25bb00816249b4e385fbaffb89a8e62dde0a3e9c7.json",
+      "size": 724,
+      "mtimeMs": 1782890839509.6406
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/37/37464d24c95868e2646ee9cb6d5783f245b80226dcff2c5fc92513c88fe2f3cc.json",
+      "size": 451,
+      "mtimeMs": 1782890535922.6316
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/d0/d05f8eecd4e9e47a61072e8bfe489d5fefdbe92ddcf91aa03f4b3d2a788156a4.json",
+      "size": 187,
+      "mtimeMs": 1782890535923.6316
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c2/c2904ad5a08dbc4f9f7058c92d43f356d4c489e72260a63aee4311074a47e44f.json",
+      "size": 551,
+      "mtimeMs": 1782890546331.4949
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/af/af5d610cdb70d272ba5e07fc683704fc7816d0dd0f6304a373e42fa0643c6247.json",
+      "size": 337,
+      "mtimeMs": 1782890546333.4946
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/45/45b82c15122f8c172fe351ff64f307d2b0e083eed2705c51ff79afb8d7738d3b.json",
+      "size": 179,
+      "mtimeMs": 1782890546333.4946
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/82/8201d3809cf303691eab5b0fffac502bd7e94e59b9567394a2e91505ed2a734e.json",
+      "size": 962,
+      "mtimeMs": 1782890838663.6519
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/de/de51345fcf7f0231510905d3bf5224e090c37c9c9ddd09862ce7ae132c932da8.json",
+      "size": 748,
+      "mtimeMs": 1782890838664.6519
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/c7/c7a72dd65ad409659f59298b6cc19078f1c524dfb41470a8d9480c111524d9ad.json",
+      "size": 553,
+      "mtimeMs": 1782890846156.5535
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/b5/b591caa1b46b2d3b86133b6aa275915f8ac1c1e02b0b933e226d2e6476a6fc1d.json",
+      "size": 339,
+      "mtimeMs": 1782890846158.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/93/930f371ee1df849a3034fa238920c4b7a3db16aa6d612298ca001ac83ca8a683.json",
+      "size": 180,
+      "mtimeMs": 1782890846159.5532
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/76/767863758cba5ad39413932d7a6512dec9df0bbfe2f37537dc8521a853fa89e0.json",
+      "size": 1327,
+      "mtimeMs": 1782890846744.5457
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/76/76f635a508d5023eb65d9faf58ce812bddd48510baa29f03f518228acf9a372e.json",
+      "size": 12573,
+      "mtimeMs": 1782890980767.7837
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/0e/0eb79a08368601905a82db31e6e2c7d03328aca84f9bbff4d4fe149ac918f2f8.json",
+      "size": 582,
+      "mtimeMs": 1782890862678.3362
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/24/24f1a66b2889366c4e2e0ecb766007f40b91e6f9ca54aeb36b71a6688fb26ac2.json",
+      "size": 368,
+      "mtimeMs": 1782890862687.336
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/41/41f6a74d4f729a88bec3068e29a8a10b33d0c8fbcd1cf8396ebdbdbcf85fa176.json",
+      "size": 186,
+      "mtimeMs": 1782890980767.7837
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/68/68e4ad6a794923899430056350f0a648efbeb128b04c25e705a87ab85e62a2b3.json",
+      "size": 685,
+      "mtimeMs": 1782891403243.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/f4/f44e62474f051840c3dfedc9f7397c10b7155907afba010208ba99631f2b6415.json",
+      "size": 471,
+      "mtimeMs": 1782891403244.23
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/cc/cc078f8f4c9bfe4f79e4d7f72fb736abdb4f2bde1446501ba4b56b476af922fa.json",
+      "size": 180,
+      "mtimeMs": 1782891408394.1624
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/payloads/by-sha256/eb/eb22fac5fc018ec4d205dcc2049bd8c6f1ae42e16b8d604cd67e201ca69f12cf.json",
+      "size": 335,
+      "mtimeMs": 1782891408607.1597
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/rpc.jsonl",
+      "size": 44787,
+      "mtimeMs": 1782891408945.155
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/dispatcher.jsonl",
+      "size": 71280,
+      "mtimeMs": 1782891408941.1553
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/logs/observability/errors/by-sha256/6f/6f60e6ae4d1d3ca7f285c62f27af7972b65bcf7a3d25b1e36d315a56dfb2545f.json",
+      "size": 334,
+      "mtimeMs": 1782889600330.4175
+    },
+    {
+      "path": ".specforge.failed-before-v122-daemon-rebuild-20260701-161211/knowledge/graph.json",
+      "size": 52,
+      "mtimeMs": 1782888466463.4258
+    },
+    {
+      "path": ".specforge/manifest.json",
+      "size": 99,
+      "mtimeMs": 1782893540279.9512
+    },
+    {
+      "path": ".specforge/project/modules/core/requirements.md",
+      "size": 27302,
+      "mtimeMs": 1783097313027.3542
+    },
+    {
+      "path": ".specforge/project/modules/core/design.md",
+      "size": 35816,
+      "mtimeMs": 1783097313028.3542
+    },
+    {
+      "path": ".specforge/project/spec_manifest.json",
+      "size": 810,
+      "mtimeMs": 1783097313030.3542
+    },
+    {
+      "path": ".specforge/project/extension_registry.json",
+      "size": 271,
+      "mtimeMs": 1782893540284.9512
+    },
+    {
+      "path": ".specforge/project/requirements_index.md",
+      "size": 38,
+      "mtimeMs": 1782893540284.9512
+    },
+    {
+      "path": ".specforge/project/design_index.md",
+      "size": 38,
+      "mtimeMs": 1782893540284.9512
+    },
+    {
+      "path": ".specforge/project/architecture.md",
+      "size": 38,
+      "mtimeMs": 1782893540284.9512
+    },
+    {
+      "path": ".specforge/project/glossary.md",
+      "size": 38,
+      "mtimeMs": 1782893540285.9512
+    },
+    {
+      "path": ".specforge/project/decisions.md",
+      "size": 38,
+      "mtimeMs": 1782893540285.9512
+    },
+    {
+      "path": ".specforge/project/trace_matrix.md",
+      "size": 10885,
+      "mtimeMs": 1783097313029.3542
+    },
+    {
+      "path": ".specforge/config/observability.json",
+      "size": 897,
+      "mtimeMs": 1782893540281.9512
+    },
+    {
+      "path": ".specforge/config/project-rules.md",
+      "size": 38,
+      "mtimeMs": 1782893540281.9512
+    },
+    {
+      "path": ".specforge/config/prod-environment.md",
+      "size": 38,
+      "mtimeMs": 1782893540281.9512
+    },
+    {
+      "path": ".specforge/config/project.json",
+      "size": 30,
+      "mtimeMs": 1782893540282.9512
+    },
+    {
+      "path": ".specforge/config/risk_policy.json",
+      "size": 45,
+      "mtimeMs": 1782893540282.9512
+    },
+    {
+      "path": ".specforge/config/skill_fragments.json",
+      "size": 49,
+      "mtimeMs": 1782893540283.9512
+    },
+    {
+      "path": ".specforge/.gitignore",
+      "size": 39,
+      "mtimeMs": 1783065922664.6477
+    },
+    {
+      "path": ".specforge/knowledge/graph.json",
+      "size": 52,
+      "mtimeMs": 1782898412084.061
+    },
+    {
+      "path": "scripts/ops/upgrade_pg13_to_16.sh",
+      "size": 6468,
+      "mtimeMs": 1782901845813.7307
+    },
+    {
+      "path": "scripts/ops/install_jre17.sh",
+      "size": 3248,
+      "mtimeMs": 1782921341494.5142
+    },
+    {
+      "path": "scripts/ops/install_pg16.sh",
+      "size": 8578,
+      "mtimeMs": 1782921619203.8513
+    },
+    {
+      "path": "scripts/ops/deploy_backend.sh",
+      "size": 2331,
+      "mtimeMs": 1782956729002.0508
+    },
+    {
+      "path": "scripts/ops/rollback_backend.sh",
+      "size": 1086,
+      "mtimeMs": 1782956737656.9329
+    },
+    {
+      "path": "scripts/ops/init_database.sh",
+      "size": 2049,
+      "mtimeMs": 1782956748952.7788
+    },
+    {
+      "path": "deploy/config/postgresql-16.conf",
+      "size": 2247,
+      "mtimeMs": 1782901870062.4153
+    },
+    {
+      "path": "deploy/config/pg_hba.conf",
+      "size": 1125,
+      "mtimeMs": 1782901891182.1404
+    },
+    {
+      "path": "deploy/config/application-prod.yml",
+      "size": 1623,
+      "mtimeMs": 1782921312123.9019
+    },
+    {
+      "path": "deploy/config/.env.template",
+      "size": 415,
+      "mtimeMs": 1782921313152.8882
+    },
+    {
+      "path": "deploy/systemd/fj-api.service",
+      "size": 1352,
+      "mtimeMs": 1782921311362.9119
+    },
+    {
+      "path": "deploy/nginx/fj.conf",
+      "size": 2643,
+      "mtimeMs": 1782921325845.7207
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/response/ApiResponse.java",
+      "size": 1703,
+      "mtimeMs": 1782902772409.6765
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/response/PageResponse.java",
+      "size": 1141,
+      "mtimeMs": 1782902775942.6306
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/enume/BaseEnum.java",
+      "size": 1183,
+      "mtimeMs": 1782902780983.565
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/enume/IssueSeverity.java",
+      "size": 956,
+      "mtimeMs": 1782906548897.6077
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/enume/CorrectionStatus.java",
+      "size": 556,
+      "mtimeMs": 1782906550848.5825
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/exception/BusinessException.java",
+      "size": 857,
+      "mtimeMs": 1782902783618.5308
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/exception/ErrorCode.java",
+      "size": 2787,
+      "mtimeMs": 1782902802010.2915
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/exception/GlobalExceptionHandler.java",
+      "size": 4667,
+      "mtimeMs": 1782902813174.1462
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/dto/PageRequest.java",
+      "size": 1839,
+      "mtimeMs": 1782902819365.066
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/config/CacheConfig.java",
+      "size": 1394,
+      "mtimeMs": 1782902823989.0059
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/export/OfficialReportExporter.java",
+      "size": 1807,
+      "mtimeMs": 1782910633030.8708
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/jpa/BaseEntity.java",
+      "size": 1857,
+      "mtimeMs": 1782956890434.8508
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/notification/entity/Notification.java",
+      "size": 1944,
+      "mtimeMs": 1782911061214.3545
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/notification/repository/NotificationRepository.java",
+      "size": 790,
+      "mtimeMs": 1782911062631.3362
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/notification/service/NotificationService.java",
+      "size": 3123,
+      "mtimeMs": 1782911070471.2344
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/notification/controller/NotificationController.java",
+      "size": 1971,
+      "mtimeMs": 1782911075027.1753
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/entity/OperationLog.java",
+      "size": 1664,
+      "mtimeMs": 1782911103555.8054
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/repository/OperationLogRepository.java",
+      "size": 765,
+      "mtimeMs": 1782911106241.7705
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/service/OperationLogService.java",
+      "size": 3960,
+      "mtimeMs": 1782911118559.6108
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/LogOperation.java",
+      "size": 1295,
+      "mtimeMs": 1782911124707.531
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/audit/aspect/OperationLogAspect.java",
+      "size": 5932,
+      "mtimeMs": 1782957979193.053
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/entity/EditLock.java",
+      "size": 1765,
+      "mtimeMs": 1782911161158.0583
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/repository/EditLockRepository.java",
+      "size": 1115,
+      "mtimeMs": 1782911164677.0127
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/service/EditLockService.java",
+      "size": 5443,
+      "mtimeMs": 1782911180444.808
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/concurrent/job/EditLockCleanupJob.java",
+      "size": 1091,
+      "mtimeMs": 1782911184309.758
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/port/IssueReferenceChecker.java",
+      "size": 795,
+      "mtimeMs": 1782957672837.1917
+    },
+    {
+      "path": "fj-backend/fj-common/src/test/java/com/fj/common/audit/OperationLogAspectTest.java",
+      "size": 6368,
+      "mtimeMs": 1782958424353.039
+    },
+    {
+      "path": "fj-backend/fj-common/pom.xml",
+      "size": 2067,
+      "mtimeMs": 1782911032088.7302
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/LogOperation.class",
+      "size": 573,
+      "mtimeMs": 1782961162740.4648
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/service/OperationLogService.class",
+      "size": 4622,
+      "mtimeMs": 1782961162922.4626
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/repository/OperationLogRepository.class",
+      "size": 599,
+      "mtimeMs": 1782961162925.4624
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/entity/OperationLog.class",
+      "size": 2342,
+      "mtimeMs": 1782961162928.4624
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/audit/aspect/OperationLogAspect.class",
+      "size": 6328,
+      "mtimeMs": 1782961162959.4622
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/exception/BusinessException.class",
+      "size": 1215,
+      "mtimeMs": 1782961162757.4648
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/exception/ErrorCode.class",
+      "size": 4358,
+      "mtimeMs": 1782961162780.4644
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/exception/GlobalExceptionHandler.class",
+      "size": 8607,
+      "mtimeMs": 1782961163006.4614
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/enume/BaseEnum.class",
+      "size": 1010,
+      "mtimeMs": 1782961162792.4644
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/enume/CorrectionStatus.class",
+      "size": 1218,
+      "mtimeMs": 1782961162931.4624
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/enume/IssueSeverity.class",
+      "size": 1135,
+      "mtimeMs": 1782961162961.462
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/response/PageResponse.class",
+      "size": 3906,
+      "mtimeMs": 1782961162822.4639
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/response/ApiResponse.class",
+      "size": 5085,
+      "mtimeMs": 1782961162847.4636
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/config/CacheConfig.class",
+      "size": 1484,
+      "mtimeMs": 1782961162827.4639
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/jpa/BaseEntity.class",
+      "size": 2250,
+      "mtimeMs": 1782961162830.4639
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/dto/PageRequest.class",
+      "size": 4161,
+      "mtimeMs": 1782961162857.4634
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/concurrent/service/EditLockService.class",
+      "size": 5450,
+      "mtimeMs": 1782961162897.463
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/concurrent/repository/EditLockRepository.class",
+      "size": 1206,
+      "mtimeMs": 1782961162902.463
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/concurrent/entity/EditLock.class",
+      "size": 2480,
+      "mtimeMs": 1782961162911.4626
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/concurrent/job/EditLockCleanupJob.class",
+      "size": 1514,
+      "mtimeMs": 1782961162964.462
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/port/IssueReferenceChecker.class",
+      "size": 204,
+      "mtimeMs": 1782961162912.4626
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/notification/repository/NotificationRepository.class",
+      "size": 768,
+      "mtimeMs": 1782961162934.4624
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/notification/entity/Notification.class",
+      "size": 3310,
+      "mtimeMs": 1782961162937.4624
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/notification/service/NotificationService.class",
+      "size": 4234,
+      "mtimeMs": 1782961162944.4622
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/notification/controller/NotificationController.class",
+      "size": 2636,
+      "mtimeMs": 1782961163011.4614
+    },
+    {
+      "path": "fj-backend/fj-common/target/classes/com/fj/common/export/OfficialReportExporter.class",
+      "size": 211,
+      "mtimeMs": 1782961162965.462
+    },
+    {
+      "path": "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 2799,
+      "mtimeMs": 1782961161356.4834
+    },
+    {
+      "path": "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 1265,
+      "mtimeMs": 1782961163015.4612
+    },
+    {
+      "path": "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 108,
+      "mtimeMs": 1782961163023.4612
+    },
+    {
+      "path": "fj-backend/fj-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 49,
+      "mtimeMs": 1782961163407.456
+    },
+    {
+      "path": "fj-backend/fj-common/target/test-classes/com/fj/common/audit/OperationLogAspectTest.class",
+      "size": 6024,
+      "mtimeMs": 1782961163405.456
+    },
+    {
+      "path": "fj-backend/fj-common/target/maven-archiver/pom.properties",
+      "size": 59,
+      "mtimeMs": 1782961163721.452
+    },
+    {
+      "path": "fj-backend/fj-common/target/fj-common-1.0.0-SNAPSHOT.jar",
+      "size": 40153,
+      "mtimeMs": 1782961163777.4512
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/security/UserContext.java",
+      "size": 392,
+      "mtimeMs": 1782903615137.725
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/security/SecurityContextHolder.java",
+      "size": 1313,
+      "mtimeMs": 1782903619015.6746
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/security/RateLimiter.java",
+      "size": 1566,
+      "mtimeMs": 1782903624117.6084
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/TokenBlacklistService.java",
+      "size": 1167,
+      "mtimeMs": 1782903628731.5483
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/JwtTokenProvider.java",
+      "size": 3865,
+      "mtimeMs": 1782911037730.6577
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/JwtAuthFilter.java",
+      "size": 3007,
+      "mtimeMs": 1782903647835.3
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/LoginRequest.java",
+      "size": 275,
+      "mtimeMs": 1782903650841.261
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/RefreshRequest.java",
+      "size": 216,
+      "mtimeMs": 1782903651700.25
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/dto/LoginResponse.java",
+      "size": 934,
+      "mtimeMs": 1782903654606.2122
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/service/AuthService.java",
+      "size": 5227,
+      "mtimeMs": 1782903667096.0498
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/controller/AuthController.java",
+      "size": 2043,
+      "mtimeMs": 1782903671333.9949
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/RequirePermission.java",
+      "size": 1177,
+      "mtimeMs": 1782903679587.8875
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/PermissionChecker.java",
+      "size": 2153,
+      "mtimeMs": 1782903685283.8135
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/PermissionAspect.java",
+      "size": 2986,
+      "mtimeMs": 1782903692944.7139
+    },
+    {
+      "path": "fj-backend/fj-auth/src/main/java/com/fj/auth/rbac/ProjectAccessFilter.java",
+      "size": 2938,
+      "mtimeMs": 1782957364802.3865
+    },
+    {
+      "path": "fj-backend/fj-auth/pom.xml",
+      "size": 2058,
+      "mtimeMs": 1782902009765.5977
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginRequest.class",
+      "size": 1982,
+      "mtimeMs": 1782961164883.4365
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginResponse$UserInfo.class",
+      "size": 2504,
+      "mtimeMs": 1782961164893.4363
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/dto/LoginResponse.class",
+      "size": 2223,
+      "mtimeMs": 1782961164894.4363
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/dto/RefreshRequest.class",
+      "size": 1709,
+      "mtimeMs": 1782961164957.4355
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/RequirePermission.class",
+      "size": 563,
+      "mtimeMs": 1782961164884.4365
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/PermissionAspect.class",
+      "size": 3431,
+      "mtimeMs": 1782961164909.436
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/PermissionChecker.class",
+      "size": 2546,
+      "mtimeMs": 1782961164914.436
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/rbac/ProjectAccessFilter.class",
+      "size": 3091,
+      "mtimeMs": 1782961164919.436
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/security/SecurityContextHolder.class",
+      "size": 1413,
+      "mtimeMs": 1782961164887.4365
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/security/UserContext.class",
+      "size": 1734,
+      "mtimeMs": 1782961164889.4363
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/security/RateLimiter.class",
+      "size": 3208,
+      "mtimeMs": 1782961164947.4355
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/TokenBlacklistService.class",
+      "size": 1745,
+      "mtimeMs": 1782961164897.4363
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtTokenProvider$TokenPair.class",
+      "size": 1708,
+      "mtimeMs": 1782961164940.4358
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtTokenProvider.class",
+      "size": 5396,
+      "mtimeMs": 1782961164942.4358
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/jwt/JwtAuthFilter.class",
+      "size": 3782,
+      "mtimeMs": 1782961164952.4355
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/service/AuthService.class",
+      "size": 5593,
+      "mtimeMs": 1782961164926.4358
+    },
+    {
+      "path": "fj-backend/fj-auth/target/classes/com/fj/auth/controller/AuthController.class",
+      "size": 3047,
+      "mtimeMs": 1782961164956.4355
+    },
+    {
+      "path": "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 1456,
+      "mtimeMs": 1782961164499.4417
+    },
+    {
+      "path": "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 695,
+      "mtimeMs": 1782961164959.4355
+    },
+    {
+      "path": "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961164963.4353
+    },
+    {
+      "path": "fj-backend/fj-auth/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961164963.4353
+    },
+    {
+      "path": "fj-backend/fj-auth/target/maven-archiver/pom.properties",
+      "size": 57,
+      "mtimeMs": 1782961164967.4353
+    },
+    {
+      "path": "fj-backend/fj-auth/target/fj-auth-1.0.0-SNAPSHOT.jar",
+      "size": 26513,
+      "mtimeMs": 1782961164979.4353
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatus.java",
+      "size": 567,
+      "mtimeMs": 1782903535469.7603
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserStatusConverter.java",
+      "size": 690,
+      "mtimeMs": 1782903538067.7266
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/User.java",
+      "size": 1395,
+      "mtimeMs": 1782957562428.693
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Permission.java",
+      "size": 1149,
+      "mtimeMs": 1782956881890.9673
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Role.java",
+      "size": 1419,
+      "mtimeMs": 1782956880270.9893
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java",
+      "size": 1275,
+      "mtimeMs": 1782957175954.96
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java",
+      "size": 893,
+      "mtimeMs": 1782957173749.99
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java",
+      "size": 677,
+      "mtimeMs": 1782957174859.9749
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java",
+      "size": 992,
+      "mtimeMs": 1782957177557.938
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/repository/UserRepository.java",
+      "size": 588,
+      "mtimeMs": 1782903566119.362
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/repository/RoleRepository.java",
+      "size": 426,
+      "mtimeMs": 1782903567339.3462
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/repository/OrganizationRepository.java",
+      "size": 477,
+      "mtimeMs": 1782903568611.3296
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/repository/UserProjectRoleRepository.java",
+      "size": 707,
+      "mtimeMs": 1782903570350.3071
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/service/UserService.java",
+      "size": 4532,
+      "mtimeMs": 1782903585113.1152
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/controller/UserController.java",
+      "size": 3252,
+      "mtimeMs": 1782957542079.9705
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseDTO.java",
+      "size": 1047,
+      "mtimeMs": 1782957632339.7405
+    },
+    {
+      "path": "fj-backend/fj-system/src/main/java/com/fj/system/dto/UserResponseConverter.java",
+      "size": 1189,
+      "mtimeMs": 1782957644042.581
+    },
+    {
+      "path": "fj-backend/fj-system/pom.xml",
+      "size": 1388,
+      "mtimeMs": 1782901996272.7732
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/UserStatus.class",
+      "size": 1587,
+      "mtimeMs": 1782961164318.444
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/User.class",
+      "size": 2765,
+      "mtimeMs": 1782961164333.4438
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/UserProjectRole.class",
+      "size": 1749,
+      "mtimeMs": 1782961164357.4434
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/Role.class",
+      "size": 2074,
+      "mtimeMs": 1782961164359.4434
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/Permission.class",
+      "size": 1700,
+      "mtimeMs": 1782961164363.4434
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/Organization.class",
+      "size": 1718,
+      "mtimeMs": 1782961164365.4434
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/UserStatusConverter.class",
+      "size": 1435,
+      "mtimeMs": 1782961164411.4426
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/DataDictionary.class",
+      "size": 1673,
+      "mtimeMs": 1782961164412.4426
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/entity/ProjectOrganization.class",
+      "size": 1126,
+      "mtimeMs": 1782961164416.4426
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/dto/UserResponseConverter.class",
+      "size": 2638,
+      "mtimeMs": 1782961164331.4438
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/dto/UserResponseDTO.class",
+      "size": 5690,
+      "mtimeMs": 1782961164352.4436
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/repository/UserProjectRoleRepository.class",
+      "size": 789,
+      "mtimeMs": 1782961164355.4436
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/repository/UserRepository.class",
+      "size": 621,
+      "mtimeMs": 1782961164404.4429
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/repository/RoleRepository.class",
+      "size": 566,
+      "mtimeMs": 1782961164407.4429
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/repository/OrganizationRepository.class",
+      "size": 590,
+      "mtimeMs": 1782961164415.4426
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/controller/UserController.class",
+      "size": 5539,
+      "mtimeMs": 1782961164380.443
+    },
+    {
+      "path": "fj-backend/fj-system/target/classes/com/fj/system/service/UserService.class",
+      "size": 7596,
+      "mtimeMs": 1782961164401.4429
+    },
+    {
+      "path": "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 1737,
+      "mtimeMs": 1782961163823.4504
+    },
+    {
+      "path": "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 734,
+      "mtimeMs": 1782961164418.4426
+    },
+    {
+      "path": "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961164428.4426
+    },
+    {
+      "path": "fj-backend/fj-system/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961164429.4424
+    },
+    {
+      "path": "fj-backend/fj-system/target/maven-archiver/pom.properties",
+      "size": 59,
+      "mtimeMs": 1782961164436.4424
+    },
+    {
+      "path": "fj-backend/fj-system/target/fj-system-1.0.0-SNAPSHOT.jar",
+      "size": 21541,
+      "mtimeMs": 1782961164459.4421
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectStatus.java",
+      "size": 343,
+      "mtimeMs": 1782904235998.6565
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/Project.java",
+      "size": 1396,
+      "mtimeMs": 1782956855918.321
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectConfig.java",
+      "size": 1862,
+      "mtimeMs": 1782956856800.309
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/FormStatus.java",
+      "size": 298,
+      "mtimeMs": 1782904281135.0698
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/ProjectInspectionForm.java",
+      "size": 1102,
+      "mtimeMs": 1782956860688.256
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionFormItem.java",
+      "size": 1226,
+      "mtimeMs": 1782956861149.25
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/BindingType.java",
+      "size": 316,
+      "mtimeMs": 1782904346320.2227
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/CheckItemStandardBinding.java",
+      "size": 1391,
+      "mtimeMs": 1782956861987.2385
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionTaskStatus.java",
+      "size": 780,
+      "mtimeMs": 1782904992732.8206
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/EquipmentStatus.java",
+      "size": 266,
+      "mtimeMs": 1782904993556.8098
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/InspectionTask.java",
+      "size": 2488,
+      "mtimeMs": 1782956857381.3013
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/LocationDetail.java",
+      "size": 1322,
+      "mtimeMs": 1782956859489.2725
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/entity/Equipment.java",
+      "size": 1325,
+      "mtimeMs": 1782956858452.2866
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/ProjectRepository.java",
+      "size": 541,
+      "mtimeMs": 1782904251482.4553
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/ProjectConfigRepository.java",
+      "size": 473,
+      "mtimeMs": 1782904252948.4363
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionFormRepository.java",
+      "size": 487,
+      "mtimeMs": 1782904290077.9536
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionFormItemRepository.java",
+      "size": 606,
+      "mtimeMs": 1782904291969.9292
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/CheckItemStandardBindingRepository.java",
+      "size": 804,
+      "mtimeMs": 1782904350735.1653
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/InspectionTaskRepository.java",
+      "size": 1631,
+      "mtimeMs": 1782905015545.524
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/LocationDetailRepository.java",
+      "size": 591,
+      "mtimeMs": 1782905017628.4968
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/repository/EquipmentRepository.java",
+      "size": 686,
+      "mtimeMs": 1782905019117.4773
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/service/ProjectService.java",
+      "size": 6004,
+      "mtimeMs": 1782904266149.2646
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/service/InspectionFormService.java",
+      "size": 8633,
+      "mtimeMs": 1782904377578.8164
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/service/InspectionTaskService.java",
+      "size": 8055,
+      "mtimeMs": 1782905038085.2307
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/controller/ProjectController.java",
+      "size": 2344,
+      "mtimeMs": 1782904271395.1965
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/controller/InspectionFormController.java",
+      "size": 4558,
+      "mtimeMs": 1782904324507.5063
+    },
+    {
+      "path": "fj-backend/fj-project/src/main/java/com/fj/project/controller/InspectionTaskController.java",
+      "size": 3323,
+      "mtimeMs": 1782905044500.1472
+    },
+    {
+      "path": "fj-backend/fj-project/pom.xml",
+      "size": 1213,
+      "mtimeMs": 1782902022358.4338
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/FormStatus.class",
+      "size": 1125,
+      "mtimeMs": 1782961165546.4277
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/BindingType.class",
+      "size": 1082,
+      "mtimeMs": 1782961165548.4277
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/CheckItemStandardBinding.class",
+      "size": 2108,
+      "mtimeMs": 1782961165554.4275
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/Project.class",
+      "size": 2463,
+      "mtimeMs": 1782961165556.4275
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectStatus.class",
+      "size": 1206,
+      "mtimeMs": 1782961165558.4275
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionTask.class",
+      "size": 4476,
+      "mtimeMs": 1782961165562.4275
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionTaskStatus.class",
+      "size": 1315,
+      "mtimeMs": 1782961165564.4275
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectInspectionForm.class",
+      "size": 2028,
+      "mtimeMs": 1782961165600.427
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/InspectionFormItem.class",
+      "size": 2407,
+      "mtimeMs": 1782961165602.427
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/ProjectConfig.class",
+      "size": 3141,
+      "mtimeMs": 1782961165633.4265
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/Equipment.class",
+      "size": 2518,
+      "mtimeMs": 1782961165665.426
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/EquipmentStatus.class",
+      "size": 1223,
+      "mtimeMs": 1782961165667.426
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/entity/LocationDetail.class",
+      "size": 2442,
+      "mtimeMs": 1782961165680.4258
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/CheckItemStandardBindingRepository.class",
+      "size": 772,
+      "mtimeMs": 1782961165551.4275
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionTaskRepository.class",
+      "size": 1738,
+      "mtimeMs": 1782961165560.4275
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionFormRepository.class",
+      "size": 616,
+      "mtimeMs": 1782961165603.427
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/InspectionFormItemRepository.class",
+      "size": 681,
+      "mtimeMs": 1782961165605.4268
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/ProjectRepository.class",
+      "size": 628,
+      "mtimeMs": 1782961165634.4265
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/ProjectConfigRepository.class",
+      "size": 606,
+      "mtimeMs": 1782961165636.4265
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/EquipmentRepository.class",
+      "size": 840,
+      "mtimeMs": 1782961165674.426
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/repository/LocationDetailRepository.class",
+      "size": 652,
+      "mtimeMs": 1782961165682.4258
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/controller/InspectionFormController.class",
+      "size": 6152,
+      "mtimeMs": 1782961165582.4272
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/controller/ProjectController.class",
+      "size": 3783,
+      "mtimeMs": 1782961165612.4268
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/controller/InspectionTaskController.class",
+      "size": 4062,
+      "mtimeMs": 1782961165645.4263
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/service/InspectionFormService.class",
+      "size": 9554,
+      "mtimeMs": 1782961165598.427
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/service/ProjectService.class",
+      "size": 8562,
+      "mtimeMs": 1782961165631.4265
+    },
+    {
+      "path": "fj-backend/fj-project/target/classes/com/fj/project/service/InspectionTaskService.class",
+      "size": 8148,
+      "mtimeMs": 1782961165663.426
+    },
+    {
+      "path": "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 2953,
+      "mtimeMs": 1782961165012.4348
+    },
+    {
+      "path": "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 1333,
+      "mtimeMs": 1782961165684.4258
+    },
+    {
+      "path": "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961165688.4258
+    },
+    {
+      "path": "fj-backend/fj-project/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961165688.4258
+    },
+    {
+      "path": "fj-backend/fj-project/target/maven-archiver/pom.properties",
+      "size": 60,
+      "mtimeMs": 1782961165692.4258
+    },
+    {
+      "path": "fj-backend/fj-project/target/fj-project-1.0.0-SNAPSHOT.jar",
+      "size": 35385,
+      "mtimeMs": 1782961165753.4248
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportStatus.java",
+      "size": 975,
+      "mtimeMs": 1782905820019.0603
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/PhotoType.java",
+      "size": 368,
+      "mtimeMs": 1782905824683.9998
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/GpsStatus.java",
+      "size": 480,
+      "mtimeMs": 1782905827671.9607
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/FileUploadStatus.java",
+      "size": 442,
+      "mtimeMs": 1782905829326.9392
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReport.java",
+      "size": 2217,
+      "mtimeMs": 1782956862895.226
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportIssue.java",
+      "size": 2150,
+      "mtimeMs": 1782956867116.1685
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportTask.java",
+      "size": 1173,
+      "mtimeMs": 1782956863693.2153
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/DailyReportInspectedParty.java",
+      "size": 978,
+      "mtimeMs": 1782956867464.1638
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/entity/Photo.java",
+      "size": 3039,
+      "mtimeMs": 1782956867686.161
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/DailyReportRepository.java",
+      "size": 1946,
+      "mtimeMs": 1782906564628.4038
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/DailyReportIssueRepository.java",
+      "size": 987,
+      "mtimeMs": 1782906562017.4377
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/repository/PhotoRepository.java",
+      "size": 1018,
+      "mtimeMs": 1782905883636.233
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportValidator.java",
+      "size": 7205,
+      "mtimeMs": 1782906561115.4492
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportSubmitService.java",
+      "size": 6370,
+      "mtimeMs": 1782906559718.4675
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/service/DailyReportConfirmService.java",
+      "size": 10122,
+      "mtimeMs": 1782907636567.5146
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/controller/DailyReportController.java",
+      "size": 2851,
+      "mtimeMs": 1782905981764.9602
+    },
+    {
+      "path": "fj-backend/fj-inspection/src/main/java/com/fj/inspection/controller/DailyReportConfirmController.java",
+      "size": 2199,
+      "mtimeMs": 1782907901986.0767
+    },
+    {
+      "path": "fj-backend/fj-inspection/pom.xml",
+      "size": 1623,
+      "mtimeMs": 1782907570708.3677
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportInspectedParty.class",
+      "size": 1478,
+      "mtimeMs": 1782961167544.4011
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReport.class",
+      "size": 2927,
+      "mtimeMs": 1782961167574.4006
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportIssue.class",
+      "size": 3430,
+      "mtimeMs": 1782961167594.4004
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/Photo.class",
+      "size": 5603,
+      "mtimeMs": 1782961167600.4004
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportStatus.class",
+      "size": 1301,
+      "mtimeMs": 1782961167602.4004
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/PhotoType.class",
+      "size": 1205,
+      "mtimeMs": 1782961167603.4004
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/GpsStatus.class",
+      "size": 1190,
+      "mtimeMs": 1782961167605.4004
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/FileUploadStatus.class",
+      "size": 1243,
+      "mtimeMs": 1782961167607.4001
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/entity/DailyReportTask.class",
+      "size": 1439,
+      "mtimeMs": 1782961167662.3994
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportValidator.class",
+      "size": 8455,
+      "mtimeMs": 1782961167570.4006
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportConfirmService.class",
+      "size": 10276,
+      "mtimeMs": 1782961167641.4
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/service/DailyReportSubmitService.class",
+      "size": 6858,
+      "mtimeMs": 1782961167661.3997
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/DailyReportRepository.class",
+      "size": 1784,
+      "mtimeMs": 1782961167573.4006
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/DailyReportIssueRepository.class",
+      "size": 967,
+      "mtimeMs": 1782961167575.4006
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/repository/PhotoRepository.class",
+      "size": 871,
+      "mtimeMs": 1782961167595.4004
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController$ConfirmRequest.class",
+      "size": 1746,
+      "mtimeMs": 1782961167609.4001
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController$VoidRequest.class",
+      "size": 1726,
+      "mtimeMs": 1782961167619.4001
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportConfirmController.class",
+      "size": 2656,
+      "mtimeMs": 1782961167619.4001
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/classes/com/fj/inspection/controller/DailyReportController.class",
+      "size": 3859,
+      "mtimeMs": 1782961167644.3997
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 1941,
+      "mtimeMs": 1782961167153.4062
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 1025,
+      "mtimeMs": 1782961167664.3994
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961167668.3994
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961167668.3994
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/maven-archiver/pom.properties",
+      "size": 63,
+      "mtimeMs": 1782961167678.3994
+    },
+    {
+      "path": "fj-backend/fj-inspection/target/fj-inspection-1.0.0-SNAPSHOT.jar",
+      "size": 29250,
+      "mtimeMs": 1782961167738.3984
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/IssueStatus.java",
+      "size": 1669,
+      "mtimeMs": 1782906576378.2515
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/RelationType.java",
+      "size": 339,
+      "mtimeMs": 1782906577943.2312
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/ProjectIssue.java",
+      "size": 3763,
+      "mtimeMs": 1782956867896.158
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/IssueRelation.java",
+      "size": 1048,
+      "mtimeMs": 1782956868357.1516
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/repository/ProjectIssueRepository.java",
+      "size": 2070,
+      "mtimeMs": 1782907576450.2932
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/repository/IssueRelationRepository.java",
+      "size": 873,
+      "mtimeMs": 1782908007203.7158
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/dto/DailyReportIssueImport.java",
+      "size": 1139,
+      "mtimeMs": 1782906636619.4705
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/RectificationDeadlineCalculator.java",
+      "size": 4001,
+      "mtimeMs": 1782957440530.3545
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssuePoolService.java",
+      "size": 7504,
+      "mtimeMs": 1782906741056.1165
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueStatusService.java",
+      "size": 6046,
+      "mtimeMs": 1782907919196.8535
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueReviewService.java",
+      "size": 8100,
+      "mtimeMs": 1782957720622.5461
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/ReviewAction.java",
+      "size": 511,
+      "mtimeMs": 1782907963139.2844
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueRelationService.java",
+      "size": 4039,
+      "mtimeMs": 1782907978833.0813
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/job/OverdueDetectionJob.java",
+      "size": 2109,
+      "mtimeMs": 1782906769407.749
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/controller/IssueController.java",
+      "size": 3003,
+      "mtimeMs": 1782906722821.353
+    },
+    {
+      "path": "fj-backend/fj-issue/src/main/java/com/fj/issue/controller/IssueReviewController.java",
+      "size": 3429,
+      "mtimeMs": 1782907990593.9297
+    },
+    {
+      "path": "fj-backend/fj-issue/src/test/java/com/fj/issue/service/IssueReviewServiceTest.java",
+      "size": 5758,
+      "mtimeMs": 1782958374290.7153
+    },
+    {
+      "path": "fj-backend/fj-issue/src/test/java/com/fj/issue/service/RectificationDeadlineCalculatorTest.java",
+      "size": 4842,
+      "mtimeMs": 1782958533399.566
+    },
+    {
+      "path": "fj-backend/fj-issue/pom.xml",
+      "size": 1218,
+      "mtimeMs": 1782906568047.3594
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/dto/DailyReportIssueImport.class",
+      "size": 2560,
+      "mtimeMs": 1782961166202.419
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueReviewService$1.class",
+      "size": 903,
+      "mtimeMs": 1782961166216.4187
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueReviewService.class",
+      "size": 7266,
+      "mtimeMs": 1782961166219.4187
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueStatusService.class",
+      "size": 5951,
+      "mtimeMs": 1782961166253.4182
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/ReviewAction.class",
+      "size": 1235,
+      "mtimeMs": 1782961166255.4182
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssueRelationService.class",
+      "size": 4508,
+      "mtimeMs": 1782961166263.4182
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/RectificationDeadlineCalculator$1.class",
+      "size": 853,
+      "mtimeMs": 1782961166290.4177
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/RectificationDeadlineCalculator.class",
+      "size": 2504,
+      "mtimeMs": 1782961166291.4177
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/service/IssuePoolService.class",
+      "size": 9027,
+      "mtimeMs": 1782961166310.4175
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/repository/ProjectIssueRepository.class",
+      "size": 2235,
+      "mtimeMs": 1782961166224.4187
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/repository/IssueRelationRepository.class",
+      "size": 769,
+      "mtimeMs": 1782961166265.4182
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/entity/ProjectIssue.class",
+      "size": 4846,
+      "mtimeMs": 1782961166226.4187
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/entity/IssueStatus.class",
+      "size": 1964,
+      "mtimeMs": 1782961166258.4182
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/entity/RelationType.class",
+      "size": 1077,
+      "mtimeMs": 1782961166259.4182
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/entity/IssueRelation.class",
+      "size": 1585,
+      "mtimeMs": 1782961166266.418
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController$ReviewRequest.class",
+      "size": 2139,
+      "mtimeMs": 1782961166278.418
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController$RelationRequest.class",
+      "size": 1940,
+      "mtimeMs": 1782961166279.418
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueReviewController.class",
+      "size": 4567,
+      "mtimeMs": 1782961166280.418
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/controller/IssueController.class",
+      "size": 4674,
+      "mtimeMs": 1782961166301.4177
+    },
+    {
+      "path": "fj-backend/fj-issue/target/classes/com/fj/issue/job/OverdueDetectionJob.class",
+      "size": 3035,
+      "mtimeMs": 1782961166284.418
+    },
+    {
+      "path": "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 1661,
+      "mtimeMs": 1782961165776.4246
+    },
+    {
+      "path": "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 976,
+      "mtimeMs": 1782961166312.4175
+    },
+    {
+      "path": "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 229,
+      "mtimeMs": 1782961166330.4172
+    },
+    {
+      "path": "fj-backend/fj-issue/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 113,
+      "mtimeMs": 1782961166641.413
+    },
+    {
+      "path": "fj-backend/fj-issue/target/test-classes/com/fj/issue/service/RectificationDeadlineCalculatorTest.class",
+      "size": 3380,
+      "mtimeMs": 1782961166614.4136
+    },
+    {
+      "path": "fj-backend/fj-issue/target/test-classes/com/fj/issue/service/IssueReviewServiceTest.class",
+      "size": 5658,
+      "mtimeMs": 1782961166639.413
+    },
+    {
+      "path": "fj-backend/fj-issue/target/maven-archiver/pom.properties",
+      "size": 58,
+      "mtimeMs": 1782961166645.413
+    },
+    {
+      "path": "fj-backend/fj-issue/target/fj-issue-1.0.0-SNAPSHOT.jar",
+      "size": 32197,
+      "mtimeMs": 1782961166662.4128
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/entity/ReportStatus.java",
+      "size": 1282,
+      "mtimeMs": 1782908252176.561
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/entity/Report.java",
+      "size": 2944,
+      "mtimeMs": 1782956870750.1191
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/entity/ReportIssueSnapshot.java",
+      "size": 2574,
+      "mtimeMs": 1782956870944.1165
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportRepository.java",
+      "size": 1060,
+      "mtimeMs": 1782908264442.403
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/repository/ReportIssueSnapshotRepository.java",
+      "size": 1904,
+      "mtimeMs": 1782957692258.9292
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportService.java",
+      "size": 8396,
+      "mtimeMs": 1782908372958.0056
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportSnapshotService.java",
+      "size": 14079,
+      "mtimeMs": 1782958578532.956
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportApprovalService.java",
+      "size": 11014,
+      "mtimeMs": 1782909048456.3052
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportPublishService.java",
+      "size": 5987,
+      "mtimeMs": 1782910694984.0728
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/service/ReportIssueReferenceChecker.java",
+      "size": 1159,
+      "mtimeMs": 1782957679333.1038
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportController.java",
+      "size": 3108,
+      "mtimeMs": 1782908305630.8726
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportSnapshotController.java",
+      "size": 2821,
+      "mtimeMs": 1782908360760.1626
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportApprovalController.java",
+      "size": 4070,
+      "mtimeMs": 1782909065491.0854
+    },
+    {
+      "path": "fj-backend/fj-report/src/main/java/com/fj/report/controller/ReportPublishController.java",
+      "size": 1858,
+      "mtimeMs": 1782910701413.99
+    },
+    {
+      "path": "fj-backend/fj-report/src/test/java/com/fj/report/service/ReportSnapshotServiceTest.java",
+      "size": 9525,
+      "mtimeMs": 1782960141704.0476
+    },
+    {
+      "path": "fj-backend/fj-report/pom.xml",
+      "size": 1462,
+      "mtimeMs": 1782908238329.7393
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/repository/ReportRepository.class",
+      "size": 1093,
+      "mtimeMs": 1782961168206.3923
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/repository/ReportIssueSnapshotRepository.class",
+      "size": 1389,
+      "mtimeMs": 1782961168246.3918
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/entity/Report.class",
+      "size": 4187,
+      "mtimeMs": 1782961168209.3923
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/entity/ReportStatus.class",
+      "size": 1763,
+      "mtimeMs": 1782961168211.3923
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/entity/ReportIssueSnapshot.class",
+      "size": 3249,
+      "mtimeMs": 1782961168247.3918
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportPublishService.class",
+      "size": 4545,
+      "mtimeMs": 1782961168221.392
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportApprovalService.class",
+      "size": 8625,
+      "mtimeMs": 1782961168244.3918
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportIssueReferenceChecker.class",
+      "size": 1004,
+      "mtimeMs": 1782961168252.3916
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportService.class",
+      "size": 9090,
+      "mtimeMs": 1782961168274.3914
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/service/ReportSnapshotService.class",
+      "size": 14606,
+      "mtimeMs": 1782961168303.391
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportPublishController.class",
+      "size": 3049,
+      "mtimeMs": 1782961168236.3918
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportController.class",
+      "size": 4201,
+      "mtimeMs": 1782961168256.3916
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportSnapshotController.class",
+      "size": 3486,
+      "mtimeMs": 1782961168308.3909
+    },
+    {
+      "path": "fj-backend/fj-report/target/classes/com/fj/report/controller/ReportApprovalController.class",
+      "size": 4967,
+      "mtimeMs": 1782961168314.3909
+    },
+    {
+      "path": "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 1518,
+      "mtimeMs": 1782961167771.3982
+    },
+    {
+      "path": "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 692,
+      "mtimeMs": 1782961168315.3909
+    },
+    {
+      "path": "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 113,
+      "mtimeMs": 1782961168321.3909
+    },
+    {
+      "path": "fj-backend/fj-report/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 54,
+      "mtimeMs": 1782961168813.3843
+    },
+    {
+      "path": "fj-backend/fj-report/target/test-classes/com/fj/report/service/ReportSnapshotServiceTest.class",
+      "size": 9345,
+      "mtimeMs": 1782961168811.3843
+    },
+    {
+      "path": "fj-backend/fj-report/target/maven-archiver/pom.properties",
+      "size": 59,
+      "mtimeMs": 1782961168817.3843
+    },
+    {
+      "path": "fj-backend/fj-report/target/fj-report-1.0.0-SNAPSHOT.jar",
+      "size": 31232,
+      "mtimeMs": 1782961168845.3838
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalFlowType.java",
+      "size": 265,
+      "mtimeMs": 1782904406975.4346
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalFlowConfig.java",
+      "size": 1371,
+      "mtimeMs": 1782956872644.0933
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalStatus.java",
+      "size": 531,
+      "mtimeMs": 1782907195051.2336
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalTaskStatus.java",
+      "size": 442,
+      "mtimeMs": 1782907196500.2148
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalAction.java",
+      "size": 315,
+      "mtimeMs": 1782907197970.1958
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalInstance.java",
+      "size": 2055,
+      "mtimeMs": 1782956872049.1013
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalTask.java",
+      "size": 1816,
+      "mtimeMs": 1782956872310.098
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/entity/ApprovalRecord.java",
+      "size": 2716,
+      "mtimeMs": 1782907234865.718
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalFlowConfigRepository.java",
+      "size": 771,
+      "mtimeMs": 1782904414036.3428
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalInstanceRepository.java",
+      "size": 956,
+      "mtimeMs": 1782907241644.6301
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalTaskRepository.java",
+      "size": 853,
+      "mtimeMs": 1782907244406.5942
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/repository/ApprovalRecordRepository.java",
+      "size": 905,
+      "mtimeMs": 1782907247866.5496
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/service/ApprovalFlowConfigService.java",
+      "size": 3824,
+      "mtimeMs": 1782904425347.1958
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/service/ApprovalEngineService.java",
+      "size": 14128,
+      "mtimeMs": 1782907619403.7368
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/controller/ApprovalFlowConfigController.java",
+      "size": 2862,
+      "mtimeMs": 1782904431224.1194
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/controller/ApprovalController.java",
+      "size": 4727,
+      "mtimeMs": 1782907411626.4282
+    },
+    {
+      "path": "fj-backend/fj-approval/src/main/java/com/fj/approval/dto/ApprovalNodeConfig.java",
+      "size": 747,
+      "mtimeMs": 1782907354711.1655
+    },
+    {
+      "path": "fj-backend/fj-approval/pom.xml",
+      "size": 1359,
+      "mtimeMs": 1782907352312.1965
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalTaskStatus.class",
+      "size": 1191,
+      "mtimeMs": 1782961167003.4082
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalFlowConfig.class",
+      "size": 2288,
+      "mtimeMs": 1782961167010.4082
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalFlowType.class",
+      "size": 1125,
+      "mtimeMs": 1782961167012.4082
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalInstance.class",
+      "size": 3104,
+      "mtimeMs": 1782961167062.4075
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalTask.class",
+      "size": 2724,
+      "mtimeMs": 1782961167063.4075
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalRecord.class",
+      "size": 3227,
+      "mtimeMs": 1782961167065.4075
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalAction.class",
+      "size": 1106,
+      "mtimeMs": 1782961167066.4075
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/entity/ApprovalStatus.class",
+      "size": 1219,
+      "mtimeMs": 1782961167068.4075
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalFlowConfigRepository.class",
+      "size": 920,
+      "mtimeMs": 1782961167005.4082
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalInstanceRepository.class",
+      "size": 1105,
+      "mtimeMs": 1782961167077.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalTaskRepository.class",
+      "size": 885,
+      "mtimeMs": 1782961167079.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/repository/ApprovalRecordRepository.class",
+      "size": 625,
+      "mtimeMs": 1782961167080.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/controller/ApprovalController.class",
+      "size": 6038,
+      "mtimeMs": 1782961167021.408
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/controller/ApprovalFlowConfigController.class",
+      "size": 4774,
+      "mtimeMs": 1782961167085.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalEngineService$1.class",
+      "size": 830,
+      "mtimeMs": 1782961167057.4075
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalEngineService.class",
+      "size": 15558,
+      "mtimeMs": 1782961167060.4075
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/service/ApprovalFlowConfigService.class",
+      "size": 6014,
+      "mtimeMs": 1782961167075.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/classes/com/fj/approval/dto/ApprovalNodeConfig.class",
+      "size": 1979,
+      "mtimeMs": 1782961167082.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 1902,
+      "mtimeMs": 1782961166680.4126
+    },
+    {
+      "path": "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 919,
+      "mtimeMs": 1782961167087.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961167090.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961167091.4072
+    },
+    {
+      "path": "fj-backend/fj-approval/target/maven-archiver/pom.properties",
+      "size": 61,
+      "mtimeMs": 1782961167095.407
+    },
+    {
+      "path": "fj-backend/fj-approval/target/fj-approval-1.0.0-SNAPSHOT.jar",
+      "size": 27274,
+      "mtimeMs": 1782961167118.4067
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/entity/ExportFileType.java",
+      "size": 630,
+      "mtimeMs": 1782909100235.637
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/entity/ExportFile.java",
+      "size": 2517,
+      "mtimeMs": 1782956873430.0825
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/repository/ExportFileRepository.java",
+      "size": 702,
+      "mtimeMs": 1782909122971.3438
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/service/ExportService.java",
+      "size": 1668,
+      "mtimeMs": 1782909139738.1272
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/service/PoiTlExportEngine.java",
+      "size": 25390,
+      "mtimeMs": 1782959999974.934
+    },
+    {
+      "path": "fj-backend/fj-export/src/main/java/com/fj/export/controller/ExportController.java",
+      "size": 3177,
+      "mtimeMs": 1782909266593.4902
+    },
+    {
+      "path": "fj-backend/fj-export/pom.xml",
+      "size": 2006,
+      "mtimeMs": 1782909094164.7153
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/service/PoiTlExportEngine$RenderResult.class",
+      "size": 2362,
+      "mtimeMs": 1782961169295.378
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/service/PoiTlExportEngine.class",
+      "size": 25229,
+      "mtimeMs": 1782961169302.3777
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/service/ExportService.class",
+      "size": 260,
+      "mtimeMs": 1782961169302.3777
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/repository/ExportFileRepository.class",
+      "size": 700,
+      "mtimeMs": 1782961169304.3777
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/entity/ExportFile.class",
+      "size": 3358,
+      "mtimeMs": 1782961169306.3777
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/entity/ExportFileType.class",
+      "size": 1110,
+      "mtimeMs": 1782961169307.3777
+    },
+    {
+      "path": "fj-backend/fj-export/target/classes/com/fj/export/controller/ExportController.class",
+      "size": 3962,
+      "mtimeMs": 1782961169311.3777
+    },
+    {
+      "path": "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 622,
+      "mtimeMs": 1782961168937.3826
+    },
+    {
+      "path": "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 327,
+      "mtimeMs": 1782961169313.3777
+    },
+    {
+      "path": "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961169316.3774
+    },
+    {
+      "path": "fj-backend/fj-export/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961169317.3774
+    },
+    {
+      "path": "fj-backend/fj-export/target/maven-archiver/pom.properties",
+      "size": 59,
+      "mtimeMs": 1782961169321.3774
+    },
+    {
+      "path": "fj-backend/fj-export/target/fj-export-1.0.0-SNAPSHOT.jar",
+      "size": 19849,
+      "mtimeMs": 1782961169334.3772
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatchStatus.java",
+      "size": 317,
+      "mtimeMs": 1782905056199.995
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatch.java",
+      "size": 2200,
+      "mtimeMs": 1782956873899.0762
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/ClientSyncState.java",
+      "size": 1325,
+      "mtimeMs": 1782956874911.0623
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/repository/SyncBatchRepository.java",
+      "size": 667,
+      "mtimeMs": 1782905066824.857
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/repository/ClientSyncStateRepository.java",
+      "size": 639,
+      "mtimeMs": 1782905068626.8335
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncRecord.java",
+      "size": 652,
+      "mtimeMs": 1782905116784.207
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPushRequest.java",
+      "size": 948,
+      "mtimeMs": 1782905118360.1865
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPushResponse.java",
+      "size": 2180,
+      "mtimeMs": 1782905125070.0994
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/dto/SyncPullResponse.java",
+      "size": 822,
+      "mtimeMs": 1782905128253.0579
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/seq/ServerSeqAllocator.java",
+      "size": 3356,
+      "mtimeMs": 1782905146564.8198
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncChangeApplier.java",
+      "size": 1569,
+      "mtimeMs": 1782905153713.7268
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/DefaultSyncChangeApplier.java",
+      "size": 2036,
+      "mtimeMs": 1782905161856.6208
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPushService.java",
+      "size": 8543,
+      "mtimeMs": 1782905196033.1763
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncPullService.java",
+      "size": 2901,
+      "mtimeMs": 1782905203408.0803
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/service/SyncChangeProvider.java",
+      "size": 800,
+      "mtimeMs": 1782905206812.0361
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/controller/SyncController.java",
+      "size": 2638,
+      "mtimeMs": 1782905214286.939
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/FileAccessException.java",
+      "size": 479,
+      "mtimeMs": 1782905225450.7937
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/HmacUrlSigner.java",
+      "size": 3441,
+      "mtimeMs": 1782905235907.6577
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/PhotoStorageService.java",
+      "size": 8575,
+      "mtimeMs": 1782905270986.2014
+    },
+    {
+      "path": "fj-backend/fj-sync/src/main/java/com/fj/sync/photo/PhotoUploadController.java",
+      "size": 5417,
+      "mtimeMs": 1782905288444.9744
+    },
+    {
+      "path": "fj-backend/fj-sync/pom.xml",
+      "size": 1318,
+      "mtimeMs": 1782905053940.0244
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/repository/ClientSyncStateRepository.class",
+      "size": 693,
+      "mtimeMs": 1782961169768.3716
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/repository/SyncBatchRepository.class",
+      "size": 649,
+      "mtimeMs": 1782961169809.371
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/entity/ClientSyncState.class",
+      "size": 2290,
+      "mtimeMs": 1782961169770.3716
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/entity/SyncBatch.class",
+      "size": 3946,
+      "mtimeMs": 1782961169787.3713
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/entity/SyncBatchStatus.class",
+      "size": 1148,
+      "mtimeMs": 1782961169788.3713
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPullResponse.class",
+      "size": 3371,
+      "mtimeMs": 1782961169776.3713
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse$AcceptedRecord.class",
+      "size": 3311,
+      "mtimeMs": 1782961169797.371
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse$ConflictRecord.class",
+      "size": 4193,
+      "mtimeMs": 1782961169798.371
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushResponse.class",
+      "size": 5225,
+      "mtimeMs": 1782961169800.371
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncRecord.class",
+      "size": 3024,
+      "mtimeMs": 1782961169808.371
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/dto/SyncPushRequest.class",
+      "size": 4188,
+      "mtimeMs": 1782961169846.3706
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncPullService.class",
+      "size": 3513,
+      "mtimeMs": 1782961169781.3713
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeProvider.class",
+      "size": 360,
+      "mtimeMs": 1782961169784.3713
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/DefaultSyncChangeApplier.class",
+      "size": 3133,
+      "mtimeMs": 1782961169803.371
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeApplier$ApplyOutcome.class",
+      "size": 2305,
+      "mtimeMs": 1782961169804.371
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncChangeApplier.class",
+      "size": 562,
+      "mtimeMs": 1782961169805.371
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/service/SyncPushService.class",
+      "size": 10637,
+      "mtimeMs": 1782961169842.3706
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/seq/ServerSeqAllocator.class",
+      "size": 2692,
+      "mtimeMs": 1782961169784.3713
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/photo/FileAccessException.class",
+      "size": 630,
+      "mtimeMs": 1782961169785.3713
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/photo/PhotoStorageService.class",
+      "size": 10660,
+      "mtimeMs": 1782961169829.3708
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/photo/HmacUrlSigner.class",
+      "size": 4100,
+      "mtimeMs": 1782961169850.3704
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/photo/PhotoUploadController.class",
+      "size": 6120,
+      "mtimeMs": 1782961169866.37
+    },
+    {
+      "path": "fj-backend/fj-sync/target/classes/com/fj/sync/controller/SyncController.class",
+      "size": 4135,
+      "mtimeMs": 1782961169854.3704
+    },
+    {
+      "path": "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 1991,
+      "mtimeMs": 1782961169360.377
+    },
+    {
+      "path": "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 1016,
+      "mtimeMs": 1782961169868.37
+    },
+    {
+      "path": "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961169870.37
+    },
+    {
+      "path": "fj-backend/fj-sync/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961169871.37
+    },
+    {
+      "path": "fj-backend/fj-sync/target/maven-archiver/pom.properties",
+      "size": 57,
+      "mtimeMs": 1782961169876.37
+    },
+    {
+      "path": "fj-backend/fj-sync/target/fj-sync-1.0.0-SNAPSHOT.jar",
+      "size": 41763,
+      "mtimeMs": 1782961169890.3699
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardDocumentStatus.java",
+      "size": 302,
+      "mtimeMs": 1782904465611.6724
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardDocument.java",
+      "size": 1169,
+      "mtimeMs": 1782956875970.0479
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardClause.java",
+      "size": 1236,
+      "mtimeMs": 1782956876488.0408
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardIssueTemplate.java",
+      "size": 1057,
+      "mtimeMs": 1782956877887.0217
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardRecommendationResult.java",
+      "size": 1756,
+      "mtimeMs": 1782956878095.019
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardDocumentRepository.java",
+      "size": 472,
+      "mtimeMs": 1782904479292.4946
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardClauseRepository.java",
+      "size": 1198,
+      "mtimeMs": 1782904482908.4475
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardIssueTemplateRepository.java",
+      "size": 488,
+      "mtimeMs": 1782904484551.4263
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/repository/StandardRecommendationResultRepository.java",
+      "size": 934,
+      "mtimeMs": 1782905326196.4834
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/service/StandardLibraryService.java",
+      "size": 4711,
+      "mtimeMs": 1782904498180.2493
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/service/StandardRecommendationService.java",
+      "size": 11070,
+      "mtimeMs": 1782905358091.0686
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/controller/StandardLibraryController.java",
+      "size": 3787,
+      "mtimeMs": 1782904505745.151
+    },
+    {
+      "path": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/controller/RecommendationController.java",
+      "size": 3354,
+      "mtimeMs": 1782905366032.965
+    },
+    {
+      "path": "fj-backend/fj-recommend/pom.xml",
+      "size": 1208,
+      "mtimeMs": 1782905317353.5984
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardIssueTemplate.class",
+      "size": 1653,
+      "mtimeMs": 1782961170229.3655
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardRecommendationResult.class",
+      "size": 2250,
+      "mtimeMs": 1782961170267.365
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardClause.class",
+      "size": 2136,
+      "mtimeMs": 1782961170270.365
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardDocument.class",
+      "size": 2177,
+      "mtimeMs": 1782961170272.3647
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/entity/StandardDocumentStatus.class",
+      "size": 1226,
+      "mtimeMs": 1782961170275.3647
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/controller/RecommendationController.class",
+      "size": 4720,
+      "mtimeMs": 1782961170236.3652
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/controller/StandardLibraryController.class",
+      "size": 5356,
+      "mtimeMs": 1782961170280.3647
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardRecommendationService$ScoreAccumulator.class",
+      "size": 944,
+      "mtimeMs": 1782961170263.365
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardRecommendationService.class",
+      "size": 13942,
+      "mtimeMs": 1782961170266.365
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/service/StandardLibraryService.class",
+      "size": 6567,
+      "mtimeMs": 1782961170286.3647
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardClauseRepository.class",
+      "size": 1238,
+      "mtimeMs": 1782961170268.365
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardDocumentRepository.class",
+      "size": 628,
+      "mtimeMs": 1782961170271.3647
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardRecommendationResultRepository.class",
+      "size": 808,
+      "mtimeMs": 1782961170273.3647
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/classes/com/fj/recommend/repository/StandardIssueTemplateRepository.class",
+      "size": 639,
+      "mtimeMs": 1782961170276.3647
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 1555,
+      "mtimeMs": 1782961169907.3696
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 827,
+      "mtimeMs": 1782961170288.3647
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961170291.3645
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961170292.3645
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/maven-archiver/pom.properties",
+      "size": 62,
+      "mtimeMs": 1782961170295.3645
+    },
+    {
+      "path": "fj-backend/fj-recommend/target/fj-recommend-1.0.0-SNAPSHOT.jar",
+      "size": 21838,
+      "mtimeMs": 1782961170320.3643
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/java/com/fj/api/FjApplication.java",
+      "size": 1343,
+      "mtimeMs": 1782957504168.487
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/java/com/fj/api/config/WebMvcConfig.java",
+      "size": 593,
+      "mtimeMs": 1782902944183.4438
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/java/com/fj/api/config/CorsConfig.java",
+      "size": 1920,
+      "mtimeMs": 1782902950076.3672
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/application.yml",
+      "size": 2432,
+      "mtimeMs": 1782911033116.717
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/application-prod.yml",
+      "size": 1623,
+      "mtimeMs": 1782921317527.8306
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/.gitkeep",
+      "size": 0,
+      "mtimeMs": 1782902969809.1108
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V1__base_tables.sql",
+      "size": 9727,
+      "mtimeMs": 1782903010065.5876
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V2__seed_data.sql",
+      "size": 6426,
+      "mtimeMs": 1782903774761.6506
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V3__project_tables.sql",
+      "size": 13127,
+      "mtimeMs": 1782904220097.8633
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V4__task_tables.sql",
+      "size": 19741,
+      "mtimeMs": 1782904530440.8298
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V5__daily_report_tables.sql",
+      "size": 22624,
+      "mtimeMs": 1782905807612.2217
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V6__approval_tables.sql",
+      "size": 11028,
+      "mtimeMs": 1782907174486.5
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/db/migration/V7__report_tables.sql",
+      "size": 12351,
+      "mtimeMs": 1782908236609.7615
+    },
+    {
+      "path": "fj-backend/fj-api/src/main/resources/templates/report_default_v1.docx",
+      "size": 1117,
+      "mtimeMs": 1782959403169.9026
+    },
+    {
+      "path": "fj-backend/fj-api/pom.xml",
+      "size": 3574,
+      "mtimeMs": 1782961128406.9214
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/application.yml",
+      "size": 2432,
+      "mtimeMs": 1782961170373.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/application-prod.yml",
+      "size": 1623,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/.gitkeep",
+      "size": 0,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V1__base_tables.sql",
+      "size": 9727,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V2__seed_data.sql",
+      "size": 6426,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V3__project_tables.sql",
+      "size": 13127,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V4__task_tables.sql",
+      "size": 19741,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V5__daily_report_tables.sql",
+      "size": 22624,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V6__approval_tables.sql",
+      "size": 11028,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/db/migration/V7__report_tables.sql",
+      "size": 12351,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/templates/report_default_v1.docx",
+      "size": 1117,
+      "mtimeMs": 1782961170374.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/com/fj/api/config/WebMvcConfig.class",
+      "size": 468,
+      "mtimeMs": 1782961170600.3606
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/com/fj/api/config/CorsConfig.class",
+      "size": 3335,
+      "mtimeMs": 1782961170608.3604
+    },
+    {
+      "path": "fj-backend/fj-api/target/classes/com/fj/api/FjApplication.class",
+      "size": 1383,
+      "mtimeMs": 1782961170609.3604
+    },
+    {
+      "path": "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+      "size": 271,
+      "mtimeMs": 1782961170377.3635
+    },
+    {
+      "path": "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+      "size": 103,
+      "mtimeMs": 1782961170612.3604
+    },
+    {
+      "path": "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961170627.36
+    },
+    {
+      "path": "fj-backend/fj-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst",
+      "size": 0,
+      "mtimeMs": 1782961170627.36
+    },
+    {
+      "path": "fj-backend/fj-api/target/maven-archiver/pom.properties",
+      "size": 56,
+      "mtimeMs": 1782961170632.36
+    },
+    {
+      "path": "fj-backend/fj-api/target/fj-api-1.0.0-SNAPSHOT.jar",
+      "size": 35464,
+      "mtimeMs": 1782961170649.3599
+    },
+    {
+      "path": "fj-backend/fj-api/target/fj-api-1.0.0.jar",
+      "size": 81732875,
+      "mtimeMs": 1782961170975.3555
+    },
+    {
+      "path": "fj-backend/.mvn/wrapper/maven-wrapper.properties",
+      "size": 233,
+      "mtimeMs": 1782902735981.1504
+    },
+    {
+      "path": "fj-backend/pom.xml",
+      "size": 7589,
+      "mtimeMs": 1782901962248.2158
+    },
+    {
+      "path": "fj-web/package.json",
+      "size": 676,
+      "mtimeMs": 1782901919451.7727
+    },
+    {
+      "path": "fj-web/vite.config.ts",
+      "size": 567,
+      "mtimeMs": 1782901921792.7422
+    },
+    {
+      "path": "fj-web/tsconfig.json",
+      "size": 766,
+      "mtimeMs": 1782901924442.7078
+    },
+    {
+      "path": "fj-web/index.html",
+      "size": 314,
+      "mtimeMs": 1782901925733.691
+    },
+    {
+      "path": "fj-web/src/main.tsx",
+      "size": 530,
+      "mtimeMs": 1782901942874.468
+    },
+    {
+      "path": "fj-web/src/App.tsx",
+      "size": 100,
+      "mtimeMs": 1782901943413.461
+    },
+    {
+      "path": "fj-web/src/router/index.tsx",
+      "size": 2443,
+      "mtimeMs": 1782910511940.4307
+    },
+    {
+      "path": "fj-web/src/router/AuthGuard.tsx",
+      "size": 626,
+      "mtimeMs": 1782901948696.3923
+    },
+    {
+      "path": "fj-web/src/store/authStore.ts",
+      "size": 2539,
+      "mtimeMs": 1782910173395.7917
+    },
+    {
+      "path": "fj-web/src/api/client.ts",
+      "size": 2208,
+      "mtimeMs": 1782910146996.1316
+    },
+    {
+      "path": "fj-web/src/api/interceptors.ts",
+      "size": 3543,
+      "mtimeMs": 1782910302982.1223
+    },
+    {
+      "path": "fj-web/src/api/types.ts",
+      "size": 10871,
+      "mtimeMs": 1782910221151.1765
+    },
+    {
+      "path": "fj-web/src/api/reportConfirmApi.ts",
+      "size": 2637,
+      "mtimeMs": 1782908582620.3054
+    },
+    {
+      "path": "fj-web/src/api/issueApi.ts",
+      "size": 1495,
+      "mtimeMs": 1782908587368.2444
+    },
+    {
+      "path": "fj-web/src/api/reportApi.ts",
+      "size": 4164,
+      "mtimeMs": 1782910229692.0664
+    },
+    {
+      "path": "fj-web/src/api/systemApi.ts",
+      "size": 4111,
+      "mtimeMs": 1782910242986.8953
+    },
+    {
+      "path": "fj-web/src/shared/DataTable.tsx",
+      "size": 1543,
+      "mtimeMs": 1782909719557.645
+    },
+    {
+      "path": "fj-web/src/shared/PermissionDirective.tsx",
+      "size": 1222,
+      "mtimeMs": 1782902009810.5972
+    },
+    {
+      "path": "fj-web/src/shared/Layout.tsx",
+      "size": 4611,
+      "mtimeMs": 1782910676637.309
+    },
+    {
+      "path": "fj-web/src/shared/dateUtils.ts",
+      "size": 1723,
+      "mtimeMs": 1782908571697.4463
+    },
+    {
+      "path": "fj-web/src/auth/LoginPage.tsx",
+      "size": 3473,
+      "mtimeMs": 1782910220927.1794
+    },
+    {
+      "path": "fj-web/src/report-confirm/IssueActionButtons.tsx",
+      "size": 5925,
+      "mtimeMs": 1782909720290.6355
+    },
+    {
+      "path": "fj-web/src/report-confirm/DailyReportDetailPanel.tsx",
+      "size": 6345,
+      "mtimeMs": 1782909806225.5266
+    },
+    {
+      "path": "fj-web/src/report-confirm/IssueReviewPanel.tsx",
+      "size": 7145,
+      "mtimeMs": 1782909721015.6262
+    },
+    {
+      "path": "fj-web/src/report-confirm/DailyReportConfirmPage.tsx",
+      "size": 8114,
+      "mtimeMs": 1782909810896.4663
+    },
+    {
+      "path": "fj-web/src/issue-pool/IssueDetailDrawer.tsx",
+      "size": 4524,
+      "mtimeMs": 1782909772835.9573
+    },
+    {
+      "path": "fj-web/src/issue-pool/IssuePoolPage.tsx",
+      "size": 8740,
+      "mtimeMs": 1782909721635.6182
+    },
+    {
+      "path": "fj-web/src/issue-pool/MyIssuesPage.tsx",
+      "size": 6738,
+      "mtimeMs": 1782909722379.6084
+    },
+    {
+      "path": "fj-web/src/report/IssueSelectionPanel.tsx",
+      "size": 5348,
+      "mtimeMs": 1782910269705.551
+    },
+    {
+      "path": "fj-web/src/report/ReportWorkspacePage.tsx",
+      "size": 8654,
+      "mtimeMs": 1782910298629.1785
+    },
+    {
+      "path": "fj-web/src/report/SnapshotComparisonView.tsx",
+      "size": 2976,
+      "mtimeMs": 1782910678209.2888
+    },
+    {
+      "path": "fj-web/src/report/ReportSnapshotEditorPage.tsx",
+      "size": 8246,
+      "mtimeMs": 1782910331767.7515
+    },
+    {
+      "path": "fj-web/src/approval/ApprovalHistoryPanel.tsx",
+      "size": 1448,
+      "mtimeMs": 1782910341679.6238
+    },
+    {
+      "path": "fj-web/src/approval/ReportApprovalPage.tsx",
+      "size": 7112,
+      "mtimeMs": 1782910368855.2737
+    },
+    {
+      "path": "fj-web/src/approval/PublishedReportPage.tsx",
+      "size": 5444,
+      "mtimeMs": 1782910695956.0603
+    },
+    {
+      "path": "fj-web/src/system/UserManagementPage.tsx",
+      "size": 6591,
+      "mtimeMs": 1782910676751.3076
+    },
+    {
+      "path": "fj-web/src/system/OrganizationManagementPage.tsx",
+      "size": 5806,
+      "mtimeMs": 1782910706002.931
+    },
+    {
+      "path": "fj-web/src/system/RolePermissionPage.tsx",
+      "size": 8191,
+      "mtimeMs": 1782910467152.0076
+    },
+    {
+      "path": "fj-web/src/system/rolePermissions.ts",
+      "size": 235,
+      "mtimeMs": 1782910476571.8862
+    },
+    {
+      "path": "fj-web/src/system/DictionaryManagementPage.tsx",
+      "size": 6371,
+      "mtimeMs": 1782910495444.643
+    },
+    {
+      "path": "fj-web/package-lock.json",
+      "size": 109284,
+      "mtimeMs": 1782902115105.2273
+    },
+    {
+      "path": "fj-android/package.json",
+      "size": 1322,
+      "mtimeMs": 1782958636786.1692
+    },
+    {
+      "path": "fj-android/app.json",
+      "size": 194,
+      "mtimeMs": 1782901941616.4844
+    },
+    {
+      "path": "fj-android/tsconfig.json",
+      "size": 1154,
+      "mtimeMs": 1782902846298.7158
+    },
+    {
+      "path": "fj-android/babel.config.js",
+      "size": 780,
+      "mtimeMs": 1782901968748.1313
+    },
+    {
+      "path": "fj-android/src/store/schema.ts",
+      "size": 12899,
+      "mtimeMs": 1782921332336.635
+    },
+    {
+      "path": "fj-android/src/store/models/DailyReportModel.ts",
+      "size": 4150,
+      "mtimeMs": 1782902981990.9526
+    },
+    {
+      "path": "fj-android/src/store/models/DailyReportIssueModel.ts",
+      "size": 3879,
+      "mtimeMs": 1782902973753.0596
+    },
+    {
+      "path": "fj-android/src/store/models/PhotoModel.ts",
+      "size": 4886,
+      "mtimeMs": 1782902969979.1086
+    },
+    {
+      "path": "fj-android/src/store/models/InspectionTaskModel.ts",
+      "size": 2701,
+      "mtimeMs": 1782902969370.1167
+    },
+    {
+      "path": "fj-android/src/store/migrations/index.ts",
+      "size": 9726,
+      "mtimeMs": 1782902968771.1243
+    },
+    {
+      "path": "fj-android/src/store/database.ts",
+      "size": 7559,
+      "mtimeMs": 1782902307882.7195
+    },
+    {
+      "path": "fj-android/src/navigation/AppNavigator.tsx",
+      "size": 3909,
+      "mtimeMs": 1782902342310.2717
+    },
+    {
+      "path": "fj-android/src/api/ApiClient.ts",
+      "size": 12960,
+      "mtimeMs": 1782905287343.9888
+    },
+    {
+      "path": "fj-android/src/api/ClientSyncStateManager.ts",
+      "size": 5404,
+      "mtimeMs": 1782904749920.9775
+    },
+    {
+      "path": "fj-android/src/api/SyncEngine.ts",
+      "size": 17488,
+      "mtimeMs": 1782905253558.4282
+    },
+    {
+      "path": "fj-android/src/api/PhotoUploadQueue.ts",
+      "size": 14266,
+      "mtimeMs": 1782905138524.9243
+    },
+    {
+      "path": "fj-android/src/api/NetworkMonitor.ts",
+      "size": 8037,
+      "mtimeMs": 1782905265408.274
+    },
+    {
+      "path": "fj-android/src/di/SyncEnginePort.tsx",
+      "size": 2378,
+      "mtimeMs": 1782905984158.9292
+    },
+    {
+      "path": "fj-android/src/screens/today/TodayInspectionScreen.tsx",
+      "size": 6241,
+      "mtimeMs": 1782906012821.5576
+    },
+    {
+      "path": "fj-android/src/screens/today/TaskCard.tsx",
+      "size": 3618,
+      "mtimeMs": 1782906031631.3137
+    },
+    {
+      "path": "fj-android/src/screens/inspection/TaskDetailScreen.tsx",
+      "size": 7143,
+      "mtimeMs": 1782906054121.0222
+    },
+    {
+      "path": "fj-android/src/screens/inspection/InspectionInProgressScreen.tsx",
+      "size": 9897,
+      "mtimeMs": 1782906091920.532
+    },
+    {
+      "path": "fj-android/src/screens/inspection/IssueCreateButton.tsx",
+      "size": 1963,
+      "mtimeMs": 1782906109002.3105
+    },
+    {
+      "path": "fj-android/src/screens/inspection/IssueEvidenceScreen.tsx",
+      "size": 27762,
+      "mtimeMs": 1782907094850.5315
+    },
+    {
+      "path": "fj-android/src/screens/issue-basket/IssueBasketScreen.tsx",
+      "size": 13364,
+      "mtimeMs": 1782907308520.764
+    },
+    {
+      "path": "fj-android/src/screens/submit/SubmitReportScreen.tsx",
+      "size": 16559,
+      "mtimeMs": 1782907396672.622
+    },
+    {
+      "path": "fj-android/src/components/photo/WatermarkOverlay.tsx",
+      "size": 3987,
+      "mtimeMs": 1782906985529.9478
+    },
+    {
+      "path": "fj-android/src/components/photo/PhotoCapture.tsx",
+      "size": 8823,
+      "mtimeMs": 1782906813281.1802
+    },
+    {
+      "path": "fj-android/src/components/photo/PhotoCompressor.tsx",
+      "size": 6922,
+      "mtimeMs": 1782906836610.8777
+    },
+    {
+      "path": "fj-android/package-lock.json",
+      "size": 315338,
+      "mtimeMs": 1782958730755.9058
+    }
+  ]
+}

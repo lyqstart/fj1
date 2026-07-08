@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0033",
+  "status": "created",
+  "workflow_type": "quick_change",
+  "workflow_path": "code_only_fast_path",
+  "title": "Work Item WI-0033",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-06T16:56:20.998Z",
+  "updated_at": "2026-07-06T17:16:21.727Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-android/src/utils/LogPersistence.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/utils/LogPersistence.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/utils/LogPersistence.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/utils/LogPersistence.ts",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-06T16:57:57.536Z",
+      "mode": "release",
+      "incoming_count": 4,
+      "previous_count": 0,
+      "total_count": 4
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-06T17:16:11.750Z"
+}

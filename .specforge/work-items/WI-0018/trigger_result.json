@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0018",
+  "trigger_date": "2026-07-05T08:35:00Z",
+  "intent": "infrastructure_activation",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "decision_reason": "激活照片上传队列骨架，降级模式（不解除原生模块屏蔽）。",
+  "selected_path": "requirement_change_path",
+  "unknowns": [],
+  "predecessor_wi": "WI-0017",
+  "successor_wi": "WI-0019",
+  "status": "triggered"
+}

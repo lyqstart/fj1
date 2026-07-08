@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0031",
+  "generated_at": "2026-07-06T11:15:00Z",
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "command_output",
+      "description": "grep confirms ERROR flush + 5000ms interval, no 30000残留",
+      "command": "grep -n '5000|LogLevel.ERROR|30000' Logger.ts",
+      "result": "pass",
+      "details": {
+        "output": "167: }, 5000); [Change 2]; 209: if (level === LogLevel.ERROR) { [Change 1]; no 30000 matches"
+      }
+    },
+    {
+      "id": "EV-002",
+      "type": "audit",
+      "description": "Changed files audit passed",
+      "command": "sf_changed_files_audit",
+      "result": "pass",
+      "details": {
+        "total_files": 1,
+        "in_scope": 1,
+        "out_of_scope": 0,
+        "blocked_write_attempts": 0
+      }
+    },
+    {
+      "id": "EV-003",
+      "type": "build_output",
+      "description": "Docker Release APK build success",
+      "command": "docker run fj-builder assembleRelease",
+      "result": "pass",
+      "details": {
+        "artifact": "app-release.apk",
+        "size_bytes": 59712937
+      }
+    }
+  ]
+}

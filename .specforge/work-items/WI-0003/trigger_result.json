@@ -1,0 +1,11 @@
+{
+  "work_item_id": "WI-0003",
+  "workflow_type": "ops_task",
+  "workflow_path": "task_change_path",
+  "trigger_reason": "生产服务器首次部署运维任务，含破坏性操作（PG13→16）",
+  "complexity": "high",
+  "unknowns": [],
+  "decision_basis": "用户明确要求部署 + 5项决策(D1-D5)已确认 + 服务器现状已探测",
+  "schema_version": "1.1",
+  "status": "triggered"
+}

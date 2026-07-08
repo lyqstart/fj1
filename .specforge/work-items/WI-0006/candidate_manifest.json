@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0006",
+  "workflow_type": "investigation",
+  "workflow_path": "requirement_change_path",
+  "generated_at": "2026-07-03T18:14:00Z",
+  "candidates": [
+    {
+      "type": "requirements",
+      "path": "candidates/project/modules/core/requirements.candidate.md",
+      "absolute_path": ".specforge/work-items/WI-0006/candidates/project/modules/core/requirements.candidate.md",
+      "size_bytes": 1800,
+      "lint_passed": true,
+      "note": "investigation_plan (调查目标/范围/方法/预期产出)",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "module_id": "core"
+    }
+  ],
+  "preflight_verified": {
+    "requirements_exists": true,
+    "manifest_paths_match_actual": true
+  },
+  "entries": [
+    {
+      "candidate_path": "candidates/project/modules/core/requirements.candidate.md",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "operation": "replace",
+      "type": "requirements",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    }
+  ]
+}

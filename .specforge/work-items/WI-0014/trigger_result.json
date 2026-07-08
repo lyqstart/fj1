@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0014",
+  "trigger_date": "2026-07-05T06:13:00Z",
+  "intent": "new_feature",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "decision_reason": "新增构建配置能力（Release签名+ProGuard），属于生产化必要步骤。需要需求分析确定ProGuard规则覆盖面。",
+  "selected_path": "requirement_change_path",
+  "unknowns": [],
+  "predecessor_wi": "WI-0013",
+  "successor_wi": "WI-0015",
+  "status": "triggered"
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0030",
+  "generated_at": "2026-07-06T10:45:00Z",
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "command_output",
+      "description": "grep LOG_DIR confirms /opt/fj1/ path",
+      "command": "grep LOG_DIR AppLogService.java",
+      "result": "pass",
+      "details": {
+        "output": "private static final String LOG_DIR = \"/opt/fj1/api/logs/app-logs\";"
+      }
+    },
+    {
+      "id": "EV-002",
+      "type": "compilation",
+      "description": "Maven package build success",
+      "command": "mvn clean package -DskipTests",
+      "result": "pass",
+      "details": {
+        "exit_code": 0,
+        "artifact": "fj-api-1.0.0.jar",
+        "size_bytes": 81745295
+      }
+    },
+    {
+      "id": "EV-003",
+      "type": "deploy_output",
+      "description": "Service active on port 8080 after restart",
+      "command": "systemctl is-active fj1-api && ss -tlnp | grep 8080",
+      "result": "pass",
+      "details": {
+        "status": "active",
+        "port": "8080",
+        "pid": 3288733
+      }
+    },
+    {
+      "id": "EV-004",
+      "type": "api_response",
+      "description": "POST /api/v1/logs/batch returns 200",
+      "command": "curl -X POST http://129.211.5.240/api/v1/logs/batch",
+      "result": "pass",
+      "details": {
+        "http_status": 200,
+        "response": "{\"code\":0,\"message\":\"ok\",\"success\":true}"
+      }
+    },
+    {
+      "id": "EV-005",
+      "type": "file_content",
+      "description": "Log entry written to correct path /opt/fj1/api/logs/app-logs/",
+      "command": "cat /opt/fj1/api/logs/app-logs/app-2026-07-06.log",
+      "result": "pass",
+      "details": {
+        "content": "2026-07-06T19:00:00Z [INFO] [DEPLOY_TEST] WI-0030 deploy verify - log endpoint test"
+      }
+    }
+  ]
+}

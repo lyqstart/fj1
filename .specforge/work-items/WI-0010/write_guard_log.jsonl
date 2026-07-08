@@ -1,0 +1,1 @@
+{"timestamp":"2026-07-04T15:57:47.929Z","path":"--cached","operation":"delete","actor":"agent","allowed":false,"violations":["file+operation not in allowed_write_files: --cached (delete)"],"tool":"sf_safe_bash","command":"git ls-files '*/target/*' | xargs git rm --cached -q && echo \"RM_CACHED_DONE\""}

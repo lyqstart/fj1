@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0016",
+  "trigger_date": "2026-07-05T08:03:50Z",
+  "intent": "new_feature",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "decision_reason": "激活今日检查屏幕是用户可见功能新增，需要需求分析确认集成范围和导航结构。",
+  "selected_path": "requirement_change_path",
+  "unknowns": [],
+  "predecessor_wi": "WI-0015",
+  "successor_wi": "WI-0017",
+  "status": "triggered"
+}

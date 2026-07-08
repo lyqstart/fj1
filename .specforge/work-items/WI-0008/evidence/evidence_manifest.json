@@ -1,0 +1,119 @@
+{
+  "work_item_id": "WI-0008",
+  "schema_version": "1.1",
+  "evidence_collected_at": "2026-07-04T12:35:00.000Z",
+  "total_evidence": 10,
+  "ac_coverage": {
+    "AC-1": [
+      "EA-1"
+    ],
+    "AC-2": [
+      "EA-2"
+    ],
+    "AC-3": [
+      "EA-3"
+    ],
+    "AC-4": [
+      "EA-4"
+    ],
+    "AC-5": [
+      "EA-5"
+    ],
+    "AC-6": [
+      "EA-6"
+    ],
+    "AC-7": [
+      "EA-7"
+    ],
+    "AC-8": [
+      "EA-8"
+    ],
+    "AC-9": [
+      "EA-9",
+      "EA-10"
+    ]
+  },
+  "entries": [
+    {
+      "evidence_id": "EA-1",
+      "type": "build_log",
+      "description": "mvn clean package BUILD SUCCESS, 13 modules, jar 81736099 bytes",
+      "ac_refs": [
+        "AC-1"
+      ]
+    },
+    {
+      "evidence_id": "EA-2",
+      "type": "command_output",
+      "description": "jar 内 SQL 文件计数=9, V9 存在",
+      "ac_refs": [
+        "AC-2"
+      ]
+    },
+    {
+      "evidence_id": "EA-3",
+      "type": "command_output",
+      "description": "SyncBatchStatus.class strings 含 RECEIVED 不含 PROCESSING",
+      "ac_refs": [
+        "AC-3"
+      ]
+    },
+    {
+      "evidence_id": "EA-4",
+      "type": "command_output",
+      "description": "ls -la: 新 jar fj1:fj1 644, .bak.WI0008 存在",
+      "ac_refs": [
+        "AC-4"
+      ]
+    },
+    {
+      "evidence_id": "EA-5",
+      "type": "service_status",
+      "description": "systemctl is-active fj1-api = active, Started in 10.663s",
+      "ac_refs": [
+        "AC-5"
+      ]
+    },
+    {
+      "evidence_id": "EA-6",
+      "type": "db_query",
+      "description": "flyway_schema_history: 9 | fix enum check constraints | t",
+      "ac_refs": [
+        "AC-6"
+      ]
+    },
+    {
+      "evidence_id": "EA-7",
+      "type": "db_query",
+      "description": "chk_pi_status CHECK 含 8 值 (VALID,PENDING_CONFIRM,RECTIFIED,CLOSED,OVERDUE,SUSPENDED,VOIDED,CORRECTED)",
+      "ac_refs": [
+        "AC-7"
+      ]
+    },
+    {
+      "evidence_id": "EA-8",
+      "type": "db_query",
+      "description": "standard_library_version character_maximum_length = 64",
+      "ac_refs": [
+        "AC-8"
+      ]
+    },
+    {
+      "evidence_id": "EA-9",
+      "type": "log_check",
+      "description": "journalctl 无 FATAL/FlywayException/InvalidConfigDataPropertyException, profile prod 正常激活",
+      "ac_refs": [
+        "AC-9"
+      ]
+    },
+    {
+      "evidence_id": "EA-10",
+      "type": "regression_proof",
+      "description": "AC-WI0009: jar 内 application-prod.yml 不含 spring.profiles.active (第一次部署失败根因已消除)",
+      "ac_refs": [
+        "AC-9",
+        "WI-0009"
+      ]
+    }
+  ]
+}

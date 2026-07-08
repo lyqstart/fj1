@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0022",
+  "collected_by": "sf-verifier",
+  "collected_at": "2026-07-05T15:25:00Z",
+  "entries": [
+    {
+      "evidence_id": "EA-001",
+      "type": "command_output",
+      "description": "Full Docker assembleRelease build log proving BUILD SUCCESSFUL, 276 actionable tasks executed, and EXIT_CODE=0. Independently re-verified by sf-verifier via grep + read on lines 700-703.",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:25:00Z",
+      "location": "fj-android/build-wi22.log",
+      "verification_method": "read lines 690-703 of build-wi22.log; grep for BUILD SUCCESSFUL|BUILD FAILED|EXIT_CODE",
+      "raw_facts": {
+        "build_successful_line": 701,
+        "build_successful_text": "BUILD SUCCESSFUL in 4m 17s",
+        "actionable_tasks_line": 702,
+        "actionable_tasks_text": "276 actionable tasks: 276 executed",
+        "exit_code_line": 703,
+        "exit_code_text": "EXIT_CODE=0",
+        "total_log_lines": 703
+      },
+      "related_refs": {
+        "req_ids": [
+          "REQ-0022-1"
+        ],
+        "ac_ids": [
+          "AC-1"
+        ],
+        "task_ids": [
+          "TASK-0022-1"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-002",
+      "type": "command_output",
+      "description": "R8 minification + resource shrinking pipeline evidence. Proves :app:minifyReleaseWithR8, :app:shrinkReleaseRes, :app:optimizeReleaseResources, :app:packageRelease, and :app:assembleRelease all executed without failure as part of the release build.",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:25:00Z",
+      "location": "fj-android/build-wi22.log",
+      "verification_method": "grep_search for minifyReleaseWithR8|shrinkReleaseRes|optimizeReleaseResources|packageRelease|assembleRelease",
+      "raw_facts": {
+        "minifyReleaseWithR8_line": 693,
+        "shrinkReleaseRes_line": 695,
+        "optimizeReleaseResources_line": 696,
+        "packageRelease_line": 697,
+        "assembleRelease_line": 699,
+        "build_failed_present": false
+      },
+      "related_refs": {
+        "req_ids": [
+          "REQ-0022-2"
+        ],
+        "ac_ids": [
+          "AC-2"
+        ],
+        "task_ids": [
+          "TASK-0022-1"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-003",
+      "type": "file_snapshot",
+      "description": "Release APK artifact existence and size verification. Verified via ls -la on the actual file on disk (not from memory).",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T15:25:00Z",
+      "location": "fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "verification_method": "sf_safe_bash: ls -la on APK path",
+      "raw_facts": {
+        "size_bytes": 56204971,
+        "size_mb_approx": 53.6,
+        "reported_size_mb": 54,
+        "mtime": "2026-07-05 23:09",
+        "permissions": "-rw-r--r--",
+        "owner": "root:root"
+      },
+      "related_refs": {
+        "req_ids": [
+          "REQ-0022-3"
+        ],
+        "ac_ids": [
+          "AC-3"
+        ],
+        "task_ids": [
+          "TASK-0022-1"
+        ]
+      }
+    }
+  ]
+}

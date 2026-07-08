@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0035",
+  "workflow_path": "requirement_change_path",
+  "workflow_type": "investigation",
+  "base_spec_version": "PSV-0015",
+  "candidates": [
+    {
+      "type": "requirements",
+      "path": "candidates/project/modules/core/requirements.candidate.md",
+      "lint_passed": true,
+      "description": "investigation_plan: 调查目标/范围/方法/产出格式",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "module_id": "core"
+    },
+    {
+      "type": "design",
+      "path": "candidates/project/modules/core/design.candidate.md",
+      "lint_passed": true,
+      "description": "findings_report: 审查矩阵/差距清单/建议",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "module_id": "core"
+    },
+    {
+      "type": "tasks",
+      "path": "candidates/tasks.md",
+      "lint_passed": true,
+      "description": "审查任务清单"
+    },
+    {
+      "type": "trace_delta",
+      "path": "candidates/trace_delta.md",
+      "lint_passed": true,
+      "description": "追溯链 OUT→REQ→AC→DD→TASK→EV"
+    }
+  ],
+  "project_integration_effect": "candidate_knowledge",
+  "no_project_change": true,
+  "entries": [
+    {
+      "candidate_path": "candidates/project/modules/core/requirements.candidate.md",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "operation": "replace",
+      "type": "requirements",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/project/modules/core/design.candidate.md",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "operation": "replace",
+      "type": "design",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/trace_delta.md",
+      "target_path": ".specforge/project/trace_matrix.md",
+      "operation": "replace",
+      "type": "trace_delta",
+      "inferred": false,
+      "normalized": true
+    }
+  ]
+}

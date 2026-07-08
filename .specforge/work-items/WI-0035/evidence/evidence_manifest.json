@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0035",
+  "entries": [
+    {
+      "id": "EV-W35-1",
+      "task_ref": "TASK-W35-1",
+      "evidence_type": "document_analysis",
+      "description": "需求文档 9192 行结构化提取，120+ 需求点",
+      "source": "doc/飞检现场管理系统_业务逻辑定稿_v1.14_最终干净版_开发输入.md",
+      "status": "pass",
+      "level": "L4"
+    },
+    {
+      "id": "EV-W35-2",
+      "task_ref": "TASK-W35-2",
+      "evidence_type": "code_audit",
+      "description": "33 个安卓源文件逐个阅读审计",
+      "source": "fj-android/src/**/*.tsx, *.ts",
+      "status": "pass",
+      "level": "L4"
+    },
+    {
+      "id": "EV-W35-3",
+      "task_ref": "TASK-W35-3",
+      "evidence_type": "comparison_matrix",
+      "description": "68 项需求点逐条对比矩阵（✅/⚠️/❌ + 代码证据）",
+      "source": "design.md",
+      "status": "pass",
+      "level": "L4"
+    },
+    {
+      "id": "EV-W35-4",
+      "task_ref": "TASK-W35-4",
+      "evidence_type": "gap_analysis",
+      "description": "10 项重大差距按 P0/P1/P2 优先级排序",
+      "source": "design.md",
+      "status": "pass",
+      "level": "L4"
+    },
+    {
+      "id": "EV-W35-5",
+      "task_ref": "TASK-W35-4",
+      "evidence_type": "user_confirmation",
+      "description": "用户确认接受审查报告",
+      "source": "user decision UD-WI-0035-1783473629024",
+      "status": "pass",
+      "level": "L5"
+    }
+  ]
+}

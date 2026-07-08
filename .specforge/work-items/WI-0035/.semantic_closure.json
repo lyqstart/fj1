@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0035",
+  "outcomes": [
+    {
+      "id": "OUT-W35-1",
+      "requirement_refs": [
+        "REQ-W35-1",
+        "REQ-W35-2"
+      ],
+      "required_evidence_refs": [
+        "EV-W35-1",
+        "EV-W35-2",
+        "EV-W35-3",
+        "EV-W35-4"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ-W35-1",
+      "type": "MUST",
+      "outcome_refs": [
+        "OUT-W35-1"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "task_refs": [
+        "TASK-W35-1",
+        "TASK-W35-2",
+        "TASK-W35-3"
+      ],
+      "required_evidence_refs": [
+        "EV-W35-1",
+        "EV-W35-2",
+        "EV-W35-3"
+      ]
+    },
+    {
+      "id": "REQ-W35-2",
+      "type": "MUST",
+      "outcome_refs": [
+        "OUT-W35-1"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "task_refs": [
+        "TASK-W35-4"
+      ],
+      "required_evidence_refs": [
+        "EV-W35-4"
+      ]
+    }
+  ],
+  "design_decisions": [
+    {
+      "id": "DD-W35-1",
+      "requirement_refs": [
+        "REQ-W35-1",
+        "REQ-W35-2"
+      ],
+      "task_refs": [
+        "TASK-W35-1",
+        "TASK-W35-2",
+        "TASK-W35-3",
+        "TASK-W35-4"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-W35-1",
+      "requirement_refs": [
+        "REQ-W35-1"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "evidence_refs": [
+        "EV-W35-1"
+      ]
+    },
+    {
+      "id": "TASK-W35-2",
+      "requirement_refs": [
+        "REQ-W35-1"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "evidence_refs": [
+        "EV-W35-2"
+      ]
+    },
+    {
+      "id": "TASK-W35-3",
+      "requirement_refs": [
+        "REQ-W35-1"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "evidence_refs": [
+        "EV-W35-3"
+      ]
+    },
+    {
+      "id": "TASK-W35-4",
+      "requirement_refs": [
+        "REQ-W35-2"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "evidence_refs": [
+        "EV-W35-4"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-W35-1",
+      "status": "pass",
+      "level": "L4",
+      "evidence_type": "document_analysis",
+      "supports": [
+        "OUT-W35-1",
+        "REQ-W35-1",
+        "DD-W35-1",
+        "TASK-W35-1"
+      ],
+      "outcome_refs": [
+        "OUT-W35-1"
+      ],
+      "requirement_refs": [
+        "REQ-W35-1"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "task_refs": [
+        "TASK-W35-1"
+      ]
+    },
+    {
+      "id": "EV-W35-2",
+      "status": "pass",
+      "level": "L4",
+      "evidence_type": "code_audit",
+      "supports": [
+        "OUT-W35-1",
+        "REQ-W35-1",
+        "DD-W35-1",
+        "TASK-W35-2"
+      ],
+      "outcome_refs": [
+        "OUT-W35-1"
+      ],
+      "requirement_refs": [
+        "REQ-W35-1"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "task_refs": [
+        "TASK-W35-2"
+      ]
+    },
+    {
+      "id": "EV-W35-3",
+      "status": "pass",
+      "level": "L4",
+      "evidence_type": "comparison_matrix",
+      "supports": [
+        "OUT-W35-1",
+        "REQ-W35-1",
+        "DD-W35-1",
+        "TASK-W35-3"
+      ],
+      "outcome_refs": [
+        "OUT-W35-1"
+      ],
+      "requirement_refs": [
+        "REQ-W35-1"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "task_refs": [
+        "TASK-W35-3"
+      ]
+    },
+    {
+      "id": "EV-W35-4",
+      "status": "pass",
+      "level": "L4",
+      "evidence_type": "gap_analysis",
+      "supports": [
+        "OUT-W35-1",
+        "REQ-W35-2",
+        "DD-W35-1",
+        "TASK-W35-4"
+      ],
+      "outcome_refs": [
+        "OUT-W35-1"
+      ],
+      "requirement_refs": [
+        "REQ-W35-2"
+      ],
+      "design_refs": [
+        "DD-W35-1"
+      ],
+      "task_refs": [
+        "TASK-W35-4"
+      ]
+    }
+  ],
+  "project_integration": {
+    "status": "merged"
+  }
+}

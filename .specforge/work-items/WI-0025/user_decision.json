@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "UD-WI-0025-1783272387384",
+  "work_item_id": "WI-0025",
+  "workflow_path": "requirement_change_path",
+  "base_spec_version": "PSV-0001",
+  "candidate_manifest_path": "candidate_manifest.json",
+  "manifest_hash": "sha256:db926fbc6d2a3d62307879dbb4f734cbdcd7a2da773e2681e2550428547112f8",
+  "candidate_hash": "sha256:ecc93f9eb45f6c66572d62c0b7289c3b25d3c44c13294ea34575afe5ff93af6f",
+  "gate_summary_path": "gate_summary.md",
+  "gate_summary_hash": "sha256:aa2141b5911bd1e67159ea5515a960c2ca05a578c44a9eb1bbff9b68c1f9c5e6",
+  "decision_status": "approved",
+  "decision_type": "user_approved",
+  "decided_by": "user",
+  "decided_at": "2026-07-05T17:26:27.384Z",
+  "decision_scope": "full",
+  "waivers": [],
+  "recorded_by": "sf-orchestrator",
+  "recorder_role": "user_decision_recorder",
+  "recorded_at": "2026-07-05T17:26:27.385Z",
+  "user_response_quote": "安卓手机运行报错如下：Unable to load script"
+}

@@ -30,7 +30,7 @@ public class StandardRecommendationResult extends BaseEntity {
     private Long projectId;
 
     /** 关联问题 ID（V5/V6 问题表建立后外键；此处为跨模块 Long） */
-    @Column(name = "issue_id")
+    @Column(name = "issue_id", nullable = false)
     private Long issueId;
 
     /** 命中的标准条款 ID（StandardClause） */

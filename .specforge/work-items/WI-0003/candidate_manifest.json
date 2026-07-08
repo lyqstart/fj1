@@ -1,0 +1,46 @@
+{
+  "work_item_id": "WI-0003",
+  "workflow_path": "task_change_path",
+  "candidates": [
+    {
+      "type": "design",
+      "path": "candidates/project/modules/core/design.candidate.md",
+      "lint_passed": true,
+      "description": "ops_plan.md — 28 steps, 9 phases (A-I), complete rollback plans, naming change fj→fj1 mapping",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "module_id": "core"
+    },
+    {
+      "type": "tasks",
+      "path": "candidates/tasks.md",
+      "lint_passed": true,
+      "description": "28 tasks derived from ops_plan, serial execution, 22 user-confirmation required"
+    },
+    {
+      "type": "trace_delta",
+      "path": "candidates/trace_delta.md",
+      "lint_passed": true,
+      "description": "trace matrix: 28 ops steps → 28 tasks → 38 server target files/processes/services"
+    }
+  ],
+  "schema_version": "1.1",
+  "entries": [
+    {
+      "candidate_path": "candidates/project/modules/core/design.candidate.md",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "operation": "replace",
+      "type": "design",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/trace_delta.md",
+      "target_path": ".specforge/project/trace_matrix.md",
+      "operation": "replace",
+      "type": "trace_delta",
+      "inferred": false,
+      "normalized": true
+    }
+  ]
+}

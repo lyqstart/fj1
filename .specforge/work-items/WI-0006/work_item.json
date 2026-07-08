@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0006",
+  "status": "created",
+  "workflow_type": "investigation",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0006",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-03T18:07:06.435Z",
+  "updated_at": "2026-07-03T18:25:58.480Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "../../../../tmp/schema-audit-notes",
+      "operation": "create"
+    },
+    {
+      "path": "../../../../tmp/schema-audit-notes",
+      "operation": "modify"
+    },
+    {
+      "path": "/tmp/schema-audit-notes",
+      "operation": "create"
+    },
+    {
+      "path": "/tmp/schema-audit-notes",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-03T18:19:02.404Z",
+      "mode": "release",
+      "incoming_count": 4,
+      "previous_count": 0,
+      "total_count": 4
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-03T18:25:53.079Z"
+}

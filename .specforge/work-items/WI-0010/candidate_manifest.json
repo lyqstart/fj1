@@ -1,0 +1,10 @@
+{
+  "work_item_id": "WI-0010",
+  "workflow_path": "code_only_fast_path",
+  "workflow_type": "quick_change",
+  "entries": [],
+  "schema_version": "1.1",
+  "merge_applicable": false,
+  "merge_required": false,
+  "reason": "code_only_fast_path: no spec-level candidate products"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0035",
+  "workflow_type": "investigation",
+  "workflow_path": "requirement_change_path",
+  "trigger_reason": "用户请求审查安卓端程序是否完成业务需求",
+  "classification": "investigation",
+  "unknowns": [],
+  "ready_for_gate": true,
+  "status": "triggered"
+}

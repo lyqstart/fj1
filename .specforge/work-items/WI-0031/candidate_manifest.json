@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0031",
+  "workflow_path": "code_only_fast_path",
+  "entries": [],
+  "note": "code_only_fast_path - no candidate artifacts",
+  "merge_applicable": false,
+  "merge_required": false,
+  "reason": "code_only_fast_path: no spec-level candidate products"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0020",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "unknowns": [
+    "vision-camera CMake 编译可能需要额外配置"
+  ],
+  "selected_at": "2026-07-05T10:08:00Z",
+  "status": "triggered"
+}

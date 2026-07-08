@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "project_spec_version": "PSV-0003",
+  "project_spec_version": "PSV-0001",
   "project_name": "fj1",
   "project": {
     "extension_registry": ".specforge/project/extension_registry.json",
@@ -11,12 +11,5 @@
     "decisions": ".specforge/project/decisions.md",
     "trace_matrix": ".specforge/project/trace_matrix.md"
   },
-  "modules": [],
-  "last_merged_work_item": "WI-0002",
-  "last_merged_at": "2026-07-01T15:51:43.465Z",
-  "last_merged_targets": [
-    ".specforge/project/modules/core/requirements.md",
-    ".specforge/project/modules/core/design.md",
-    ".specforge/project/trace_matrix.md"
-  ]
+  "modules": []
 }

@@ -1,0 +1,25 @@
+{
+  "baseline_timestamp": "2026-07-02T10:30:27.119Z",
+  "diff_timestamp": "2026-07-03T10:56:09.538Z",
+  "created": [],
+  "modified": [
+    ".specforge/project/spec_manifest.json",
+    ".specforge/.gitignore"
+  ],
+  "deleted": [],
+  "all_changes": [
+    {
+      "path": ".specforge/project/spec_manifest.json",
+      "change": "modified"
+    },
+    {
+      "path": ".specforge/.gitignore",
+      "change": "modified"
+    }
+  ],
+  "untracked_changes": [
+    ".specforge/project/spec_manifest.json",
+    ".specforge/.gitignore"
+  ],
+  "ignored_runtime_files": 0
+}

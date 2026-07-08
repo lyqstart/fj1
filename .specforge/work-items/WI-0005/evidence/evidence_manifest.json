@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0005",
+  "collected_at": "2026-07-04T02:05:00Z",
+  "collector": "sf-verifier",
+  "summary": {
+    "total_evidence": 13,
+    "passed": 13,
+    "failed": 0
+  },
+  "entries": [
+    {
+      "id": "EV-AC1-history",
+      "ac_ref": "AC-1",
+      "type": "command_output",
+      "command": "psql flyway_schema_history",
+      "output": "8 rows V1-V8 all success=t",
+      "passed": true
+    },
+    {
+      "id": "EV-AC1-validate",
+      "ac_ref": "AC-1",
+      "type": "command_output",
+      "command": "flyway validate",
+      "output": "Successfully validated 8 migrations",
+      "passed": true
+    },
+    {
+      "id": "EV-AC2-active",
+      "ac_ref": "AC-2",
+      "type": "command_output",
+      "command": "systemctl is-active fj1-api",
+      "output": "active",
+      "passed": true
+    },
+    {
+      "id": "EV-AC2-yml",
+      "ac_ref": "AC-2",
+      "type": "command_output",
+      "command": "grep ddl-auto application-prod.yml",
+      "output": "ddl-auto: validate",
+      "passed": true
+    },
+    {
+      "id": "EV-AC3",
+      "ac_ref": "AC-3",
+      "type": "command_output",
+      "command": "curl 10.0.12.12/api/actuator/health",
+      "output": "{\"status\":\"UP\"}",
+      "passed": true
+    },
+    {
+      "id": "EV-AC4a",
+      "ac_ref": "AC-4",
+      "type": "command_output",
+      "command": "curl -sI 10.0.12.12/",
+      "output": "HTTP/1.1 200 OK",
+      "passed": true
+    },
+    {
+      "id": "EV-AC4b",
+      "ac_ref": "AC-4",
+      "type": "command_output",
+      "command": "grep id=root",
+      "output": "SPA_OK",
+      "passed": true
+    },
+    {
+      "id": "EV-AC5a",
+      "ac_ref": "AC-5",
+      "type": "command_output",
+      "command": "free -m available",
+      "output": "1856 MB (>=500)",
+      "passed": true
+    },
+    {
+      "id": "EV-AC5b",
+      "ac_ref": "AC-5",
+      "type": "command_output",
+      "command": "dmesg killed java",
+      "output": "NO_OOM",
+      "passed": true
+    },
+    {
+      "id": "EV-AC6",
+      "ac_ref": "AC-6",
+      "type": "command_output",
+      "command": "journalctl error grep",
+      "output": "0 real errors (only Flyway idempotent WARN 42701)",
+      "passed": true
+    },
+    {
+      "id": "EV-AC7-data",
+      "ac_ref": "AC-7",
+      "type": "command_output",
+      "command": "count projects/users/upr",
+      "output": "projects=1, users=1, upr=1 (no data loss)",
+      "passed": true
+    },
+    {
+      "id": "EV-AC7-schema",
+      "ac_ref": "AC-7",
+      "type": "command_output",
+      "command": "export_status/file_hash columns info",
+      "output": "export_status VARCHAR(32) NOT NULL, file_hash VARCHAR(128)",
+      "passed": true
+    },
+    {
+      "id": "EV-AC7-placeholder",
+      "ac_ref": "AC-7",
+      "type": "command_output",
+      "command": "projects id=0",
+      "output": "0 | 系统占位项目 | SYSTEM | ARCHIVED",
+      "passed": true
+    }
+  ]
+}

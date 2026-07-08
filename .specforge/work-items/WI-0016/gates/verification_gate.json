@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0016",
+  "gate_id": "verification_gate",
+  "gate_type": "hard_gate",
+  "required": true,
+  "status": "passed",
+  "input_files": [
+    "/mnt/1t_back/project/fj1/.specforge/work-items/WI-0016/verification_report.md",
+    "/mnt/1t_back/project/fj1/.specforge/work-items/WI-0016/evidence/evidence_manifest.json"
+  ],
+  "checks": [
+    {
+      "check_id": "verification_report_exists",
+      "description": "verification_report.md exists",
+      "passed": true
+    },
+    {
+      "check_id": "evidence_manifest_exists",
+      "description": "evidence/evidence_manifest.json exists",
+      "passed": true
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [],
+  "waiver_allowed": false,
+  "waiver_required": false,
+  "waiver_ids": [],
+  "started_at": "2026-07-05T08:19:29.364Z",
+  "finished_at": "2026-07-05T08:19:29.364Z",
+  "runner": "gate_runner"
+}

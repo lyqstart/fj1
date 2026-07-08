@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0018",
+  "generated_at": "2026-07-05T08:55:00Z",
+  "generated_by": "sf-orchestrator",
+  "summary": {
+    "total_evidence": 7,
+    "passed": 7,
+    "failed": 0,
+    "overall_status": "PASS"
+  },
+  "entries": [
+    {
+      "evidence_id": "EV-001",
+      "task_id": "TASK-1",
+      "evidence_type": "file_existence",
+      "claim": "PhotoUploadPort.tsx 新建",
+      "expected": "exists",
+      "actual": "exists",
+      "line_count": 38,
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-002",
+      "task_id": "TASK-1",
+      "evidence_type": "grep_count",
+      "claim": "导出 PhotoUploadProvider + usePhotoUploadQueue",
+      "expected": "≥2",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-003",
+      "task_id": "TASK-2",
+      "evidence_type": "grep_count",
+      "claim": "AppRoot 含 PhotoUploadProvider",
+      "expected": "≥1",
+      "actual": "yes",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-004",
+      "task_id": "TASK-2",
+      "evidence_type": "line_count",
+      "claim": "AppRoot 行数 100-150",
+      "expected": "100-150",
+      "actual": 128,
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-005",
+      "task_id": "TASK-3",
+      "evidence_type": "tsc_exit_code",
+      "claim": "TypeScript 零错误",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-006",
+      "task_id": "TASK-4",
+      "evidence_type": "build_log_marker",
+      "claim": "BUILD SUCCESSFUL",
+      "expected": "≥1",
+      "actual": "1",
+      "build_duration": "48s",
+      "passed": true
+    },
+    {
+      "evidence_id": "EV-007",
+      "task_id": "TASK-4",
+      "evidence_type": "file_size",
+      "claim": "APK > 1MiB",
+      "expected_min_bytes": 1048576,
+      "actual_bytes": 130749900,
+      "actual_mib": 125,
+      "passed": true
+    }
+  ]
+}

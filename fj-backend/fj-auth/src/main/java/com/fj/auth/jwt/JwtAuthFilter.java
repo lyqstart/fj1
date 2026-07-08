@@ -70,8 +70,8 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
-        String path = request.getRequestURI();
-        // 登录 / 刷新接口不走令牌认证
+        String path = request.getServletPath();
+        // 登录 / 刷新接口不走令牌认证（使用 getServletPath 以兼容 context-path）
         return path.startsWith("/api/v1/auth/login") || path.startsWith("/api/v1/auth/refresh");
     }
 }

@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0004",
+  "collected_at": "2026-07-03T16:58:00Z",
+  "collector": "sf-verifier",
+  "summary": {
+    "total_evidence": 12,
+    "passed": 12,
+    "failed": 0
+  },
+  "entries": [
+    {
+      "id": "EV-AC1-a",
+      "ac_ref": "AC-1",
+      "type": "command_output",
+      "description": "application-prod.yml 无 spring.profiles.active",
+      "command": "grep -n 'spring.profiles.active|profiles:|active:' deploy/config/application-prod.yml",
+      "output": "exit 1, 无匹配",
+      "passed": true
+    },
+    {
+      "id": "EV-AC1-b",
+      "ac_ref": "AC-1",
+      "type": "command_output",
+      "description": "YAML 语法有效",
+      "command": "python3 -c \"import yaml; yaml.safe_load(open('application-prod.yml'))\"",
+      "output": "YAML_VALID",
+      "passed": true
+    },
+    {
+      "id": "EV-AC1-c",
+      "ac_ref": "AC-1",
+      "type": "command_output",
+      "description": "systemd profile 激活保障",
+      "command": "grep 'SPRING_PROFILES_ACTIVE' deploy/systemd/fj-api.service",
+      "output": "line 26: Environment=\"SPRING_PROFILES_ACTIVE=prod\"",
+      "passed": true
+    },
+    {
+      "id": "EV-AC2",
+      "ac_ref": "AC-2",
+      "type": "command_output",
+      "description": "V3 INSERT 在 ADD CONSTRAINT 前",
+      "command": "grep -n 'INSERT INTO projects|ADD CONSTRAINT fk_upr_project' V3__project_tables.sql",
+      "output": "INSERT@225 < ADD_CONSTRAINT@230; OVERRIDING SYSTEM VALUE@227",
+      "passed": true
+    },
+    {
+      "id": "EV-AC3",
+      "ac_ref": "AC-3",
+      "type": "command_output",
+      "description": "V8 export_files 三处补列/扩展",
+      "command": "grep -c 'error_message VARCHAR(1024)|export_status VARCHAR(32)|file_hash TYPE VARCHAR(128)' V8.sql",
+      "output": "3 匹配 (line 7/8/11)",
+      "passed": true
+    },
+    {
+      "id": "EV-AC4",
+      "ac_ref": "AC-4",
+      "type": "command_output",
+      "description": "V8 users.status 类型修正 + 幂等",
+      "command": "grep -c 'ALTER COLUMN status TYPE INTEGER|data_type = smallint' V8.sql",
+      "output": "2 匹配 (line 23 条件, line 25 ALTER)",
+      "passed": true
+    },
+    {
+      "id": "EV-AC5-a",
+      "ac_ref": "AC-5",
+      "type": "command_output",
+      "description": "install_pg16.sh 语法正确",
+      "command": "bash -n scripts/ops/install_pg16.sh",
+      "output": "SYNTAX_OK",
+      "passed": true
+    },
+    {
+      "id": "EV-AC5-b",
+      "ac_ref": "AC-5",
+      "type": "command_output",
+      "description": "PG13 包名修正",
+      "command": "grep 'postgresql13-server' install_pg16.sh",
+      "output": "line 25: PG13_PACKAGES=\"postgresql13-server\"",
+      "passed": true
+    },
+    {
+      "id": "EV-AC5-c",
+      "ac_ref": "AC-5",
+      "type": "command_output",
+      "description": "initdb 参数修正",
+      "command": "grep 'postgresql-16-setup initdb' install_pg16.sh",
+      "output": "line 143: postgresql-16-setup initdb",
+      "passed": true
+    },
+    {
+      "id": "EV-AC6",
+      "ac_ref": "AC-6",
+      "type": "command_output",
+      "description": "ddl-auto 源码为 validate",
+      "command": "grep 'ddl-auto' application-prod.yml",
+      "output": "line 26: ddl-auto: validate",
+      "passed": true
+    },
+    {
+      "id": "EV-AC7-a",
+      "ac_ref": "AC-7",
+      "type": "command_output",
+      "description": "UserStatus 注释无 SMALLINT 残留",
+      "command": "grep -in 'smallint' UserStatusConverter.java UserStatus.java",
+      "output": "exit 1, 无匹配",
+      "passed": true
+    },
+    {
+      "id": "EV-AC7-b",
+      "ac_ref": "AC-7",
+      "type": "git_diff",
+      "description": "TASK-3 仅注释变更, 编译代码未变",
+      "command": "git diff --unified=0 UserStatus*.java",
+      "output": "仅 2 行注释变更 (均以 * 开头), 零编译代码影响",
+      "passed": true
+    }
+  ]
+}

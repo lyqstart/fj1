@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "UD-WI-0026-1783304963005",
+  "work_item_id": "WI-0026",
+  "workflow_path": "requirement_change_path",
+  "base_spec_version": "PSV-0001",
+  "candidate_manifest_path": "candidate_manifest.json",
+  "manifest_hash": "sha256:611b6e9bc8f6a5fad28d899aad85a9ba409c70308f2fecd2eab2f91a546a997b",
+  "candidate_hash": "sha256:36e29b14ed50ff5787eec0afdb1ede7407ba500fe1e9108a60014be082812266",
+  "gate_summary_path": "gate_summary.md",
+  "gate_summary_hash": "sha256:098dc0a6f907ff065d8515bdf12c5756a915eb50b724fdd0665559f617c1332e",
+  "decision_status": "approved",
+  "decision_type": "user_approved",
+  "decided_by": "user",
+  "decided_at": "2026-07-06T02:29:23.005Z",
+  "decision_scope": "full",
+  "waivers": [],
+  "recorded_by": "sf-orchestrator",
+  "recorder_role": "user_decision_recorder",
+  "recorded_at": "2026-07-06T02:29:23.006Z",
+  "user_response_quote": "启动后是黑屏"
+}

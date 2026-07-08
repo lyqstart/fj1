@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "UD-WI-0022-1783263826139",
+  "work_item_id": "WI-0022",
+  "workflow_path": "code_only_fast_path",
+  "base_spec_version": "PSV-0001",
+  "candidate_manifest_path": "candidate_manifest.json",
+  "manifest_hash": "sha256:aa10a2281496a5957358014f28c8dfdf6af5317b0227331e4a120b1e4daa29d1",
+  "candidate_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_summary_path": "gate_summary.md",
+  "gate_summary_hash": "sha256:670f7bb61161e09e531f23ad1d7aa70a3712112aed8d7b0a0e70676adff24505",
+  "decision_status": "approved",
+  "decision_type": "auto_approved",
+  "decided_by": "sf-orchestrator",
+  "decided_at": "2026-07-05T15:03:46.139Z",
+  "decision_scope": "full",
+  "waivers": [],
+  "recorded_by": "sf-orchestrator",
+  "recorder_role": "user_decision_recorder",
+  "recorded_at": "2026-07-05T15:03:46.139Z",
+  "auto_approval_policy_id": "code_only_fast_path_auto"
+}

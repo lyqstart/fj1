@@ -5,7 +5,7 @@ import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
 /**
- * UserStatus <-> SMALLINT JPA 转换器。
+ * UserStatus <-> INTEGER JPA 转换器。
  * <p>持久化按 {@link BaseEnum#getCode()} 存储，读取时按 code 还原枚举。
  */
 @Converter

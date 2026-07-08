@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0005",
+  "workflow_type": "ops_task",
+  "workflow_path": "task_change_path",
+  "generated_at": "2026-07-03T17:20:00Z",
+  "candidates": [
+    {
+      "type": "requirements",
+      "path": "candidates/project/modules/core/requirements.candidate.md",
+      "absolute_path": ".specforge/work-items/WI-0005/intake.md",
+      "size_bytes": 3781,
+      "lint_passed": true,
+      "note": "ops_task requirements artifact (intake with operation goal, constraints, rollback triggers)",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "module_id": "core"
+    },
+    {
+      "type": "design",
+      "path": "candidates/project/modules/core/design.candidate.md",
+      "absolute_path": ".specforge/work-items/WI-0005/design.md",
+      "size_bytes": 46000,
+      "lint_passed": true,
+      "note": "ops_plan: 22 steps / 8 phases (A-H), with rollback plan, risk assessment, impact scope",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "module_id": "core"
+    },
+    {
+      "type": "tasks",
+      "path": "candidates/tasks.md",
+      "absolute_path": ".specforge/work-items/WI-0005/tasks.md",
+      "size_bytes": 37410,
+      "lint_passed": true,
+      "note": "8 tasks covering phases A-H, serial execution, 2 user-confirmation tasks"
+    },
+    {
+      "type": "trace_delta",
+      "path": "candidates/trace_delta.md",
+      "absolute_path": ".specforge/work-items/WI-0005/trace_delta.md",
+      "size_bytes": 11169,
+      "lint_passed": true
+    }
+  ],
+  "preflight_verified": {
+    "requirements_exists": true,
+    "design_exists": true,
+    "tasks_exists": true,
+    "trace_delta_exists": true,
+    "manifest_paths_match_actual": true
+  },
+  "entries": [
+    {
+      "candidate_path": "candidates/project/modules/core/requirements.candidate.md",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "operation": "replace",
+      "type": "requirements",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/project/modules/core/design.candidate.md",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "operation": "replace",
+      "type": "design",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/trace_delta.md",
+      "target_path": ".specforge/project/trace_matrix.md",
+      "operation": "replace",
+      "type": "trace_delta",
+      "inferred": false,
+      "normalized": true
+    }
+  ]
+}

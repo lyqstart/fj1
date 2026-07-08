@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0025",
+  "collected_at": "2026-07-05T17:32:30Z",
+  "summary": {
+    "total_ac": 4,
+    "passed": 4,
+    "failed": 0,
+    "overall_verdict": "pass"
+  },
+  "entries": [
+    {
+      "id": "EV-001",
+      "ac_id": "AC-1",
+      "type": "file_inspection",
+      "path": "fj-android/android/app/build.gradle",
+      "description": "androidResources noCompress bundle 配置存在",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-002",
+      "ac_id": "AC-2",
+      "type": "build_log",
+      "path": "fj-android/build-wi25.log",
+      "description": "BUILD SUCCESSFUL in 3m 24s, EXIT_CODE=0",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-003",
+      "ac_id": "AC-3",
+      "type": "command_output",
+      "path": "unzip -lv",
+      "description": "bundle Stored 0% (was Defl:N 52%)",
+      "verdict": "pass"
+    },
+    {
+      "id": "EV-004",
+      "ac_id": "AC-4",
+      "type": "file_inspection",
+      "path": "app-release.apk",
+      "description": "APK 55MB",
+      "verdict": "pass"
+    }
+  ]
+}

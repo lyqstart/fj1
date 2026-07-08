@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0027",
+  "generated_at": "2026-07-06T04:34:00Z",
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "build_log",
+      "description": "Docker assembleRelease without ProGuard",
+      "target_file": "fj-android/build-wi27.log",
+      "result": "pass",
+      "details": {
+        "result": "BUILD SUCCESSFUL in 3m 52s",
+        "exit_code": 0,
+        "tasks": 275,
+        "no_r8_task": true,
+        "no_shrink_task": true
+      }
+    },
+    {
+      "id": "EV-002",
+      "type": "artifact_output",
+      "description": "Diagnostic Release APK",
+      "target_file": "fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "result": "pass",
+      "details": {
+        "size": "57M",
+        "note": "2MB larger than ProGuard version (55MB), confirming no code stripping"
+      }
+    },
+    {
+      "id": "EV-003",
+      "type": "audit_result",
+      "description": "Changed files audit passed",
+      "result": "pass",
+      "details": {
+        "in_scope": 1,
+        "out_of_scope": 0,
+        "unresolved_violations": 0
+      }
+    }
+  ]
+}

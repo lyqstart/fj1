@@ -22,7 +22,7 @@ PG16_DATA="/var/lib/pgsql/${PG16_VERSION}/data"
 PG16_HBA="${PG16_DATA}/pg_hba.conf"
 PG16_CONF="${PG16_DATA}/postgresql.conf"
 PG13_SERVICE="postgresql"
-PG13_PACKAGES="postgresql-server"
+PG13_PACKAGES="postgresql13-server"
 
 # ---------- 工具函数 ----------
 log()  { echo "[install_pg16] $*"; }
@@ -140,7 +140,7 @@ init_pg16() {
         return
     fi
 
-    postgresql-16-setup --initdb
+    postgresql-16-setup initdb
 
     log "数据目录初始化完成: ${PG16_DATA}"
 }

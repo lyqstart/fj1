@@ -99,7 +99,7 @@ INSERT INTO data_dictionaries (category, code, value, sort_order) VALUES
 -- ===== 5. 默认管理员账号 =====
 -- 密码明文：admin123（BCrypt cost=12 哈希，上线后务必修改）
 INSERT INTO users (username, password_hash, real_name, phone, email, status) VALUES
-    ('admin', '$2b$12$jcLWioY/WRH23Pe6KiVvFeh3N5ovrHbFZqZxzCb5nDco.C2I3swZy', '系统管理员', NULL, NULL, 1);
+    ('admin', '$2a$12$slq9M/Yknmi83WYOiUrkkuDkDuMomPMoa215j6MtUUYgJlwERlaL6', '系统管理员', NULL, NULL, 1);
 
 -- ===== 6. 授予管理员系统管理员角色（全局角色，project_id 占位 0 表示非项目级） =====
 INSERT INTO user_project_roles (user_id, project_id, role_id)

@@ -1,0 +1,268 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0021",
+  "status": "created",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0021",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-05T11:18:36.308Z",
+  "updated_at": "2026-07-05T14:58:52.313Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-android/src/api/ApiClient.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/api/ApiClient.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/api/ApiClient.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/api/ApiClient.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/src/store/auth/AuthContext.tsx",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/store/auth/AuthContext.tsx",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/store/auth/AuthContext.tsx",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/store/auth/AuthContext.tsx",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/src/store/auth/types.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/store/auth/types.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/store/auth/types.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/store/auth/types.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/src/main/res/xml/network_security_config.xml",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/src/main/res/xml/network_security_config.xml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/res/xml/network_security_config.xml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/res/xml/network_security_config.xml",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/src/main/AndroidManifest.xml",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/src/main/AndroidManifest.xml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/AndroidManifest.xml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/AndroidManifest.xml",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/src/theme/colors.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/theme/colors.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/theme/colors.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/theme/colors.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/src/theme/spacing.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/theme/spacing.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/theme/spacing.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/theme/spacing.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/src/theme/typography.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/theme/typography.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/theme/typography.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/theme/typography.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/src/theme/index.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/theme/index.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/theme/index.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/theme/index.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/debug/app-debug.apk",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/debug/app-debug.apk",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/debug/app-debug.apk",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/debug/app-debug.apk",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/intermediates/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/intermediates/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/intermediates/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/intermediates/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/tmp/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/tmp/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/tmp/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/tmp/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/generated/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/generated/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/generated/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/generated/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/build-wi21.log",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/build-wi21.log",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/build-wi21.log",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/build-wi21.log",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-05T14:42:44.630Z",
+      "mode": "release",
+      "incoming_count": 60,
+      "previous_count": 0,
+      "total_count": 60
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-05T14:58:34.421Z"
+}

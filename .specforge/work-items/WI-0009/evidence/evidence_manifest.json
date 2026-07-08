@@ -1,0 +1,94 @@
+{
+  "work_item_id": "WI-0009",
+  "schema_version": "1.1",
+  "evidence_collected_at": "2026-07-04T08:40:00.000Z",
+  "total_evidence": 7,
+  "ac_coverage": {
+    "AC-1": [
+      "EA-1",
+      "EA-2"
+    ],
+    "AC-2": [
+      "EA-2"
+    ],
+    "AC-3": [
+      "EA-3",
+      "EA-4"
+    ],
+    "AC-4": [
+      "EA-7"
+    ],
+    "invariants": [
+      "EA-5"
+    ],
+    "governance": [
+      "EA-6"
+    ]
+  },
+  "entries": [
+    {
+      "evidence_id": "EA-1",
+      "type": "command_output",
+      "description": "sf_batch_verify on application-prod.yml source (12 checks: AC-1 no profiles + invariants)",
+      "verifier": "sf-verifier",
+      "ac_refs": [
+        "AC-1"
+      ]
+    },
+    {
+      "evidence_id": "EA-2",
+      "type": "command_output",
+      "description": "Python yaml.safe_load structural validation: PROFILES_PRESENT=False, SPRING_SUBKEYS=['datasource','flyway','jackson','jpa','servlet']",
+      "verifier": "sf-verifier",
+      "ac_refs": [
+        "AC-1",
+        "AC-2"
+      ]
+    },
+    {
+      "evidence_id": "EA-3",
+      "type": "build_log",
+      "description": "mvn clean package -DskipTests -pl fj-api -am exit 0, BUILD SUCCESS, duration 11.5s",
+      "verifier": "sf-verifier",
+      "ac_refs": [
+        "AC-3"
+      ]
+    },
+    {
+      "evidence_id": "EA-4",
+      "type": "file_snapshot",
+      "description": "target/classes/application-prod.yml (71 lines, byte-identical to jar BOOT-INF/classes/) verified clean of profiles",
+      "verifier": "sf-verifier",
+      "ac_refs": [
+        "AC-3"
+      ]
+    },
+    {
+      "evidence_id": "EA-5",
+      "type": "command_output",
+      "description": "sf_batch_verify on application.yml: invariance confirmed, SPRING_PROFILES_ACTIVE:dev placeholder at line 13",
+      "verifier": "sf-verifier",
+      "ac_refs": [
+        "invariant"
+      ]
+    },
+    {
+      "evidence_id": "EA-6",
+      "type": "audit_report",
+      "description": "sf_changed_files_audit passed after retroactive permission expansion (blocked_write_attempts=0)",
+      "verifier": "sf-verifier",
+      "ac_refs": [
+        "governance"
+      ]
+    },
+    {
+      "evidence_id": "EA-7",
+      "type": "constructive_proof",
+      "description": "AC-4 constructive satisfaction: ConfigDataEnvironmentPostProcessor has nothing to reject after root cause removal",
+      "verifier": "sf-verifier",
+      "ac_refs": [
+        "AC-4"
+      ]
+    }
+  ]
+}

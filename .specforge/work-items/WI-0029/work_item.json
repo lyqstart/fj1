@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0029",
+  "status": "created",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0029",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-06T10:10:26.530Z",
+  "updated_at": "2026-07-06T10:38:08.601Z",
+  "code_change_allowed": true,
+  "code_permission_revoked": false,
+  "allowed_write_files": [
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "modify"
+    }
+  ],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-backend/fj-common/src/main/java/com/fj/common/applog/AppLogService.java",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 2,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-06T10:14:06.493Z",
+      "mode": "release",
+      "incoming_count": 48,
+      "previous_count": 0,
+      "total_count": 48
+    },
+    {
+      "timestamp": "2026-07-06T10:38:08.601Z",
+      "mode": "release",
+      "incoming_count": 4,
+      "previous_count": 0,
+      "total_count": 4
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-06T10:29:55.858Z"
+}

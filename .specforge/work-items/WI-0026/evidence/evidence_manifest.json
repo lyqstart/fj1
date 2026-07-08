@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0026",
+  "generated_at": "2026-07-06T02:48:00Z",
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "file_content_check",
+      "description": "ProGuard rules rewrite verification - 11 checks all passed",
+      "target_file": "fj-android/android/app/proguard-rules.pro",
+      "result": "pass",
+      "details": {
+        "line_count": 82,
+        "non_ascii_count": 0,
+        "nozbe_watermelondb_keeps": "lines 58,59",
+        "facebook_crypto_keep": "line 53",
+        "mrousavy_camera_keep": "line 63",
+        "th3rdwave_safeareacontext_keep": "line 67",
+        "RNImageResizer_keep": "line 71",
+        "DoNotStrip_correct_syntax": "line 23",
+        "new_arch_keeps": "lines 36-41"
+      }
+    },
+    {
+      "id": "EV-002",
+      "type": "build_log",
+      "description": "Docker assembleRelease build success",
+      "target_file": "fj-android/build-wi26.log",
+      "result": "pass",
+      "details": {
+        "line_678": "BUILD SUCCESSFUL in 3m 25s",
+        "line_679": "276 actionable tasks: 276 executed",
+        "line_680": "EXIT_CODE=0",
+        "r8_minify_task": ":app:minifyReleaseWithR8 completed",
+        "shrink_resources_task": ":app:shrinkReleaseRes completed",
+        "package_task": ":app:packageRelease completed"
+      }
+    },
+    {
+      "id": "EV-003",
+      "type": "artifact_output",
+      "description": "Release APK exists and size is reasonable",
+      "target_file": "fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "result": "pass",
+      "details": {
+        "size": "55M",
+        "date": "Jul 6 10:44"
+      }
+    },
+    {
+      "id": "EV-004",
+      "type": "audit_result",
+      "description": "Changed files audit passed",
+      "result": "pass",
+      "details": {
+        "total_files": 1,
+        "in_scope": 1,
+        "out_of_scope": 0,
+        "unresolved_violations": 0,
+        "blocked_write_attempts_resolved": 3
+      }
+    }
+  ]
+}

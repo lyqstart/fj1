@@ -1,0 +1,32 @@
+{
+  "work_item_id": "WI-0007",
+  "source_work_item": "WI-0006",
+  "trigger_type": "bug_report",
+  "trigger_description": "修复 WI-0006 schema 审查发现的 3 Warning + 2 Info 不匹配问题",
+  "intent_classification": "bug_report",
+  "workflow_type": "bugfix_spec",
+  "workflow_path": "requirement_change_path",
+  "workflow_skill": "sf-workflow-bugfix-spec",
+  "selection_reason": "5 个 schema 不匹配缺陷（枚举/CHECK/长度/nullable），涉及 Java 源码修改 + V9 增量迁移，跨 3 个后端模块。非 fast path（多文件、跨模块、需迁移）。",
+  "risk_level": "low-medium",
+  "unknowns": [],
+  "findings_count": 5,
+  "findings_breakdown": {
+    "warning": 3,
+    "info": 2,
+    "critical": 0
+  },
+  "estimated_files_modified": 5,
+  "estimated_files_created": 1,
+  "modules_affected": [
+    "fj-sync",
+    "fj-issue",
+    "fj-recommend",
+    "fj-api"
+  ],
+  "requires_migration": true,
+  "migration_version": "V9",
+  "forward_compatible": true,
+  "schema_version": "1.1",
+  "status": "triggered"
+}

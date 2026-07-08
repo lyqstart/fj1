@@ -1,0 +1,22 @@
+{
+  "work_item_id": "WI-0010",
+  "trigger_type": "quick_change",
+  "trigger_description": "版本控制卫生：git commit WI-0003~0009 累积源码变更 + .gitignore 排除 target/",
+  "intent_classification": "small_change",
+  "workflow_type": "quick_change",
+  "workflow_path": "code_only_fast_path",
+  "workflow_skill": "sf-workflow-quick-change",
+  "selection_reason": "纯版本控制卫生操作（git commit + .gitignore），无功能/逻辑/配置变更，符合 code_only_fast_path 守卫条件。",
+  "risk_level": "very_low",
+  "unknowns": [],
+  "downtime_estimate": "none",
+  "has_rollback": true,
+  "rollback_triggers": [
+    "git reset HEAD~1 (undo commit)"
+  ],
+  "requires_user_confirmation_steps": [],
+  "modules_affected": [],
+  "forward_compatible": true,
+  "schema_version": "1.1",
+  "status": "triggered"
+}

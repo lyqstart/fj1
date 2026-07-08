@@ -21,6 +21,8 @@
 // 全局 fetch / Headers / FormData / AbortController / setTimeout 由 react-native 运行时提供，
 // 类型声明见 react-native/types/modules/globals.d.ts，无需 import。
 
+import { logger } from '../utils/Logger';
+
 /**
  * 统一响应结构（§107.x）。
  * 所有后端接口返回此结构；data 的具体形状由调用方用泛型 T 约束。
@@ -126,6 +128,75 @@ export interface ApiClientOptions {
 const DEFAULT_TIMEOUT_MS = 30000;
 
 /**
+ * Token 主动刷新阈值：access token 剩余有效期低于此值时，请求前先刷新。
+ * 5 分钟，避免请求飞行途中过期（WI-0021 TASK-1）。
+ */
+const TOKEN_REFRESH_THRESHOLD_MS = 5 * 60 * 1000;
+
+/**
+ * 模块级单飞锁：并发请求同时发现 token 即将过期时，只触发一次 refreshTokens，
+ * 其余请求复用同一个 Promise，避免刷新风暴（DD-14 / WI-0021 TASK-1）。
+ */
+let refreshInFlight: Promise<string | null> | null = null;
+
+/**
+ * base64 字符表（自实现解码，避免依赖 RN 全局 atob 类型声明，WI-0021 TASK-1）。
+ */
+const B64_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+
+/**
+ * base64 解码为二进制字符串（UTF-8 字节序列）。
+ * 自实现避免依赖运行时 atob 全局类型声明，保证 tsc 严格模式下无外部类型依赖。
+ */
+function base64Decode(input: string): string {
+  const clean = input.replace(/[^A-Za-z0-9+/]/g, '');
+  let output = '';
+  for (let i = 0; i < clean.length; i += 4) {
+    const n =
+      (B64_CHARS.indexOf(clean[i]) << 18) |
+      (B64_CHARS.indexOf(clean[i + 1]) << 12) |
+      (B64_CHARS.indexOf(clean[i + 2]) << 6) |
+      (B64_CHARS.indexOf(clean[i + 3]));
+    output += String.fromCharCode((n >> 16) & 0xff, (n >> 8) & 0xff, n & 0xff);
+  }
+  const pad = input.endsWith('==') ? 2 : input.endsWith('=') ? 1 : 0;
+  return output.slice(0, output.length - pad);
+}
+
+/**
+ * 解析 JWT 的 exp 字段（过期时间，毫秒）。
+ *
+ * React Native 运行时无 Buffer.from，使用自实现 base64 解码 + base64url 规范化。
+ * 非 JWT / 缺少 exp / 解析失败 → 返回 null（调用方据此降级为信任 token，交由 401 兜底）。
+ */
+function decodeJwtExpMs(token: string): number | null {
+  try {
+    const parts = token.split('.');
+    if (parts.length !== 3) {
+      return null;
+    }
+    // base64url → base64 + 补齐 padding
+    const b64 = parts[1].replace(/-/g, '+').replace(/_/g, '/');
+    const padded = b64 + '='.repeat((4 - (b64.length % 4)) % 4);
+    const json = base64Decode(padded);
+    // 处理 UTF-8 多字节字符
+    const decoded = decodeURIComponent(
+      json
+        .split('')
+        .map((c: string) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+        .join(''),
+    );
+    const payload = JSON.parse(decoded) as { exp?: unknown };
+    if (typeof payload.exp !== 'number') {
+      return null;
+    }
+    return payload.exp * 1000;
+  } catch {
+    return null;
+  }
+}
+
+/**
  * 飞检统一 HTTP 客户端。
  *
  * @example
@@ -223,8 +294,72 @@ export class ApiClient {
     const url = this.buildUrl(path, options?.query);
     const timeoutMs = options?.timeoutMs ?? this.timeoutMs;
 
+    logger.debug('API', `${method} ${url}`);
     // 首次尝试；401 时内部会再试一次（retried 标记防止无限刷新）
-    return this.doFetchWithAuth<T>(url, init, options, timeoutMs, false);
+    try {
+      return await this.doFetchWithAuth<T>(url, init, options, timeoutMs, false);
+    } catch (error) {
+      logger.error('API', 'Request failed', {
+        url,
+        method,
+        status: error instanceof ApiError ? error.httpStatus : null,
+        message: error instanceof Error ? error.message : String(error),
+      });
+      throw error;
+    }
+  }
+
+  /**
+   * 确保返回一个未过期的 access token（WI-0021 TASK-1）。
+   *
+   * 流程：
+   *  1. 读取当前 access token；无 → 返回 null（匿名请求）
+   *  2. 解析 JWT exp；解析失败 → 信任原 token（交由 401 兜底）
+   *  3. 剩余有效期 > 阈值 → 直接返回
+   *  4. 即将过期 → 模块级单飞调用 authProvider.refreshTokens()
+   *     - 成功：返回新 access token
+   *     - 失败：调用 onAuthFailed（触发登出），返回 null
+   *
+   * @returns 可用的 access token，或 null（未登录 / 刷新失败）
+   */
+  private async ensureFreshAccessToken(): Promise<string | null> {
+    const authProvider = this.authProvider;
+    if (!authProvider) {
+      return null;
+    }
+    const token = await authProvider.getAccessToken();
+    if (!token) {
+      return null;
+    }
+    const expMs = decodeJwtExpMs(token);
+    if (expMs === null) {
+      // 非 JWT 或无法解析 → 信任原 token，交由 401 兜底刷新
+      return token;
+    }
+    const remaining = expMs - Date.now();
+    if (remaining > TOKEN_REFRESH_THRESHOLD_MS) {
+      return token;
+    }
+    // 即将过期：单飞刷新（并发请求复用同一 Promise，避免刷新风暴）
+    if (refreshInFlight) {
+      return refreshInFlight;
+    }
+    refreshInFlight = (async (): Promise<string | null> => {
+      try {
+        const refreshed = await authProvider.refreshTokens();
+        if (!refreshed) {
+          // 刷新失败 → 认证彻底失败，触发登出回调
+          if (authProvider.onAuthFailed) {
+            await authProvider.onAuthFailed();
+          }
+          return null;
+        }
+        return refreshed.accessToken;
+      } finally {
+        refreshInFlight = null;
+      }
+    })();
+    return refreshInFlight;
   }
 
   /** 执行一次 fetch（附加 Authorization），失败按策略抛 ApiError；401 触发刷新重试 */
@@ -240,15 +375,17 @@ export class ApiClient {
       headers['Content-Type'] = 'application/json';
     }
 
-    // 附加 Bearer token
+    // 附加 Bearer token（WI-0021 TASK-1：请求前确保 token 未过期，必要时单飞刷新）
     if (this.authProvider) {
-      const token = await this.authProvider.getAccessToken();
+      const token = await this.ensureFreshAccessToken();
       if (token) {
         headers['Authorization'] = `Bearer ${token}`;
       }
     }
 
+    const requestStartTs = Date.now();
     const response = await this.fetchWithTimeout(url, { ...init, headers }, timeoutMs);
+    logger.debug('API', `Response ${response.status} (${Date.now() - requestStartTs}ms)`);
 
     // 401 → 尝试刷新令牌并重试一次
     if (response.status === 401 && this.authProvider && !retried) {

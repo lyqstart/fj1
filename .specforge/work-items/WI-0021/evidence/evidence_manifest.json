@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0021",
+  "collected_by": "sf-verifier",
+  "collected_at": "2026-07-05T00:00:00Z",
+  "entries": [
+    {
+      "evidence_id": "EA-001",
+      "type": "file_snapshot",
+      "description": "ApiClient.ts 包含单飞锁字段 inFlightRefreshPromise，防止并发刷新 token 重复请求",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "src/services/ApiClient.ts",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-1"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-002",
+      "type": "file_snapshot",
+      "description": "ApiClient.ts 实现 ensureFreshAccessToken 方法，检查 token 过期并触发刷新",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "src/services/ApiClient.ts",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-2"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-003",
+      "type": "file_snapshot",
+      "description": "AuthContext.tsx 配置 10 分钟（600000ms）定时器调用 refreshAccessToken 主动刷新 token",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "src/context/AuthContext.tsx",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-3"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-004",
+      "type": "file_snapshot",
+      "description": "Android network_security_config.xml 文件存在，定义网络安全策略",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "android/app/src/main/res/xml/network_security_config.xml",
+      "related_refs": {
+        "req_ids": [
+          "REQ-2"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-4"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-005",
+      "type": "file_snapshot",
+      "description": "AndroidManifest.xml 通过 android:networkSecurityConfig 属性引用网络安全配置文件",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "android/app/src/main/AndroidManifest.xml",
+      "related_refs": {
+        "req_ids": [
+          "REQ-2"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-5"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-006",
+      "type": "file_snapshot",
+      "description": "network_security_config.xml 配置 cleartextTrafficPermitted 明文流量目标 IP 129.211.5.240",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "android/app/src/main/res/xml/network_security_config.xml",
+      "related_refs": {
+        "req_ids": [
+          "REQ-2"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-6"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-007",
+      "type": "file_snapshot",
+      "description": "src/theme/colors.ts 定义完整主题色板常量，供 UI 组件引用",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "src/theme/colors.ts",
+      "related_refs": {
+        "req_ids": [
+          "REQ-3"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-7"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-008",
+      "type": "file_snapshot",
+      "description": "src/theme/spacing.ts 定义间距系统常量，统一 UI 间距规范",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "src/theme/spacing.ts",
+      "related_refs": {
+        "req_ids": [
+          "REQ-3"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-8"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-009",
+      "type": "file_snapshot",
+      "description": "src/theme/typography.ts 定义字体样式系统常量，统一字体大小与字重",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-05T00:00:00Z",
+      "location": "src/theme/typography.ts",
+      "related_refs": {
+        "req_ids": [
+          "REQ-3"
+        ],
+        "task_ids": [
+          "WI-0021"
+        ],
+        "ac_ids": [
+          "AC-9"
+        ]
+      }
+    }
+  ]
+}

@@ -73,7 +73,7 @@ public class ProjectIssue extends BaseEntity {
      */
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false, length = 32)
-    private IssueStatus status = IssueStatus.VALID;
+    private IssueStatus status = IssueStatus.PENDING_CONFIRM;
 
     /** 整改跟踪状态 */
     @Enumerated(EnumType.STRING)

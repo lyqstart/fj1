@@ -4,7 +4,7 @@ import com.fj.common.enume.BaseEnum;
 import lombok.Getter;
 
 /**
- * 用户状态枚举（对应 users.status SMALLINT）。
+ * 用户状态枚举（对应 users.status INTEGER）。
  * <p>兼容 V1 注释「1启用 0禁用」，新增 LOCKED=2（登录限流触发）。
  */
 @Getter

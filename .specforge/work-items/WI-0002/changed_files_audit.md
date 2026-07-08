@@ -1,25 +1,37 @@
 # Changed Files Audit
 
 Work Item: WI-0002
-Command: Re-audit with complete allowed_write_files snapshot covering all 40 actual changed files. 5 historical blocked_write_attempts are discovery events (not final violations), documented in audit_reconciliation.md.
-Timestamp: 2026-07-02T03:39:29.285Z
+Command: N/A
+Timestamp: 2026-07-02T08:32:25.095Z
 Data Source: none
 
-## Result: FAIL
+## Result: PASS
 
 - Total files: 0
 - In scope: 0
-- Out of scope: 5
-- Violations: 5
+- Out of scope: 0
+- Violations: 0
 - Blocked write attempts: 5
+- Historical/resolved blocked write attempts: 5
+- Unresolved blocked write attempts: 0
 
-## Violations
+## Blocked Write Attempts
 
-- BLOCKED_WRITE_ATTEMPT: [modify] fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java via edit violations=target_not_in_allowed_write_files
-- BLOCKED_WRITE_ATTEMPT: [modify] fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java via edit violations=target_not_in_allowed_write_files
-- BLOCKED_WRITE_ATTEMPT: [modify] fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java via edit violations=target_not_in_allowed_write_files
-- BLOCKED_WRITE_ATTEMPT: [modify] fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java via edit violations=target_not_in_allowed_write_files
-- BLOCKED_WRITE_ATTEMPT: [modify] fj-backend/fj-api/pom.xml via edit violations=target_not_in_allowed_write_files
+- Total blocked write attempts: 5
+- Historical/resolved: 5
+- Unresolved: 0
+
+### Historical / Resolved Blocked Writes
+
+- [modify] fj-backend/fj-system/src/main/java/com/fj/system/entity/Organization.java → historical_blocked_no_effect (Blocked attempt is covered by final allowed_write_files scope and no final factual write exists for that path.)
+- [modify] fj-backend/fj-system/src/main/java/com/fj/system/entity/ProjectOrganization.java → historical_blocked_no_effect (Blocked attempt is covered by final allowed_write_files scope and no final factual write exists for that path.)
+- [modify] fj-backend/fj-system/src/main/java/com/fj/system/entity/UserProjectRole.java → historical_blocked_no_effect (Blocked attempt is covered by final allowed_write_files scope and no final factual write exists for that path.)
+- [modify] fj-backend/fj-system/src/main/java/com/fj/system/entity/DataDictionary.java → historical_blocked_no_effect (Blocked attempt is covered by final allowed_write_files scope and no final factual write exists for that path.)
+- [modify] fj-backend/fj-api/pom.xml → historical_blocked_no_effect (Blocked attempt is covered by final allowed_write_files scope and no final factual write exists for that path.)
+
+### Unresolved Blocked Writes
+
+None.
 
 ## Entries
 

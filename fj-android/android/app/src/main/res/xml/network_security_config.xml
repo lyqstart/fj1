@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  网络安全配置（WI-0021 TASK-3）
+
+  过渡期：后端 API 暂以公网 IP + HTTP 明文提供，需显式放行 cleartext 流量到该主机。
+  生产化：将后端切换为 HTTPS 域名后，删除下方 domain-config，改为 certificate pinning。
+-->
+<network-security-config>
+    <!-- 过渡期：允许明文 HTTP 到后端服务器 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">129.211.5.240</domain>
+    </domain-config>
+    <!-- 生产：取消上面的 cleartextTrafficPermitted，改为 certificate pinning -->
+</network-security-config>

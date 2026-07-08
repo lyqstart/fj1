@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0010",
+  "status": "created",
+  "workflow_type": "quick_change",
+  "workflow_path": "code_only_fast_path",
+  "title": "Work Item WI-0010",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-04T15:52:50.486Z",
+  "updated_at": "2026-07-04T16:07:29.871Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": ".gitignore",
+      "operation": "create"
+    },
+    {
+      "path": ".gitignore",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/.gitignore",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/.gitignore",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-04T15:55:42.800Z",
+      "mode": "release",
+      "incoming_count": 4,
+      "previous_count": 0,
+      "total_count": 4
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-04T16:07:24.131Z"
+}

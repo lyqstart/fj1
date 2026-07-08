@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0007",
+  "generated_at": "2026-07-04T00:30:00Z",
+  "entries": [
+    {
+      "id": "EV-001",
+      "type": "file_read",
+      "description": "SyncBatchStatus.java 枚举值确认为 {RECEIVED, SUCCESS, PARTIAL, CONFLICT, FAILED}",
+      "source": "fj-backend/fj-sync/src/main/java/com/fj/sync/entity/SyncBatchStatus.java",
+      "ac_refs": [
+        "AC-1"
+      ]
+    },
+    {
+      "id": "EV-002",
+      "type": "file_read",
+      "description": "V9 迁移文件确认：DROP+ADD chk_pi_status (8值) + ALTER VARCHAR(64)",
+      "source": "fj-backend/fj-api/src/main/resources/db/migration/V9__fix_enum_check_constraints.sql",
+      "ac_refs": [
+        "AC-2",
+        "AC-3",
+        "AC-7"
+      ]
+    },
+    {
+      "id": "EV-003",
+      "type": "file_read",
+      "description": "ProjectIssue.java L76 默认值 PENDING_CONFIRM",
+      "source": "fj-backend/fj-issue/src/main/java/com/fj/issue/entity/ProjectIssue.java",
+      "ac_refs": [
+        "AC-4"
+      ]
+    },
+    {
+      "id": "EV-004",
+      "type": "file_read",
+      "description": "StandardRecommendationResult.java L33 issue_id nullable=false",
+      "source": "fj-backend/fj-recommend/src/main/java/com/fj/recommend/entity/StandardRecommendationResult.java",
+      "ac_refs": [
+        "AC-5"
+      ]
+    },
+    {
+      "id": "EV-005",
+      "type": "grep",
+      "description": "PROCESSING|COMPLETED 在 fj-backend 零残留",
+      "ac_refs": [
+        "AC-8"
+      ]
+    },
+    {
+      "id": "EV-006",
+      "type": "file_read",
+      "description": "IssueStatusService TRANSITIONS map 完整（8状态流转）",
+      "source": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssueStatusService.java",
+      "inv_refs": [
+        "INV-2"
+      ]
+    },
+    {
+      "id": "EV-007",
+      "type": "file_read",
+      "description": "IssuePoolService.java:98 仍显式 setStatus(VALID)",
+      "source": "fj-backend/fj-issue/src/main/java/com/fj/issue/service/IssuePoolService.java",
+      "inv_refs": [
+        "INV-3"
+      ]
+    },
+    {
+      "id": "EV-008",
+      "type": "changed_files_audit",
+      "description": "6/6 文件在 allowed_write_files 范围内，0 越界，0 blocked_write_attempts",
+      "ac_refs": [
+        "AC-6"
+      ]
+    },
+    {
+      "id": "EV-009",
+      "type": "static_inference",
+      "description": "schema 一致性静态推断：枚举⊆CHECK、length⊆VARCHAR、nullable 语义一致 → ddl-auto=validate 通过",
+      "ac_refs": [
+        "AC-6"
+      ]
+    }
+  ]
+}

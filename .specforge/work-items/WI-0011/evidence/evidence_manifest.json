@@ -1,0 +1,70 @@
+{
+  "work_item_id": "WI-0011",
+  "schema_version": "1.1",
+  "entries": [
+    {
+      "id": "E1",
+      "type": "http_response",
+      "description": "AC-1: admin/admin123 登录成功（8080 直连）",
+      "command": "curl -sS -X POST http://127.0.0.1:8080/api/v1/auth/login -H 'Content-Type: application/json' -d '{\"username\":\"admin\",\"password\":\"admin123\"}'",
+      "result": "HTTP 200 + {accessToken, refreshToken, user:{id:1,username:admin,realName:系统管理员}}",
+      "timestamp": "2026-07-05T01:02:30CST"
+    },
+    {
+      "id": "E2",
+      "type": "http_response",
+      "description": "AC-1: admin/admin123 登录成功（nginx :80 端到端）",
+      "command": "curl -sS -X POST http://127.0.0.1/api/v1/auth/login",
+      "result": "HTTP 200 + JWT token pair",
+      "timestamp": "2026-07-05T01:02:31CST"
+    },
+    {
+      "id": "E3",
+      "type": "log_check",
+      "description": "AC-2: 启动日志无 generated security password",
+      "command": "journalctl -u fj1-api --since '30 sec ago' | grep -c 'generated security password'",
+      "result": "0",
+      "timestamp": "2026-07-05T01:02:32CST"
+    },
+    {
+      "id": "E4",
+      "type": "http_response",
+      "description": "AC-3: 未认证请求返回 401 JSON（非 Basic Auth）",
+      "command": "curl -sS http://127.0.0.1:8080/api/v1/users/me",
+      "result": "HTTP 401 + {\"code\":401,\"message\":\"Unauthorized\",\"data\":null,\"success\":false}（无 WWW-Authenticate 头）",
+      "timestamp": "2026-07-05T01:02:33CST"
+    },
+    {
+      "id": "E5",
+      "type": "source_check",
+      "description": "AC-5: V2 种子数据使用 $2a$ 哈希",
+      "command": "grep $2a$12$ in V2__seed_data.sql",
+      "result": "1 match; $2b$ = 0 matches",
+      "timestamp": "2026-07-05T01:02:34CST"
+    },
+    {
+      "id": "E6",
+      "type": "compile",
+      "description": "Maven 编译成功",
+      "command": "JAVA_HOME=/usr/lib/jvm/java-17-openjdk mvn clean package -pl fj-api -am -DskipTests -q",
+      "result": "BUILD SUCCESS, EXIT 0",
+      "timestamp": "2026-07-05T00:53CST"
+    },
+    {
+      "id": "E7",
+      "type": "config_check",
+      "description": "context-path 已从 application.yml 和 application-prod.yml 中删除",
+      "command": "grep context-path application*.yml",
+      "result": "0 matches in both files",
+      "timestamp": "2026-07-05T01:02:35CST"
+    },
+    {
+      "id": "E8",
+      "type": "service_status",
+      "description": "fj1-api 服务运行正常",
+      "command": "systemctl is-active fj1-api",
+      "result": "active",
+      "timestamp": "2026-07-05T01:02:36CST"
+    }
+  ]
+}

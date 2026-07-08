@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0024",
+  "collected_by": "sf-verifier",
+  "entries": [
+    {
+      "evidence_id": "EA-001",
+      "type": "command_output",
+      "description": "tsc 类型检查：npx tsc --noEmit 全项目类型检查，exit code 0（无类型错误），耗时 2141ms。覆盖 BiometricAuth.ts、AuthContext.tsx、types.ts、ProfileScreen.tsx 全部改动文件。",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-06T00:30:00Z",
+      "location": "command: npx tsc --noEmit (cwd: fj-android), exit=0",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1",
+          "REQ-2"
+        ],
+        "task_ids": [
+          "TASK-1",
+          "TASK-2",
+          "TASK-3",
+          "TASK-4"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-002",
+      "type": "log",
+      "description": "Docker 构建日志 build-wi24.log 第 532 行确认 BUILD SUCCESSFUL in 2m 17s。Gradle 构建 Android APK 成功，无编译错误。",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-06T00:31:00Z",
+      "location": "fj-android/build-wi24.log:532",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1",
+          "REQ-2"
+        ],
+        "task_ids": [
+          "TASK-4"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-003",
+      "type": "file_snapshot",
+      "description": "APK 产物存在：fj-android/android/app/build/outputs/apk/debug/app-debug.apk，大小 138,585,098 字节（~132MB），mtime 2026-07-06 00:20。证明构建产出有效的可安装 APK。",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-06T00:32:00Z",
+      "location": "fj-android/android/app/build/outputs/apk/debug/app-debug.apk",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1",
+          "REQ-2"
+        ],
+        "task_ids": [
+          "TASK-4"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-004",
+      "type": "test_output",
+      "description": "静态分析批量验证（sf_batch_verify）4 个文件共 22 项断言全部通过：BiometricAuth.ts(6/6) 含 keychain 导入、BIOMETRY_CURRENT_SET、setInternetCredentials、resetInternetCredentials、5 处 try-catch、5 个导出函数；AuthContext.tsx(7/7) 含 BiometricAuth 导入、enable/disableBiometric、biometricEnabled 状态、启动自动登录检查、调用 login()、Context value 字段；ProfileScreen.tsx(6/6) 含 Switch 组件、context 取值、value 绑定、enable/disable 调用、安全 section；types.ts(3/3) 含 enableBiometric/disableBiometric/biometricEnabled 类型声明。",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-06T00:33:00Z",
+      "location": "sf_batch_verify results: BiometricAuth.ts(6/6), AuthContext.tsx(7/7), ProfileScreen.tsx(6/6), types.ts(3/3)",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1",
+          "REQ-2"
+        ],
+        "task_ids": [
+          "TASK-1",
+          "TASK-2",
+          "TASK-3"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-005",
+      "type": "command_output",
+      "description": "package.json 无变更：git diff HEAD -- package.json 输出为空，git status --short package.json 无输出。react-native-keychain ^8.2.0 已在 package.json 第 23 行存在（既有依赖）。确认 TASK-4 要求的'无新依赖引入'。",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-06T00:34:00Z",
+      "location": "git diff + package.json:23",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1"
+        ],
+        "task_ids": [
+          "TASK-4"
+        ]
+      }
+    },
+    {
+      "evidence_id": "EA-006",
+      "type": "command_output",
+      "description": "changed_files_audit 通过：sf_changed_files_audit 返回 passed=true，total_files 在最终审计范围内 0 越界，0 violations，unresolved_blocked_write_attempts=0（2 个历史 blocked write 均有 hard_stop_resolution 已解决）。4 个改动文件全部 in_scope。",
+      "collected_by": "sf-verifier",
+      "timestamp": "2026-07-06T00:35:00Z",
+      "location": "sf_changed_files_audit(WI-0024) + changed_files_audit.md",
+      "related_refs": {
+        "req_ids": [
+          "REQ-1",
+          "REQ-2"
+        ],
+        "task_ids": [
+          "TASK-1",
+          "TASK-2",
+          "TASK-3"
+        ]
+      }
+    }
+  ]
+}

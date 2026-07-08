@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "UD-WI-0016-1783239035798",
+  "work_item_id": "WI-0016",
+  "workflow_path": "requirement_change_path",
+  "base_spec_version": "PSV-0001",
+  "candidate_manifest_path": "candidate_manifest.json",
+  "manifest_hash": "sha256:73a2b98e39d4352e1588780a73e9686ae6a78b7ffcfaacd7a3b78a2bde7e4012",
+  "candidate_hash": "sha256:1d5dbf0d7c0cf7ce5ca6758c6f3b92dbee9ff98d375d6b5d70ff5c01b2dd9e90",
+  "gate_summary_path": "gate_summary.md",
+  "gate_summary_hash": "sha256:ac440b865863af2abb88e67e6b81817b618840cc408d4cda8f622aab62ccd44d",
+  "decision_status": "approved",
+  "decision_type": "user_approved",
+  "decided_by": "user",
+  "decided_at": "2026-07-05T08:10:35.798Z",
+  "decision_scope": "full",
+  "waivers": [],
+  "recorded_by": "sf-orchestrator",
+  "recorder_role": "user_decision_recorder",
+  "recorded_at": "2026-07-05T08:10:35.798Z",
+  "user_response_quote": "所有的WI全部都做，这个你不用在问我了，按照你的建议从WI-0014开始做"
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0006",
+  "collected_at": "2026-07-04T02:20:00Z",
+  "collector": "sf-investigator",
+  "summary": {
+    "total_evidence": 9,
+    "passed": 9,
+    "failed": 0
+  },
+  "entries": [
+    {
+      "id": "EV-AC1",
+      "ac_ref": "AC-1",
+      "type": "audit_result",
+      "description": "38 @Entity classes audited",
+      "output": "38/38 = 100% coverage",
+      "passed": true
+    },
+    {
+      "id": "EV-AC2",
+      "ac_ref": "AC-2",
+      "type": "audit_result",
+      "description": "40 tables DDL extracted",
+      "output": "40/40 CREATE TABLE + V8 ALTER merged",
+      "passed": true
+    },
+    {
+      "id": "EV-AC3",
+      "ac_ref": "AC-3",
+      "type": "audit_result",
+      "description": "Each finding has severity",
+      "output": "5 findings: 0 Critical, 3 Warning, 2 Info",
+      "passed": true
+    },
+    {
+      "id": "EV-AC4",
+      "ac_ref": "AC-4",
+      "type": "audit_result",
+      "description": "Each Warning has fix suggestion",
+      "output": "W1/W2/W3 all have fix suggestions",
+      "passed": true
+    },
+    {
+      "id": "EV-AC5",
+      "ac_ref": "AC-5",
+      "type": "audit_result",
+      "description": "Report includes limitations",
+      "output": "8 limitations documented",
+      "passed": true
+    },
+    {
+      "id": "EV-W1",
+      "type": "code_reference",
+      "description": "SyncBatch enum vs CHECK mismatch",
+      "files": [
+        "fj-sync/.../SyncBatch.java:45",
+        "fj-sync/.../SyncBatchStatus.java:6-14",
+        "V4__task_tables.sql:238,252-254"
+      ],
+      "passed": true
+    },
+    {
+      "id": "EV-W2",
+      "type": "code_reference",
+      "description": "ProjectIssue enum exceeds CHECK",
+      "files": [
+        "fj-issue/.../ProjectIssue.java:76",
+        "fj-issue/.../IssueStatus.java:20-29",
+        "V5__daily_report_tables.sql:215,234-236"
+      ],
+      "passed": true
+    },
+    {
+      "id": "EV-W3",
+      "type": "code_reference",
+      "description": "standard_library_version length mismatch",
+      "files": [
+        "fj-recommend/.../StandardRecommendationResult.java:49",
+        "V5__daily_report_tables.sql:300"
+      ],
+      "passed": true
+    },
+    {
+      "id": "EV-METHOD",
+      "type": "validation",
+      "description": "WI-0004 V8 fixes correctly identified as matched",
+      "output": "4/4 V8 fixes correctly validated, 0 false positives",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0026",
+  "status": "created",
+  "workflow_type": "bugfix_spec",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0026",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-06T01:59:14.450Z",
+  "updated_at": "2026-07-06T02:48:37.118Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-android/android/app/proguard-rules.pro",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/proguard-rules.pro",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/proguard-rules.pro",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/proguard-rules.pro",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/release/app-release.apk",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/intermediates/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/intermediates/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/intermediates/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/intermediates/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/tmp/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/tmp/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/tmp/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/tmp/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/generated/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/generated/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/generated/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/generated/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/**",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build/outputs/apk/**",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/**",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build/outputs/apk/**",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/build-wi26.log",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/build-wi26.log",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/build-wi26.log",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/build-wi26.log",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-06T02:29:50.883Z",
+      "mode": "release",
+      "incoming_count": 28,
+      "previous_count": 0,
+      "total_count": 28
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-06T02:48:32.025Z"
+}

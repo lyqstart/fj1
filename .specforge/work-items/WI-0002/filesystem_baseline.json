@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-02T03:39:17.283Z",
+  "timestamp": "2026-07-02T08:32:17.200Z",
   "root": "/mnt/1t_back/project/fj1",
   "files": [
     {
@@ -1179,8 +1179,8 @@
     },
     {
       "path": ".specforge/project/spec_manifest.json",
-      "size": 810,
-      "mtimeMs": 1782921103464.6562
+      "size": 547,
+      "mtimeMs": 1782975586469.1848
     },
     {
       "path": ".specforge/project/extension_registry.json",
@@ -1249,8 +1249,8 @@
     },
     {
       "path": ".specforge/.gitignore",
-      "size": 39,
-      "mtimeMs": 1782893936849.8164
+      "size": 103,
+      "mtimeMs": 1782980742901.4514
     },
     {
       "path": ".specforge/knowledge/graph.json",

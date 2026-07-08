@@ -8,13 +8,27 @@
  *  2. 问题篮子 (IssueBasket)  — 离线草拟的问题自查清单（待提交到日报）
  *  3. 我的 (Profile)          — 用户信息、同步状态、登出
  *
- * 此文件为骨架，每个 Tab 渲染占位组件；具体屏幕实现在后续 task 中开发
- * （对应 src/screens/today, src/screens/issue-basket, src/screens/profile）。
+ * WI-0016 已激活 TodayInspectionScreen：Today Tab 现挂载嵌套 InspectionStack，
+ * 提供 5 个路由（TodayInspection / TaskDetail / InspectionInProgress /
+ * SubmitReport / IssueEvidence）。其中 TodayInspection 为真实 screen（218 行骨架），
+ * 其余 4 个为 SimplePlaceholder 占位，由 WI-0017 / WI-0018 完成真实实装。
+ * IssueBasket / Profile Tab 仍为 SimplePlaceholder，由 WI-0019 / WI-0020 实装。
  */
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import type { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import TodayInspectionScreen from '../screens/today/TodayInspectionScreen';
+import type { InspectionStackParamList } from '../screens/today/TodayInspectionScreen';
+import TaskDetailScreen from '../screens/inspection/TaskDetailScreen';
+import InspectionInProgressScreen from '../screens/inspection/InspectionInProgressScreen';
+import IssueEvidenceScreen from '../screens/inspection/IssueEvidenceScreen';
+import IssueBasketScreen from '../screens/issue-basket/IssueBasketScreen';
+import SubmitReportScreen from '../screens/submit/SubmitReportScreen';
+import ProfileScreen from '../screens/profile/ProfileScreen';
 
 // ============== Root Tab 类型定义 ==============
 /**
@@ -29,17 +43,26 @@ export type RootTabParamList = {
 };
 
 const Tab = createBottomTabNavigator<RootTabParamList>();
+const InspectionStack = createStackNavigator<InspectionStackParamList>();
 
-// ============== 占位屏幕 ==============
-interface PlaceholderProps {
+// ============== 通用占位组件 ==============
+interface SimplePlaceholderProps {
   title: string;
   subtitle?: string;
 }
 
 /**
- * Tab 占位组件。后续 task 会用真实屏幕替换。
+ * 通用占位组件：
+ *  - Stack 内未实装 screen（TaskDetail / InspectionInProgress / SubmitReport / IssueEvidence）
+ *  - IssueBasket / Profile Tab（WI-0019 / WI-0020 替换）
+ *
+ * 注意：通过 Stack.Screen 的 children 渲染回调包裹此组件，避免与
+ * StackScreenProps 泛型签名直接耦合。
  */
-function PlaceholderScreen({ title, subtitle }: PlaceholderProps): React.ReactElement {
+function SimplePlaceholder({
+  title,
+  subtitle,
+}: SimplePlaceholderProps): React.ReactElement {
   return (
     <View style={styles.placeholder}>
       <Text style={styles.title}>{title}</Text>
@@ -48,29 +71,69 @@ function PlaceholderScreen({ title, subtitle }: PlaceholderProps): React.ReactEl
   );
 }
 
-function TodayScreen(): React.ReactElement {
+// ============== 嵌套 Stack：今日检查流程 ==============
+/**
+ * 嵌套在 Today Tab 内的 InspectionStack。
+ *
+ * 5 个路由名严格对齐 TodayInspectionScreen.tsx 的 InspectionStackParamList：
+ *  - TodayInspection：真实实装（TodayInspectionScreen 218 行骨架）
+ *  - TaskDetail / InspectionInProgress / SubmitReport / IssueEvidence：
+ *    SimplePlaceholder 占位，由 WI-0017 / WI-0018 实装真实 screen
+ *
+ * TodayInspection 路由 headerShown:false —— Today Tab 已提供 header，
+ * 避免 BottomTab header + Stack header 双 header。
+ */
+function InspectionStackScreen(): React.ReactElement {
   return (
-    <PlaceholderScreen
-      title="今日检查"
-      subtitle="骨架占位 — 待 TASK-020+ 实现：当日任务列表、日报入口"
-    />
+    <InspectionStack.Navigator screenOptions={{ headerShown: true }}>
+      <InspectionStack.Screen
+        name="TodayInspection"
+        component={TodayInspectionScreen}
+        options={{ headerTitle: '今日检查', headerShown: false }}
+      />
+      <InspectionStack.Screen
+        name="TaskDetail"
+        component={TaskDetailScreen}
+        options={{ headerTitle: '任务详情' }}
+      />
+      <InspectionStack.Screen
+        name="InspectionInProgress"
+        component={InspectionInProgressScreen}
+        options={{ headerTitle: '检查中' }}
+      />
+      <InspectionStack.Screen
+        name="SubmitReport"
+        component={SubmitReportScreen}
+        options={{ headerTitle: '提交日报' }}
+      />
+      <InspectionStack.Screen
+        name="IssueEvidence"
+        component={IssueEvidenceScreen}
+        options={{ headerTitle: '问题证据' }}
+      />
+    </InspectionStack.Navigator>
   );
 }
 
-function IssueBasketScreen(): React.ReactElement {
-  return (
-    <PlaceholderScreen
-      title="问题篮子"
-      subtitle="骨架占位 — 离线草拟的问题清单，待提交到日报"
-    />
-  );
-}
+// ============== Tab 宿主组件 ==============
+/**
+ * IssueBasketScreen 骨架声明 navigation 为 StackNavigationProp<InspectionStackParamList>
+ * （其"提交"/"编辑"动作需要 navigate 到 SubmitReport / IssueEvidence，这两个路由位于
+ * Today Tab 内的 InspectionStack）。作为 BottomTab 子组件挂载时实际收到
+ * BottomTabNavigationProp。运行时 React Navigation 支持跨嵌套导航器路由（navigate
+ * ('SubmitReport') 会穿透到 Today Tab 内的 InspectionStack），此处 host 仅做类型桥接。
+ */
+type IssueBasketNavigation =
+  Parameters<typeof IssueBasketScreen>[0]['navigation'];
 
-function ProfileScreen(): React.ReactElement {
+function IssueBasketTabHost({
+  navigation,
+}: {
+  navigation: BottomTabNavigationProp<RootTabParamList, 'IssueBasket'>;
+}): React.ReactElement {
   return (
-    <PlaceholderScreen
-      title="我的"
-      subtitle="骨架占位 — 用户信息、同步状态、登出"
+    <IssueBasketScreen
+      navigation={navigation as unknown as IssueBasketNavigation}
     />
   );
 }
@@ -98,12 +161,12 @@ export default function AppNavigator(): React.ReactElement {
       >
         <Tab.Screen
           name="Today"
-          component={TodayScreen}
+          component={InspectionStackScreen}
           options={{ title: '今日检查', tabBarLabel: '今日检查' }}
         />
         <Tab.Screen
           name="IssueBasket"
-          component={IssueBasketScreen}
+          component={IssueBasketTabHost}
           options={{ title: '问题篮子', tabBarLabel: '问题篮子' }}
         />
         <Tab.Screen

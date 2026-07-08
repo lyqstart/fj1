@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0012",
+  "status": "created",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0012",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-04T17:40:39.871Z",
+  "updated_at": "2026-07-05T03:43:01.143Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "fj-android/App.tsx",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/App.tsx",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/App.tsx",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/App.tsx",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/index.js",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/index.js",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/index.js",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/index.js",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/metro.config.js",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/metro.config.js",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/metro.config.js",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/metro.config.js",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/react-native.config.js",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/react-native.config.js",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/react-native.config.js",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/react-native.config.js",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/src/config/AppConfig.ts",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/src/config/AppConfig.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/config/AppConfig.ts",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/src/config/AppConfig.ts",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/build.gradle",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/build.gradle",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build.gradle",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/build.gradle",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/settings.gradle",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/settings.gradle",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/settings.gradle",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/settings.gradle",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/gradle.properties",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/gradle.properties",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/gradle.properties",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/gradle.properties",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/src/main/AndroidManifest.xml",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/src/main/AndroidManifest.xml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/AndroidManifest.xml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/AndroidManifest.xml",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/src/main/java/com/fjandroid/MainActivity.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/src/main/java/com/fjandroid/MainActivity.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/java/com/fjandroid/MainActivity.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/java/com/fjandroid/MainActivity.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/android/app/src/main/java/com/fjandroid/MainApplication.java",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/android/app/src/main/java/com/fjandroid/MainApplication.java",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/java/com/fjandroid/MainApplication.java",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/android/app/src/main/java/com/fjandroid/MainApplication.java",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/package.json",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/package.json",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/package.json",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/package.json",
+      "operation": "modify"
+    },
+    {
+      "path": "fj-android/babel.config.js",
+      "operation": "create"
+    },
+    {
+      "path": "fj-android/babel.config.js",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/babel.config.js",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/fj-android/babel.config.js",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-04T20:38:55.264Z",
+      "mode": "release",
+      "incoming_count": 56,
+      "previous_count": 0,
+      "total_count": 56
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-05T03:42:56.356Z"
+}

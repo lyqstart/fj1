@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0034",
+  "outcomes": [
+    {
+      "id": "OUT-W34-1",
+      "requirement_refs": [
+        "REQ-W34-1",
+        "REQ-W34-2",
+        "REQ-W34-3"
+      ],
+      "required_evidence_refs": [
+        "EV-W34-1",
+        "EV-W34-2",
+        "EV-W34-3",
+        "EV-W34-4",
+        "EV-W34-6"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ-W34-1",
+      "type": "MUST",
+      "outcome_refs": [
+        "OUT-W34-1"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "task_refs": [
+        "TASK-W34-1",
+        "TASK-W34-4"
+      ],
+      "required_evidence_refs": [
+        "EV-W34-1",
+        "EV-W34-4",
+        "EV-W34-6"
+      ]
+    },
+    {
+      "id": "REQ-W34-2",
+      "type": "MUST",
+      "outcome_refs": [
+        "OUT-W34-1"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "task_refs": [
+        "TASK-W34-2"
+      ],
+      "required_evidence_refs": [
+        "EV-W34-2"
+      ]
+    },
+    {
+      "id": "REQ-W34-3",
+      "type": "MUST",
+      "outcome_refs": [
+        "OUT-W34-1"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "task_refs": [
+        "TASK-W34-3"
+      ],
+      "required_evidence_refs": [
+        "EV-W34-3"
+      ]
+    }
+  ],
+  "design_decisions": [
+    {
+      "id": "DD-W34-1",
+      "requirement_refs": [
+        "REQ-W34-1",
+        "REQ-W34-2",
+        "REQ-W34-3"
+      ],
+      "task_refs": [
+        "TASK-W34-1",
+        "TASK-W34-2",
+        "TASK-W34-3",
+        "TASK-W34-4"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-W34-1",
+      "requirement_refs": [
+        "REQ-W34-1"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "evidence_refs": [
+        "EV-W34-1"
+      ]
+    },
+    {
+      "id": "TASK-W34-2",
+      "requirement_refs": [
+        "REQ-W34-2"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "evidence_refs": [
+        "EV-W34-2"
+      ]
+    },
+    {
+      "id": "TASK-W34-3",
+      "requirement_refs": [
+        "REQ-W34-3"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "evidence_refs": [
+        "EV-W34-3"
+      ]
+    },
+    {
+      "id": "TASK-W34-4",
+      "requirement_refs": [
+        "REQ-W34-1"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "evidence_refs": [
+        "EV-W34-4",
+        "EV-W34-6"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-W34-1",
+      "status": "pass",
+      "evidence_type": "file_content",
+      "supports": [
+        "OUT-W34-1",
+        "REQ-W34-1",
+        "DD-W34-1",
+        "TASK-W34-1"
+      ],
+      "outcome_refs": [
+        "OUT-W34-1"
+      ],
+      "requirement_refs": [
+        "REQ-W34-1"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "task_refs": [
+        "TASK-W34-1"
+      ]
+    },
+    {
+      "id": "EV-W34-2",
+      "status": "pass",
+      "evidence_type": "file_content",
+      "supports": [
+        "OUT-W34-1",
+        "REQ-W34-2",
+        "DD-W34-1",
+        "TASK-W34-2"
+      ],
+      "outcome_refs": [
+        "OUT-W34-1"
+      ],
+      "requirement_refs": [
+        "REQ-W34-2"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "task_refs": [
+        "TASK-W34-2"
+      ]
+    },
+    {
+      "id": "EV-W34-3",
+      "status": "pass",
+      "evidence_type": "file_content",
+      "supports": [
+        "OUT-W34-1",
+        "REQ-W34-3",
+        "DD-W34-1",
+        "TASK-W34-3"
+      ],
+      "outcome_refs": [
+        "OUT-W34-1"
+      ],
+      "requirement_refs": [
+        "REQ-W34-3"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "task_refs": [
+        "TASK-W34-3"
+      ]
+    },
+    {
+      "id": "EV-W34-4",
+      "status": "pass",
+      "evidence_type": "build_log",
+      "supports": [
+        "OUT-W34-1",
+        "REQ-W34-1",
+        "DD-W34-1",
+        "TASK-W34-4"
+      ],
+      "outcome_refs": [
+        "OUT-W34-1"
+      ],
+      "requirement_refs": [
+        "REQ-W34-1"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "task_refs": [
+        "TASK-W34-4"
+      ]
+    },
+    {
+      "id": "EV-W34-6",
+      "status": "pass",
+      "level": "L5",
+      "evidence_type": "user_confirmation",
+      "supports": [
+        "OUT-W34-1",
+        "REQ-W34-1",
+        "DD-W34-1",
+        "TASK-W34-4"
+      ],
+      "outcome_refs": [
+        "OUT-W34-1"
+      ],
+      "requirement_refs": [
+        "REQ-W34-1"
+      ],
+      "design_refs": [
+        "DD-W34-1"
+      ],
+      "task_refs": [
+        "TASK-W34-4"
+      ]
+    }
+  ],
+  "project_integration": {
+    "status": "not_applicable"
+  }
+}

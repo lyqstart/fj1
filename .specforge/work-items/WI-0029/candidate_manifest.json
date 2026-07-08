@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0029",
+  "workflow_path": "requirement_change_path",
+  "generated_at": "2026-07-06T10:13:00Z",
+  "candidates": [
+    {
+      "type": "requirements",
+      "path": "candidates/project/modules/core/requirements.candidate.md",
+      "lint_passed": true,
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "module_id": "core"
+    },
+    {
+      "type": "design",
+      "path": "candidates/project/modules/core/design.candidate.md",
+      "lint_passed": true,
+      "target_path": ".specforge/project/modules/core/design.md",
+      "module_id": "core"
+    },
+    {
+      "type": "tasks",
+      "path": "candidates/tasks.md",
+      "lint_passed": true
+    },
+    {
+      "type": "trace_delta",
+      "path": "candidates/trace_delta.md",
+      "lint_passed": true
+    }
+  ],
+  "candidate_completeness": {
+    "requirements": true,
+    "design": true,
+    "tasks": true,
+    "trace_delta": true
+  },
+  "entries": [
+    {
+      "candidate_path": "candidates/project/modules/core/requirements.candidate.md",
+      "target_path": ".specforge/project/modules/core/requirements.md",
+      "operation": "replace",
+      "type": "requirements",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/project/modules/core/design.candidate.md",
+      "target_path": ".specforge/project/modules/core/design.md",
+      "operation": "replace",
+      "type": "design",
+      "inferred": false,
+      "normalized": true,
+      "module_id": "core"
+    },
+    {
+      "candidate_path": "candidates/trace_delta.md",
+      "target_path": ".specforge/project/trace_matrix.md",
+      "operation": "replace",
+      "type": "trace_delta",
+      "inferred": false,
+      "normalized": true
+    }
+  ]
+}

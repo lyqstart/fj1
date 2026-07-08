@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0019",
+  "trigger_date": "2026-07-05T08:53:00Z",
+  "intent": "feature_activation",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "decision_reason": "集成问题篮子和提交日报屏幕",
+  "selected_path": "requirement_change_path",
+  "unknowns": [],
+  "predecessor_wi": "WI-0018",
+  "successor_wi": "WI-0020",
+  "status": "triggered"
+}

@@ -1,0 +1,44 @@
+{
+  "work_item_id": "WI-0011",
+  "workflow_type": "bugfix_spec",
+  "workflow_path": "requirement_change_path",
+  "trigger_analysis": {
+    "intent": "bug_report",
+    "complexity": "medium",
+    "requires_requirements": true,
+    "requires_design": true,
+    "requires_tasks": true,
+    "unknowns": []
+  },
+  "selected_workflow": {
+    "workflow_type": "bugfix_spec",
+    "workflow_path": "requirement_change_path",
+    "rationale": "P0 生产阻断性缺陷，需完整 bugfix_spec 流程（根因分析→修复设计→任务拆分→实现→验证）"
+  },
+  "root_causes": [
+    {
+      "id": "RC-1",
+      "severity": "critical",
+      "description": "缺少 Spring Security 配置类，默认 Basic Auth 拦截所有请求"
+    },
+    {
+      "id": "RC-2",
+      "severity": "minor",
+      "description": "BCrypt 哈希 $2b$ 前缀兼容性风险"
+    },
+    {
+      "id": "RC-3",
+      "severity": "related",
+      "description": "JwtAuthFilter shouldNotFilter 路径匹配失效"
+    }
+  ],
+  "acceptance_criteria_count": 5,
+  "files_to_modify": [
+    "fj-backend/fj-api/src/main/java/com/fj/api/config/SecurityConfig.java",
+    "fj-backend/fj-api/src/main/resources/db/migration/V2__seed_data.sql",
+    "fj-backend/fj-auth/src/main/java/com/fj/auth/jwt/JwtAuthFilter.java"
+  ],
+  "schema_version": "1.1",
+  "status": "triggered",
+  "unknowns": []
+}

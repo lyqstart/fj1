@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0003",
+  "status": "created",
+  "workflow_type": "ops_task",
+  "workflow_path": "task_change_path",
+  "title": "Work Item WI-0003",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-02T08:42:47.888Z",
+  "updated_at": "2026-07-03T10:56:09.527Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": true,
+  "allowed_write_files": [],
+  "allowed_write_files_snapshot": [
+    {
+      "path": "server:svr-lg:/opt/pg13-backup-20260702",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/pg13-backup-20260702",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/pg13-backup-20260702",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/pg13-backup-20260702",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj-backup-20260702",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj-backup-20260702",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj-backup-20260702",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj-backup-20260702",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api/.env",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api/.env",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api/.env",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api/.env",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api/fj-api-1.0.0.jar",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api/fj-api-1.0.0.jar",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api/fj-api-1.0.0.jar",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api/fj-api-1.0.0.jar",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api/application-prod.yml",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api/application-prod.yml",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api/logs",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/api/logs",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api/logs",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/api/logs",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/web",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/opt/fj1/web",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/web",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/opt/fj1/web",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/data/photos",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/data/photos",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/data/photos",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/data/photos",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/etc/systemd/system/fj1-api.service",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/etc/systemd/system/fj1-api.service",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/etc/systemd/system/fj1-api.service",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/etc/systemd/system/fj1-api.service",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/etc/nginx/conf.d/fj1.conf",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/etc/nginx/conf.d/fj1.conf",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/etc/nginx/conf.d/fj1.conf",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/etc/nginx/conf.d/fj1.conf",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/etc/nginx/conf.d/fj.conf",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/etc/nginx/conf.d/fj.conf",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/etc/nginx/conf.d/fj.conf",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/etc/nginx/conf.d/fj.conf",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/var/lib/pgsql/16/data",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/var/lib/pgsql/16/data",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/var/lib/pgsql/16/data",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/var/lib/pgsql/16/data",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/var/lib/pgsql/data",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/var/lib/pgsql/data",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/var/lib/pgsql/data",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/var/lib/pgsql/data",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:/etc/profile.d/fj_java_home.sh",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:/etc/profile.d/fj_java_home.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/etc/profile.d/fj_java_home.sh",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:/etc/profile.d/fj_java_home.sh",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:systemctl:postgresql-16",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:systemctl:postgresql-16",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:systemctl:postgresql-16",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:systemctl:postgresql-16",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:systemctl:postgresql",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:systemctl:postgresql",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:systemctl:postgresql",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:systemctl:postgresql",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:systemctl:fj1-api",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:systemctl:fj1-api",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:systemctl:fj1-api",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:systemctl:fj1-api",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:systemctl:nginx",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:systemctl:nginx",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:systemctl:nginx",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:systemctl:nginx",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:pm2:fj-server",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:pm2:fj-server",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:pm2:fj-server",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:pm2:fj-server",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:postgres:fj1_app",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:postgres:fj1_app",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:postgres:fj1_app",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:postgres:fj1_app",
+      "operation": "modify"
+    },
+    {
+      "path": "server:svr-lg:postgres:fj1_inspect",
+      "operation": "create"
+    },
+    {
+      "path": "server:svr-lg:postgres:fj1_inspect",
+      "operation": "modify"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:postgres:fj1_inspect",
+      "operation": "create"
+    },
+    {
+      "path": "/mnt/1t_back/project/fj1/server:svr-lg:postgres:fj1_inspect",
+      "operation": "modify"
+    }
+  ],
+  "code_permission_last_release_mode": "release",
+  "code_permission_release_count": 1,
+  "allowed_write_files_history": [
+    {
+      "timestamp": "2026-07-02T10:30:27.110Z",
+      "mode": "release",
+      "incoming_count": 92,
+      "previous_count": 0,
+      "total_count": 92
+    }
+  ],
+  "code_permission_revoked_at": "2026-07-03T10:56:02.461Z"
+}

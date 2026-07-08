@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0005",
+  "source_work_items": [
+    "WI-0003",
+    "WI-0004"
+  ],
+  "analyzed_at": "2026-07-03T17:12:00Z",
+  "trigger_type": "ops_task",
+  "trigger_description": "Sync WI-0004 source fixes to running svr-lg server",
+  "intent_classification": "ops_task",
+  "workflow_type": "ops_task",
+  "workflow_path": "task_change_path",
+  "path_selection_reasoning": [
+    "Operational task: sync source fixes to production server",
+    "Requires downtime, rollback plan, Flyway repair",
+    "ops_task is the canonical workflow identity for ops operations",
+    "task_change_path pairs with ops_task (already-designed ops_plan, no new requirements)"
+  ],
+  "complexity": "medium",
+  "downtime_estimate": "2-3 minutes (actual), 5-10 minutes (with buffer)",
+  "key_risks": [
+    "Flyway CLI download may fail (3-mirror fallback + Python checksum fallback)",
+    "ddl-auto=validate may expose other schema mismatches (rollback to none if fails)"
+  ],
+  "flyway_repair_strategy": "Plan A: Flyway CLI 9.22.3 (preferred); Plan B: Python checksum (fallback)",
+  "rollback_supported": true,
+  "backup_layers": [
+    "pg_dump",
+    "jar cp",
+    "yml cp",
+    "flyway_history CSV export"
+  ],
+  "gate_mode": "ops_task",
+  "unknowns": [
+    "Flyway CLI download success (network)",
+    "export_status NOT NULL constraint on svr-lg (may need pre-fix)"
+  ],
+  "status": "triggered"
+}

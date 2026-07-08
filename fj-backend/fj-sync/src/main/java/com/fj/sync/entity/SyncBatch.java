@@ -42,7 +42,7 @@ public class SyncBatch extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false, length = 32)
-    private SyncBatchStatus status = SyncBatchStatus.PROCESSING;
+    private SyncBatchStatus status = SyncBatchStatus.RECEIVED;
 
     /** push 时客户端携带的基线 seq（冲突检测，§6.5） */
     @Column(name = "base_server_seq", nullable = false)

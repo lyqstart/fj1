@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0034",
+  "workflow_type": "quick_change",
+  "workflow_path": "code_only_fast_path",
+  "trigger_reason": "Remove native module blocking - root cause fix for white screen",
+  "guard_checks": {
+    "no_requirement_change": true,
+    "no_design_change": true,
+    "no_architecture_change": true,
+    "no_acceptance_criteria_change": true,
+    "no_data_semantics_change": true,
+    "no_interface_contract_change": true,
+    "unknowns_empty": true
+  },
+  "determination": "code_only_fast_path approved",
+  "status": "triggered",
+  "unknowns": []
+}

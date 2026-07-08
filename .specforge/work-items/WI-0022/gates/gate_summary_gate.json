@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0022",
+  "gate_id": "gate_summary_gate",
+  "gate_type": "hard_gate",
+  "required": true,
+  "status": "passed",
+  "input_files": [],
+  "checks": [
+    {
+      "check_id": "gate_summary_exists",
+      "description": "gate_summary.md exists",
+      "passed": true
+    },
+    {
+      "check_id": "gate_summary_has_status",
+      "description": "gate_summary has Overall Status",
+      "passed": true
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [],
+  "waiver_allowed": false,
+  "waiver_required": false,
+  "waiver_ids": [],
+  "started_at": "2026-07-05T15:03:27.384Z",
+  "finished_at": "2026-07-05T15:03:27.384Z",
+  "runner": "gate_runner"
+}

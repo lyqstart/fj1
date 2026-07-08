@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0013",
+  "trigger_date": "2026-07-05T03:53:00Z",
+  "intent": "new_feature",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "decision_reason": "新增用户可见功能（登录界面、认证流程、导航守卫），属于 BH v1 新功能防降级规则第 1/2/3 条。不满足 code_only_fast_path 守卫条件（新增页面、新增验收标准、新增用户可见 UI）。需要完整需求分析和设计。",
+  "applicable_paths": [
+    "requirement_change_path",
+    "design_change_path",
+    "task_change_path"
+  ],
+  "selected_path": "requirement_change_path",
+  "rejected_paths": [
+    {
+      "path": "code_only_fast_path",
+      "reason": "新增用户可见功能，违反防降级规则"
+    },
+    {
+      "path": "architecture_change_path",
+      "reason": "不涉及系统架构变更"
+    }
+  ],
+  "unknowns": [],
+  "predecessor_wi": "WI-0012",
+  "successor_wi": "WI-0014",
+  "status": "triggered"
+}

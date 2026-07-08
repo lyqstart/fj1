@@ -1,0 +1,32 @@
+{
+  "work_item_id": "WI-0012",
+  "workflow_type": "feature_spec",
+  "workflow_path": "requirement_change_path",
+  "trigger_analysis": {
+    "intent": "new_feature",
+    "complexity": "medium",
+    "requires_requirements": true,
+    "requires_design": true,
+    "requires_tasks": true,
+    "unknowns": [
+      "watermelondb native module compatibility",
+      "gradle dependency download in container"
+    ]
+  },
+  "selected_workflow": {
+    "workflow_type": "feature_spec",
+    "workflow_path": "requirement_change_path",
+    "rationale": "新功能开发（安卓原生工程初始化），需完整需求-设计-任务流程"
+  },
+  "acceptance_criteria_count": 6,
+  "files_to_create": [
+    "fj-android/android/ (entire directory - native project)",
+    "fj-android/App.tsx",
+    "fj-android/index.js",
+    "fj-android/metro.config.js",
+    "fj-android/src/config/AppConfig.ts"
+  ],
+  "schema_version": "1.1",
+  "status": "triggered",
+  "unknowns": []
+}

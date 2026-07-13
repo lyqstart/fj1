@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.1",
+  "work_item_id": "WI-0036",
+  "workflow_type": "investigation",
+  "workflow_path": "requirement_change_path",
+  "title": "Work Item WI-0036",
+  "description": "Auto-created by sf_state_transition during Work Item creation.",
+  "created_at": "2026-07-13T01:30:14.511Z",
+  "updated_at": "2026-07-13T01:30:14.511Z",
+  "code_change_allowed": false,
+  "code_permission_revoked": false
+}

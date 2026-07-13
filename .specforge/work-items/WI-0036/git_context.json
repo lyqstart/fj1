@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "work_item_id": "WI-0036",
+  "git_enabled": true,
+  "branch_name": "ops/fj1-git-governance-live-acceptance-wi-0036",
+  "base_branch": "main",
+  "base_commit": "2f9af0e841addcbc8df476632811929686d7a92f",
+  "branch_relationship": "primary",
+  "remote_name": null,
+  "push_policy": "not_configured",
+  "merge_policy": "requires_user_confirmation",
+  "created_at": "2026-07-13T01:31:32.309Z"
+}
